@@ -2194,6 +2194,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A82E3462455D26900EB0A70 /* SwiftProtobuf_iOS.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				SKIP_INSTALL = NO;
 			};
 			name = Debug;
 		};
@@ -2201,6 +2203,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A82E3462455D26900EB0A70 /* SwiftProtobuf_iOS.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				SKIP_INSTALL = NO;
 			};
 			name = Release;
 		};
