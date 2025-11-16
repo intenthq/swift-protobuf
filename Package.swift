@@ -9,27 +9,38 @@
 // https://github.com/apple/swift-protobuf/blob/main/LICENSE.txt
 //
 
+// swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
-  name: "SwiftProtobuf",
+  name: "IntentSwiftProtobuf",
   products: [
     .executable(name: "protoc-gen-swift", targets: ["protoc-gen-swift"]),
-    .library(name: "SwiftProtobuf", targets: ["SwiftProtobuf"]),
-    .library(name: "SwiftProtobufPluginLibrary", targets: ["SwiftProtobufPluginLibrary"]),
+    .library(name: "IntentSwiftProtobuf", targets: ["IntentSwiftProtobuf"]),
+    .library(name: "IntentSwiftProtobufPluginLibrary", targets: ["IntentSwiftProtobufPluginLibrary"]),
   ],
   targets: [
-    .target(name: "SwiftProtobuf"),
-    .target(name: "SwiftProtobufPluginLibrary",
-            dependencies: ["SwiftProtobuf"]),
-    .target(name: "protoc-gen-swift",
-            dependencies: ["SwiftProtobufPluginLibrary", "SwiftProtobuf"]),
-    .target(name: "Conformance",
-            dependencies: ["SwiftProtobuf"]),
-    .testTarget(name: "SwiftProtobufTests",
-                dependencies: ["SwiftProtobuf"]),
-    .testTarget(name: "SwiftProtobufPluginLibraryTests",
-                dependencies: ["SwiftProtobufPluginLibrary"]),
+    .target(name: "IntentSwiftProtobuf"),
+    .target(
+      name: "IntentSwiftProtobufPluginLibrary",
+      dependencies: ["IntentSwiftProtobuf"]
+    ),
+    .target(
+      name: "protoc-gen-swift",
+      dependencies: ["IntentSwiftProtobufPluginLibrary", "IntentSwiftProtobuf"]
+    ),
+    .target(
+      name: "Conformance",
+      dependencies: ["IntentSwiftProtobuf"]
+    ),
+    .testTarget(
+      name: "IntentSwiftProtobufTests",
+      dependencies: ["IntentSwiftProtobuf"]
+    ),
+    .testTarget(
+      name: "IntentSwiftProtobufPluginLibraryTests",
+      dependencies: ["IntentSwiftProtobufPluginLibrary"]
+    ),
   ],
   swiftLanguageVersions: [.v4, .v4_2, .version("5")]
 )

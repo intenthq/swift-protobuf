@@ -8,39 +8,40 @@
 // See LICENSE.txt for license information:
 // https://github.com/apple/swift-protobuf/blob/main/LICENSE.txt
 //
-
+// swift-tools-version:5.6
 import PackageDescription
 
 let package = Package(
-  name: "SwiftProtobuf",
+  name: "IntentSwiftProtobuf",
   products: [
     .executable(name: "protoc-gen-swift", targets: ["protoc-gen-swift"]),
-    .library(name: "SwiftProtobuf", targets: ["SwiftProtobuf"]),
-    .library(name: "SwiftProtobufPluginLibrary", targets: ["SwiftProtobufPluginLibrary"]),
-    .plugin(
-        name: "SwiftProtobufPlugin",
-        targets: ["SwiftProtobufPlugin"]
-    ),
+    .library(name: "IntentSwiftProtobuf", targets: ["IntentSwiftProtobuf"]),
+    .library(name: "IntentSwiftProtobufPluginLibrary", targets: ["IntentSwiftProtobufPluginLibrary"]),
   ],
   targets: [
-    .target(name: "SwiftProtobuf"),
-    .target(name: "SwiftProtobufPluginLibrary",
-            dependencies: ["SwiftProtobuf"]),
-    .executableTarget(name: "protoc-gen-swift",
-            dependencies: ["SwiftProtobufPluginLibrary", "SwiftProtobuf"]),
-    .executableTarget(name: "Conformance",
-            dependencies: ["SwiftProtobuf"]),
-    .plugin(
-        name: "SwiftProtobufPlugin",
-        capability: .buildTool(),
-        dependencies: [
-            "protoc-gen-swift"
-        ]
+    .target(
+      name: "IntentSwiftProtobuf"
     ),
-    .testTarget(name: "SwiftProtobufTests",
-                dependencies: ["SwiftProtobuf"]),
-    .testTarget(name: "SwiftProtobufPluginLibraryTests",
-                dependencies: ["SwiftProtobufPluginLibrary"]),
+    .target(
+      name: "IntentSwiftProtobufPluginLibrary",
+      dependencies: ["IntentSwiftProtobuf"]
+    ),
+    .target(
+      name: "protoc-gen-swift",
+      dependencies: ["IntentSwiftProtobufPluginLibrary", "IntentSwiftProtobuf"]
+    ),
+    .target(
+      name: "Conformance",
+      dependencies: ["IntentSwiftProtobuf"]
+    ),
+    .testTarget(
+      name: "IntentSwiftProtobufTests",
+      dependencies: ["IntentSwiftProtobuf"]
+    ),
+    .testTarget(
+      name: "IntentSwiftProtobufPluginLibraryTests",
+      dependencies: ["IntentSwiftProtobufPluginLibrary"]
+    ),
   ],
   swiftLanguageVersions: [.v4, .v4_2, .version("5")]
 )

@@ -1018,12 +1018,12 @@
 		"_____Sources_" /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				"_______Group_Protobuf" /* SwiftProtobuf */,
+				"_______Group_Protobuf" /* IntentSwiftProtobuf */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
 		};
-		"_______Group_Protobuf" /* SwiftProtobuf */ = {
+		"_______Group_Protobuf" /* IntentSwiftProtobuf */ = {
 			isa = PBXGroup;
 			children = (
 				F41BA43F1E7AE4AC004F6E95 /* any.pb.swift */,
@@ -1111,11 +1111,11 @@
 				AAEA52731DA80DEA003F318F /* wrappers.pb.swift */,
 				AA28A4A51DA30E5900C866D9 /* ZigZag.swift */,
 			);
-			name = SwiftProtobuf;
-			path = Sources/SwiftProtobuf;
+			name = IntentSwiftProtobuf;
+			path = Sources/IntentSwiftProtobuf;
 			sourceTree = "<group>";
 		};
-		"_______Group_ProtobufTestSuite" /* SwiftProtobufTests */ = {
+		"_______Group_ProtobufTestSuite" /* IntentSwiftProtobufTests */ = {
 			isa = PBXGroup;
 			children = (
 				__PBXFileRef_Tests/ProtobufTests/any_test.pb.swift /* any_test.pb.swift */,
@@ -1235,14 +1235,14 @@
 				__PBXFileRef_Tests/ProtobufTests/unittest_well_known_types.pb.swift /* unittest_well_known_types.pb.swift */,
 				__PBXFileRef_Tests/ProtobufTests/unittest.pb.swift /* unittest.pb.swift */,
 			);
-			name = SwiftProtobufTests;
-			path = Tests/SwiftProtobufTests;
+			name = IntentSwiftProtobufTests;
+			path = Tests/IntentSwiftProtobufTests;
 			sourceTree = "<group>";
 		};
 		"_______Tests_" /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				"_______Group_ProtobufTestSuite" /* SwiftProtobufTests */,
+				"_______Group_ProtobufTestSuite" /* IntentSwiftProtobufTests */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
