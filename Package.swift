@@ -1,35 +1,59 @@
-// swift-tools-version:4.2
+// swift-tools-version:5.6
 
 // Package.swift
 //
-// Copyright (c) 2014 - 2018 Apple Inc. and the project authors
-// Licensed under Apache License v2.0 with Runtime Library Exception
-//
-// See LICENSE.txt for license information:
-// https://github.com/apple/swift-protobuf/blob/main/LICENSE.txt
+// Forked from SwiftProtobuf.
+// Module renamed to JedAIProtobuf to avoid symbol conflicts.
 //
 
 import PackageDescription
 
 let package = Package(
-  name: "SwiftProtobuf",
+  name: "JedAIProtobuf",
   products: [
     .executable(name: "protoc-gen-swift", targets: ["protoc-gen-swift"]),
-    .library(name: "SwiftProtobuf", targets: ["SwiftProtobuf"]),
-    .library(name: "SwiftProtobufPluginLibrary", targets: ["SwiftProtobufPluginLibrary"]),
+    .library(name: "JedAIProtobuf", targets: ["JedAIProtobuf"]),
+    .library(name: "JedAIProtobufPluginLibrary", targets: ["JedAIProtobufPluginLibrary"]),
+    .plugin(
+        name: "SwiftProtobufPlugin",
+        targets: ["SwiftProtobufPlugin"]
+    ),
   ],
   targets: [
-    .target(name: "SwiftProtobuf"),
-    .target(name: "SwiftProtobufPluginLibrary",
-            dependencies: ["SwiftProtobuf"]),
-    .target(name: "protoc-gen-swift",
-            dependencies: ["SwiftProtobufPluginLibrary", "SwiftProtobuf"]),
-    .target(name: "Conformance",
-            dependencies: ["SwiftProtobuf"]),
-    .testTarget(name: "SwiftProtobufTests",
-                dependencies: ["SwiftProtobuf"]),
-    .testTarget(name: "SwiftProtobufPluginLibraryTests",
-                dependencies: ["SwiftProtobufPluginLibrary"]),
+    .target(
+      name: "JedAIProtobuf",
+      path: "Sources/SwiftProtobuf"
+    ),
+    .target(
+      name: "JedAIProtobufPluginLibrary",
+      dependencies: ["JedAIProtobuf"],
+      path: "Sources/SwiftProtobufPluginLibrary"
+    ),
+    .executableTarget(
+      name: "protoc-gen-swift",
+      dependencies: ["JedAIProtobufPluginLibrary", "JedAIProtobuf"]
+    ),
+    .executableTarget(
+      name: "Conformance",
+      dependencies: ["JedAIProtobuf"]
+    ),
+    .plugin(
+        name: "SwiftProtobufPlugin",
+        capability: .buildTool(),
+        dependencies: [
+            "protoc-gen-swift"
+        ]
+    ),
+    .testTarget(
+      name: "JedAIProtobufTests",
+      dependencies: ["JedAIProtobuf"],
+      path: "Tests/SwiftProtobufTests"
+    ),
+    .testTarget(
+      name: "JedAIProtobufPluginLibraryTests",
+      dependencies: ["JedAIProtobufPluginLibrary"],
+      path: "Tests/SwiftProtobufPluginLibraryTests"
+    ),
   ],
   swiftLanguageVersions: [.v4, .v4_2, .version("5")]
 )
