@@ -18,7 +18,7 @@ import Foundation
 import IntentSwiftProtobuf
 
 extension SwiftProtobuf.Message {
-    init(serializedBytes: [UInt8], extensions: SwiftProtobuf.SimpleExtensionMap? = nil) throws {
+    init(serializedBytes: [UInt8], extensions: IntentSwiftProtobuf.SimpleExtensionMap? = nil) throws {
         try self.init(serializedData: Data(serializedBytes), extensions: extensions)
     }
 

@@ -45,8 +45,8 @@ import SwiftProtobuf
 // incompatible with the version of SwiftProtobuf to which you are linking.
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
-fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+fileprivate struct _GeneratedWithProtocGenSwiftVersion: IntentSwiftProtobuf.ProtobufAPIVersionCheck {
+  struct _2: IntentSwiftProtobuf.ProtobufAPIVersion_2 {}
   typealias Version = _2
 }
 
@@ -59,9 +59,9 @@ struct UnittestDropUnknownFields_Foo {
 
   var enumValue: UnittestDropUnknownFields_Foo.NestedEnum = .foo
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
-  enum NestedEnum: SwiftProtobuf.Enum {
+  enum NestedEnum: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
     case foo // = 0
     case bar // = 1
@@ -119,9 +119,9 @@ struct UnittestDropUnknownFields_FooWithExtraFields {
 
   var extraInt32Value: Int32 = 0
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
-  enum NestedEnum: SwiftProtobuf.Enum {
+  enum NestedEnum: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
     case foo // = 0
     case bar // = 1
@@ -183,14 +183,14 @@ extension UnittestDropUnknownFields_FooWithExtraFields.NestedEnum: @unchecked Se
 
 fileprivate let _protobuf_package = "unittest_drop_unknown_fields"
 
-extension UnittestDropUnknownFields_Foo: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension UnittestDropUnknownFields_Foo: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".Foo"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "int32_value"),
     2: .standard(proto: "enum_value"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -203,7 +203,7 @@ extension UnittestDropUnknownFields_Foo: SwiftProtobuf.Message, SwiftProtobuf._M
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if self.int32Value != 0 {
       try visitor.visitSingularInt32Field(value: self.int32Value, fieldNumber: 1)
     }
@@ -221,23 +221,23 @@ extension UnittestDropUnknownFields_Foo: SwiftProtobuf.Message, SwiftProtobuf._M
   }
 }
 
-extension UnittestDropUnknownFields_Foo.NestedEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension UnittestDropUnknownFields_Foo.NestedEnum: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     0: .same(proto: "FOO"),
     1: .same(proto: "BAR"),
     2: .same(proto: "BAZ"),
   ]
 }
 
-extension UnittestDropUnknownFields_FooWithExtraFields: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension UnittestDropUnknownFields_FooWithExtraFields: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".FooWithExtraFields"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "int32_value"),
     2: .standard(proto: "enum_value"),
     3: .standard(proto: "extra_int32_value"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -251,7 +251,7 @@ extension UnittestDropUnknownFields_FooWithExtraFields: SwiftProtobuf.Message, S
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if self.int32Value != 0 {
       try visitor.visitSingularInt32Field(value: self.int32Value, fieldNumber: 1)
     }
@@ -273,8 +273,8 @@ extension UnittestDropUnknownFields_FooWithExtraFields: SwiftProtobuf.Message, S
   }
 }
 
-extension UnittestDropUnknownFields_FooWithExtraFields.NestedEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension UnittestDropUnknownFields_FooWithExtraFields.NestedEnum: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     0: .same(proto: "FOO"),
     1: .same(proto: "BAR"),
     2: .same(proto: "BAZ"),

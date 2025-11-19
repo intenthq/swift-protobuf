@@ -51,22 +51,22 @@ import SwiftProtobuf
 // incompatible with the version of SwiftProtobuf to which you are linking.
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
-fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+fileprivate struct _GeneratedWithProtocGenSwiftVersion: IntentSwiftProtobuf.ProtobufAPIVersionCheck {
+  struct _2: IntentSwiftProtobuf.ProtobufAPIVersion_2 {}
   typealias Version = _2
 }
 
 /// A message with message_set_wire_format.
-struct Proto2WireformatUnittest_TestMessageSet: SwiftProtobuf.ExtensibleMessage {
+struct Proto2WireformatUnittest_TestMessageSet: IntentSwiftProtobuf.ExtensibleMessage {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
-  var _protobuf_extensionFieldValues = SwiftProtobuf.ExtensionFieldValueSet()
+  var _protobuf_extensionFieldValues = IntentSwiftProtobuf.ExtensionFieldValueSet()
 }
 
 struct Proto2WireformatUnittest_TestMessageSetWireFormatContainer {
@@ -83,7 +83,7 @@ struct Proto2WireformatUnittest_TestMessageSetWireFormatContainer {
   /// Clears the value of `messageSet`. Subsequent reads from it will return its default value.
   mutating func clearMessageSet() {self._messageSet = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -99,20 +99,20 @@ extension Proto2WireformatUnittest_TestMessageSetWireFormatContainer: @unchecked
 
 fileprivate let _protobuf_package = "proto2_wireformat_unittest"
 
-extension Proto2WireformatUnittest_TestMessageSet: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension Proto2WireformatUnittest_TestMessageSet: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestMessageSet"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
   public var isInitialized: Bool {
     if !_protobuf_extensionFieldValues.isInitialized {return false}
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     try decoder.decodeExtensionFieldsAsMessageSet(values: &_protobuf_extensionFieldValues, messageType: Proto2WireformatUnittest_TestMessageSet.self)
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try visitor.visitExtensionFieldsAsMessageSet(fields: _protobuf_extensionFieldValues, start: 4, end: 2147483647)
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -124,9 +124,9 @@ extension Proto2WireformatUnittest_TestMessageSet: SwiftProtobuf.Message, SwiftP
   }
 }
 
-extension Proto2WireformatUnittest_TestMessageSetWireFormatContainer: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension Proto2WireformatUnittest_TestMessageSetWireFormatContainer: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestMessageSetWireFormatContainer"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "message_set"),
   ]
 
@@ -135,7 +135,7 @@ extension Proto2WireformatUnittest_TestMessageSetWireFormatContainer: SwiftProto
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -147,7 +147,7 @@ extension Proto2WireformatUnittest_TestMessageSetWireFormatContainer: SwiftProto
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and

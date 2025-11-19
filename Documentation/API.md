@@ -38,13 +38,13 @@ in the library, and omits many details of the generated
 code that are intended purely for internal use by the library.)
 
 ```swift
-public struct Example: SwiftProtobuf.Message {
+public struct Example: IntentSwiftProtobuf.Message {
   // The generated struct carries constant properties reflecting
   // basic information about the message:
   public var protoMessageName: String {return "Example"}
 
   // Nested enum and message types are nested in the generated Swift
-  public enum E: SwiftProtobuf.Enum { ... }
+  public enum E: IntentSwiftProtobuf.Enum { ... }
 
   // A public property is created for each field in the proto.
   public var field1: Int32 { get set }
@@ -168,7 +168,7 @@ If deserialization encounters an unknown value:
 - For protobuf binary, the value is handled as an unknown field.
 
 ```swift
-public enum MyEnum: SwiftProtobuf.Enum {
+public enum MyEnum: IntentSwiftProtobuf.Enum {
     public typealias RawValue = Int
 
     // Case for each value
@@ -285,7 +285,7 @@ Groups in the proto file generate Swift structs that conform to `SwiftProtobuf.M
 Messages in the proto file generate Swift structs that conform to
 `SwiftProtobuf.Message`.
 
-Note: There is also a `SwiftProtobuf._MessageImplementationBase`
+Note: There is also a `IntentSwiftProtobuf._MessageImplementationBase`
 protocol.  You should not refer to that directly; use
 `SwiftProtobuf.Message` when you need to work with arbitrary groups or
 messages.
@@ -397,7 +397,7 @@ Also note that you can access the `alternatives` property here
 directly if you want to use a `switch` construct to analyze
 the fields contained in the oneof:
 ```swift
-public struct ExampleOneOf: SwiftProtobuf.Message {
+public struct ExampleOneOf: IntentSwiftProtobuf.Message {
    enum OneOf_Alternatives {
    case id(Int32)
    case name(String)

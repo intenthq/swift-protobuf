@@ -84,8 +84,8 @@ func buildResponse(serializedData: Data) -> Conformance_ConformanceResponse {
         return response
     }
 
-    let msgType: SwiftProtobuf.Message.Type
-    let extensions: SwiftProtobuf.ExtensionMap
+    let msgType: IntentSwiftProtobuf.Message.Type
+    let extensions: IntentSwiftProtobuf.ExtensionMap
     switch request.messageType {
     case "":
         // Note: This case is here to cover using a old version of the conformance test
@@ -93,7 +93,7 @@ func buildResponse(serializedData: Data) -> Conformance_ConformanceResponse {
         fallthrough
     case ProtobufTestMessages_Proto3_TestAllTypesProto3.protoMessageName:
         msgType = ProtobufTestMessages_Proto3_TestAllTypesProto3.self
-        extensions = SwiftProtobuf.SimpleExtensionMap()
+        extensions = IntentSwiftProtobuf.SimpleExtensionMap()
     case ProtobufTestMessages_Proto2_TestAllTypesProto2.protoMessageName:
         msgType = ProtobufTestMessages_Proto2_TestAllTypesProto2.self
         extensions = ProtobufTestMessages_Proto2_TestMessagesProto2_Extensions
@@ -102,7 +102,7 @@ func buildResponse(serializedData: Data) -> Conformance_ConformanceResponse {
         return response
     }
 
-    let testMessage: SwiftProtobuf.Message
+    let testMessage: IntentSwiftProtobuf.Message
     switch request.payload {
     case .protobufPayload(let data)?:
         do {

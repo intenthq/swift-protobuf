@@ -31,8 +31,8 @@ import IntentSwiftProtobuf
 // incompatible with the version of SwiftProtobuf to which you are linking.
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
-fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+fileprivate struct _GeneratedWithProtocGenSwiftVersion: IntentSwiftProtobuf.ProtobufAPIVersionCheck {
+  struct _2: IntentSwiftProtobuf.ProtobufAPIVersion_2 {}
   typealias Version = _2
 }
 
@@ -116,9 +116,9 @@ struct ProtobufUnittest_SwiftReservedTest {
   /// Clears the value of `requiredInt`. Subsequent reads from it will return its default value.
   mutating func clearRequiredInt() {self._requiredInt = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
-  enum Enum: SwiftProtobuf.Enum {
+  enum Enum: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
     case double // = 1
     case json // = 2
@@ -156,7 +156,7 @@ struct ProtobufUnittest_SwiftReservedTest {
 
   }
 
-  enum ProtocolEnum: SwiftProtobuf.Enum {
+  enum ProtocolEnum: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
     case a // = 1
 
@@ -179,28 +179,28 @@ struct ProtobufUnittest_SwiftReservedTest {
 
   }
 
-  struct classMessage: SwiftProtobuf.ExtensibleMessage {
+  struct classMessage: IntentSwiftProtobuf.ExtensibleMessage {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
     // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
     // methods supported on all messages.
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
-    var _protobuf_extensionFieldValues = SwiftProtobuf.ExtensionFieldValueSet()
+    var _protobuf_extensionFieldValues = IntentSwiftProtobuf.ExtensionFieldValueSet()
   }
 
-  struct TypeMessage: SwiftProtobuf.ExtensibleMessage {
+  struct TypeMessage: IntentSwiftProtobuf.ExtensibleMessage {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
     // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
     // methods supported on all messages.
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
-    var _protobuf_extensionFieldValues = SwiftProtobuf.ExtensionFieldValueSet()
+    var _protobuf_extensionFieldValues = IntentSwiftProtobuf.ExtensionFieldValueSet()
   }
 
   struct isEqual {
@@ -208,7 +208,7 @@ struct ProtobufUnittest_SwiftReservedTest {
     // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
     // methods supported on all messages.
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
   }
@@ -242,7 +242,7 @@ struct ProtobufUnittest_SwiftReservedTestExt {
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
@@ -464,7 +464,7 @@ extension ProtobufUnittest_SwiftReservedTest.classMessage {
 /// this .proto file. It can be used any place an `SwiftProtobuf.ExtensionMap` is needed
 /// in parsing, or it can be combined with other `SwiftProtobuf.SimpleExtensionMap`s to create
 /// a larger `SwiftProtobuf.SimpleExtensionMap`.
-let ProtobufUnittest_UnittestSwiftReserved_Extensions: SwiftProtobuf.SimpleExtensionMap = [
+let ProtobufUnittest_UnittestSwiftReserved_Extensions: IntentSwiftProtobuf.SimpleExtensionMap = [
   ProtobufUnittest_Extensions_debug_description,
   ProtobufUnittest_Extensions_as,
   ProtobufUnittest_Extensions_var,
@@ -484,34 +484,34 @@ let ProtobufUnittest_UnittestSwiftReserved_Extensions: SwiftProtobuf.SimpleExten
 // accessors for the extension fields on the messages directly.
 
 /// Won't get _p added because it is fully qualified.
-let ProtobufUnittest_Extensions_debug_description = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+let ProtobufUnittest_Extensions_debug_description = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
   _protobuf_fieldNumber: 1000,
   fieldName: "protobuf_unittest.debug_description"
 )
 
 /// These are scoped to the file, so the package prefix (or a Swift prefix)
 /// will get added to them to they aren't going to get renamed.
-let ProtobufUnittest_Extensions_as = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+let ProtobufUnittest_Extensions_as = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
   _protobuf_fieldNumber: 1012,
   fieldName: "protobuf_unittest.as"
 )
 
-let ProtobufUnittest_Extensions_var = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+let ProtobufUnittest_Extensions_var = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
   _protobuf_fieldNumber: 1013,
   fieldName: "protobuf_unittest.var"
 )
 
-let ProtobufUnittest_Extensions_try = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+let ProtobufUnittest_Extensions_try = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
   _protobuf_fieldNumber: 1014,
   fieldName: "protobuf_unittest.try"
 )
 
-let ProtobufUnittest_Extensions_do = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+let ProtobufUnittest_Extensions_do = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
   _protobuf_fieldNumber: 1015,
   fieldName: "protobuf_unittest.do"
 )
 
-let ProtobufUnittest_Extensions_nil = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+let ProtobufUnittest_Extensions_nil = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
   _protobuf_fieldNumber: 1016,
   fieldName: "protobuf_unittest.nil"
 )
@@ -521,34 +521,34 @@ extension ProtobufUnittest_SwiftReservedTestExt {
     /// This will end up in the "enum Extensions" to scope it, but there
     /// the raw form is used ("hash_value", not the Swift one "hashValue"),
     /// so there is no conflict, and no renaming happens.
-    static let hash_value = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+    static let hash_value = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
       _protobuf_fieldNumber: 1001,
       fieldName: "protobuf_unittest.SwiftReservedTestExt.hash_value"
     )
 
     /// Reserved words, since these end up in the "struct Extensions", they
     /// can't just be get their names, and sanitation kicks.
-    static let `as` = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+    static let `as` = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
       _protobuf_fieldNumber: 1022,
       fieldName: "protobuf_unittest.SwiftReservedTestExt.as"
     )
 
-    static let `var` = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+    static let `var` = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
       _protobuf_fieldNumber: 1023,
       fieldName: "protobuf_unittest.SwiftReservedTestExt.var"
     )
 
-    static let `try` = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+    static let `try` = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
       _protobuf_fieldNumber: 1024,
       fieldName: "protobuf_unittest.SwiftReservedTestExt.try"
     )
 
-    static let `do` = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+    static let `do` = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
       _protobuf_fieldNumber: 1025,
       fieldName: "protobuf_unittest.SwiftReservedTestExt.do"
     )
 
-    static let `nil` = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+    static let `nil` = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
       _protobuf_fieldNumber: 1026,
       fieldName: "protobuf_unittest.SwiftReservedTestExt.nil"
     )
@@ -559,9 +559,9 @@ extension ProtobufUnittest_SwiftReservedTestExt {
 
 fileprivate let _protobuf_package = "protobuf_unittest"
 
-extension ProtobufUnittest_SwiftReservedTest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_SwiftReservedTest: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".SwiftReservedTest"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     10: .standard(proto: "proto_message_name"),
     11: .standard(proto: "proto_package_name"),
     12: .standard(proto: "any_type_prefix"),
@@ -577,7 +577,7 @@ extension ProtobufUnittest_SwiftReservedTest: SwiftProtobuf.Message, SwiftProtob
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -596,7 +596,7 @@ extension ProtobufUnittest_SwiftReservedTest: SwiftProtobuf.Message, SwiftProtob
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -642,8 +642,8 @@ extension ProtobufUnittest_SwiftReservedTest: SwiftProtobuf.Message, SwiftProtob
   }
 }
 
-extension ProtobufUnittest_SwiftReservedTest.Enum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_SwiftReservedTest.Enum: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "DOUBLE"),
     2: .same(proto: "JSON"),
     3: .same(proto: "CLASS"),
@@ -653,22 +653,22 @@ extension ProtobufUnittest_SwiftReservedTest.Enum: SwiftProtobuf._ProtoNameProvi
   ]
 }
 
-extension ProtobufUnittest_SwiftReservedTest.ProtocolEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_SwiftReservedTest.ProtocolEnum: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "a"),
   ]
 }
 
-extension ProtobufUnittest_SwiftReservedTest.classMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_SwiftReservedTest.classMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_SwiftReservedTest.protoMessageName + ".class"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
   public var isInitialized: Bool {
     if !_protobuf_extensionFieldValues.isInitialized {return false}
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       if (1000 <= fieldNumber && fieldNumber < 2001) {
         try decoder.decodeExtensionField(values: &_protobuf_extensionFieldValues, messageType: ProtobufUnittest_SwiftReservedTest.classMessage.self, fieldNumber: fieldNumber)
@@ -676,7 +676,7 @@ extension ProtobufUnittest_SwiftReservedTest.classMessage: SwiftProtobuf.Message
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 1000, end: 2001)
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -688,16 +688,16 @@ extension ProtobufUnittest_SwiftReservedTest.classMessage: SwiftProtobuf.Message
   }
 }
 
-extension ProtobufUnittest_SwiftReservedTest.TypeMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_SwiftReservedTest.TypeMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_SwiftReservedTest.protoMessageName + ".Type"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
   public var isInitialized: Bool {
     if !_protobuf_extensionFieldValues.isInitialized {return false}
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       if (1000 <= fieldNumber && fieldNumber < 2001) {
         try decoder.decodeExtensionField(values: &_protobuf_extensionFieldValues, messageType: ProtobufUnittest_SwiftReservedTest.TypeMessage.self, fieldNumber: fieldNumber)
@@ -705,7 +705,7 @@ extension ProtobufUnittest_SwiftReservedTest.TypeMessage: SwiftProtobuf.Message,
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 1000, end: 2001)
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -717,16 +717,16 @@ extension ProtobufUnittest_SwiftReservedTest.TypeMessage: SwiftProtobuf.Message,
   }
 }
 
-extension ProtobufUnittest_SwiftReservedTest.isEqual: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_SwiftReservedTest.isEqual: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_SwiftReservedTest.protoMessageName + ".isEqual"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let _ = try decoder.nextFieldNumber() {
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -736,16 +736,16 @@ extension ProtobufUnittest_SwiftReservedTest.isEqual: SwiftProtobuf.Message, Swi
   }
 }
 
-extension ProtobufUnittest_SwiftReservedTestExt: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_SwiftReservedTestExt: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".SwiftReservedTestExt"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let _ = try decoder.nextFieldNumber() {
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 

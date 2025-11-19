@@ -25,8 +25,8 @@ import SwiftProtobuf
 // incompatible with the version of SwiftProtobuf to which you are linking.
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
-fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+fileprivate struct _GeneratedWithProtocGenSwiftVersion: IntentSwiftProtobuf.ProtobufAPIVersionCheck {
+  struct _2: IntentSwiftProtobuf.ProtobufAPIVersion_2 {}
   typealias Version = _2
 }
 
@@ -40,7 +40,7 @@ struct SwiftProtobuf_GenSwift_ModuleMappings {
   /// The mappings.
   var mapping: [SwiftProtobuf_GenSwift_ModuleMappings.Entry] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   /// Individual listing of the module name and the files that will go
   /// into it.
@@ -59,7 +59,7 @@ struct SwiftProtobuf_GenSwift_ModuleMappings {
     /// or `path/to/file.proto`.
     var protoFilePath: [String] = []
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
   }
@@ -76,13 +76,13 @@ extension SwiftProtobuf_GenSwift_ModuleMappings.Entry: @unchecked Sendable {}
 
 fileprivate let _protobuf_package = "swift_protobuf.gen_swift"
 
-extension SwiftProtobuf_GenSwift_ModuleMappings: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension SwiftProtobuf_GenSwift_ModuleMappings: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".ModuleMappings"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "mapping"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -94,7 +94,7 @@ extension SwiftProtobuf_GenSwift_ModuleMappings: SwiftProtobuf.Message, SwiftPro
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.mapping.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.mapping, fieldNumber: 1)
     }
@@ -108,14 +108,14 @@ extension SwiftProtobuf_GenSwift_ModuleMappings: SwiftProtobuf.Message, SwiftPro
   }
 }
 
-extension SwiftProtobuf_GenSwift_ModuleMappings.Entry: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension SwiftProtobuf_GenSwift_ModuleMappings.Entry: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = SwiftProtobuf_GenSwift_ModuleMappings.protoMessageName + ".Entry"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "module_name"),
     2: .standard(proto: "proto_file_path"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -128,7 +128,7 @@ extension SwiftProtobuf_GenSwift_ModuleMappings.Entry: SwiftProtobuf.Message, Sw
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.moduleName.isEmpty {
       try visitor.visitSingularStringField(value: self.moduleName, fieldNumber: 1)
     }

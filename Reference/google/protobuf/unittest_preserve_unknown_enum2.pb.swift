@@ -45,12 +45,12 @@ import SwiftProtobuf
 // incompatible with the version of SwiftProtobuf to which you are linking.
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
-fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+fileprivate struct _GeneratedWithProtocGenSwiftVersion: IntentSwiftProtobuf.ProtobufAPIVersionCheck {
+  struct _2: IntentSwiftProtobuf.ProtobufAPIVersion_2 {}
   typealias Version = _2
 }
 
-enum Proto2PreserveUnknownEnumUnittest_MyEnum: SwiftProtobuf.Enum {
+enum Proto2PreserveUnknownEnumUnittest_MyEnum: IntentSwiftProtobuf.Enum {
   typealias RawValue = Int
   case foo // = 0
   case bar // = 1
@@ -126,7 +126,7 @@ struct Proto2PreserveUnknownEnumUnittest_MyMessage {
     set {o = .oneofE2(newValue)}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   enum OneOf_O: Equatable {
     case oneofE1(Proto2PreserveUnknownEnumUnittest_MyEnum)
@@ -167,17 +167,17 @@ extension Proto2PreserveUnknownEnumUnittest_MyMessage.OneOf_O: @unchecked Sendab
 
 fileprivate let _protobuf_package = "proto2_preserve_unknown_enum_unittest"
 
-extension Proto2PreserveUnknownEnumUnittest_MyEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension Proto2PreserveUnknownEnumUnittest_MyEnum: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     0: .same(proto: "FOO"),
     1: .same(proto: "BAR"),
     2: .same(proto: "BAZ"),
   ]
 }
 
-extension Proto2PreserveUnknownEnumUnittest_MyMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension Proto2PreserveUnknownEnumUnittest_MyMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".MyMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "e"),
     2: .standard(proto: "repeated_e"),
     3: .standard(proto: "repeated_packed_e"),
@@ -186,7 +186,7 @@ extension Proto2PreserveUnknownEnumUnittest_MyMessage: SwiftProtobuf.Message, Sw
     6: .standard(proto: "oneof_e_2"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -217,7 +217,7 @@ extension Proto2PreserveUnknownEnumUnittest_MyMessage: SwiftProtobuf.Message, Sw
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and

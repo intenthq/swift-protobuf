@@ -51,8 +51,8 @@ import SwiftProtobuf
 // incompatible with the version of SwiftProtobuf to which you are linking.
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
-fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+fileprivate struct _GeneratedWithProtocGenSwiftVersion: IntentSwiftProtobuf.ProtobufAPIVersionCheck {
+  struct _2: IntentSwiftProtobuf.ProtobufAPIVersion_2 {}
   typealias Version = _2
 }
 
@@ -70,7 +70,7 @@ struct ProtobufUnittest_LazyImports_LazyMessage {
   /// Clears the value of `a`. Subsequent reads from it will return its default value.
   mutating func clearA() {self._a = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -115,7 +115,7 @@ extension SwiftProtobuf.Google_Protobuf_MessageOptions {
 /// this .proto file. It can be used any place an `SwiftProtobuf.ExtensionMap` is needed
 /// in parsing, or it can be combined with other `SwiftProtobuf.SimpleExtensionMap`s to create
 /// a larger `SwiftProtobuf.SimpleExtensionMap`.
-let ProtobufUnittest_LazyImports_UnittestLazyDependenciesCustomOption_Extensions: SwiftProtobuf.SimpleExtensionMap = [
+let ProtobufUnittest_LazyImports_UnittestLazyDependenciesCustomOption_Extensions: IntentSwiftProtobuf.SimpleExtensionMap = [
   ProtobufUnittest_LazyImports_Extensions_lazy_enum_option
 ]
 
@@ -123,7 +123,7 @@ let ProtobufUnittest_LazyImports_UnittestLazyDependenciesCustomOption_Extensions
 // constructing a `SimpleExtensionMap`, otherwise, use the above _Extension Properties_
 // accessors for the extension fields on the messages directly.
 
-let ProtobufUnittest_LazyImports_Extensions_lazy_enum_option = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalEnumExtensionField<ProtobufUnittest_LazyImports_LazyEnum>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
+let ProtobufUnittest_LazyImports_Extensions_lazy_enum_option = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalEnumExtensionField<ProtobufUnittest_LazyImports_LazyEnum>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
   _protobuf_fieldNumber: 138596335,
   fieldName: "protobuf_unittest.lazy_imports.lazy_enum_option"
 )
@@ -132,13 +132,13 @@ let ProtobufUnittest_LazyImports_Extensions_lazy_enum_option = SwiftProtobuf.Mes
 
 fileprivate let _protobuf_package = "protobuf_unittest.lazy_imports"
 
-extension ProtobufUnittest_LazyImports_LazyMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_LazyImports_LazyMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".LazyMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "a"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -150,7 +150,7 @@ extension ProtobufUnittest_LazyImports_LazyMessage: SwiftProtobuf.Message, Swift
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and

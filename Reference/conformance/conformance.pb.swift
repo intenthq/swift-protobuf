@@ -45,12 +45,12 @@ import SwiftProtobuf
 // incompatible with the version of SwiftProtobuf to which you are linking.
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
-fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+fileprivate struct _GeneratedWithProtocGenSwiftVersion: IntentSwiftProtobuf.ProtobufAPIVersionCheck {
+  struct _2: IntentSwiftProtobuf.ProtobufAPIVersion_2 {}
   typealias Version = _2
 }
 
-enum Conformance_WireFormat: SwiftProtobuf.Enum {
+enum Conformance_WireFormat: IntentSwiftProtobuf.Enum {
   typealias RawValue = Int
   case unspecified // = 0
   case protobuf // = 1
@@ -104,7 +104,7 @@ extension Conformance_WireFormat: CaseIterable {
 
 #endif  // swift(>=4.2)
 
-enum Conformance_TestCategory: SwiftProtobuf.Enum {
+enum Conformance_TestCategory: IntentSwiftProtobuf.Enum {
   typealias RawValue = Int
   case unspecifiedTest // = 0
 
@@ -186,7 +186,7 @@ struct Conformance_FailureSet {
 
   var failure: [String] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
@@ -266,7 +266,7 @@ struct Conformance_ConformanceRequest {
   /// unknown fields instead of ignore. This feature is optional.
   var printUnknownFields: Bool = false
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   /// The payload (whether protobuf of JSON) is always for a
   /// protobuf_test_messages.proto3.TestAllTypes proto (as defined in
@@ -416,7 +416,7 @@ struct Conformance_ConformanceResponse {
     set {result = .textPayload(newValue)}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   enum OneOf_Result: Equatable {
     /// This string should be set to indicate parsing failed.  The string can
@@ -514,7 +514,7 @@ struct Conformance_JspbEncodingConfig {
   /// Encode the value field of Any as jspb array if true, otherwise binary.
   var useJspbArrayAnyFormat: Bool = false
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
@@ -534,8 +534,8 @@ extension Conformance_JspbEncodingConfig: @unchecked Sendable {}
 
 fileprivate let _protobuf_package = "conformance"
 
-extension Conformance_WireFormat: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension Conformance_WireFormat: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     0: .same(proto: "UNSPECIFIED"),
     1: .same(proto: "PROTOBUF"),
     2: .same(proto: "JSON"),
@@ -544,8 +544,8 @@ extension Conformance_WireFormat: SwiftProtobuf._ProtoNameProviding {
   ]
 }
 
-extension Conformance_TestCategory: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension Conformance_TestCategory: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     0: .same(proto: "UNSPECIFIED_TEST"),
     1: .same(proto: "BINARY_TEST"),
     2: .same(proto: "JSON_TEST"),
@@ -555,13 +555,13 @@ extension Conformance_TestCategory: SwiftProtobuf._ProtoNameProviding {
   ]
 }
 
-extension Conformance_FailureSet: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension Conformance_FailureSet: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".FailureSet"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "failure"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -573,7 +573,7 @@ extension Conformance_FailureSet: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.failure.isEmpty {
       try visitor.visitRepeatedStringField(value: self.failure, fieldNumber: 1)
     }
@@ -587,9 +587,9 @@ extension Conformance_FailureSet: SwiftProtobuf.Message, SwiftProtobuf._MessageI
   }
 }
 
-extension Conformance_ConformanceRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension Conformance_ConformanceRequest: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".ConformanceRequest"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "protobuf_payload"),
     2: .standard(proto: "json_payload"),
     7: .standard(proto: "jspb_payload"),
@@ -601,7 +601,7 @@ extension Conformance_ConformanceRequest: SwiftProtobuf.Message, SwiftProtobuf._
     9: .standard(proto: "print_unknown_fields"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -649,7 +649,7 @@ extension Conformance_ConformanceRequest: SwiftProtobuf.Message, SwiftProtobuf._
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -706,9 +706,9 @@ extension Conformance_ConformanceRequest: SwiftProtobuf.Message, SwiftProtobuf._
   }
 }
 
-extension Conformance_ConformanceResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension Conformance_ConformanceResponse: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".ConformanceResponse"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "parse_error"),
     6: .standard(proto: "serialize_error"),
     9: .standard(proto: "timeout_error"),
@@ -720,7 +720,7 @@ extension Conformance_ConformanceResponse: SwiftProtobuf.Message, SwiftProtobuf.
     8: .standard(proto: "text_payload"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -803,7 +803,7 @@ extension Conformance_ConformanceResponse: SwiftProtobuf.Message, SwiftProtobuf.
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -857,13 +857,13 @@ extension Conformance_ConformanceResponse: SwiftProtobuf.Message, SwiftProtobuf.
   }
 }
 
-extension Conformance_JspbEncodingConfig: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension Conformance_JspbEncodingConfig: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".JspbEncodingConfig"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "use_jspb_array_any_format"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -875,7 +875,7 @@ extension Conformance_JspbEncodingConfig: SwiftProtobuf.Message, SwiftProtobuf._
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if self.useJspbArrayAnyFormat != false {
       try visitor.visitSingularBoolField(value: self.useJspbArrayAnyFormat, fieldNumber: 1)
     }

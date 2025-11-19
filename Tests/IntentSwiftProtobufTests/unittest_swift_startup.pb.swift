@@ -45,21 +45,21 @@ import IntentSwiftProtobuf
 // incompatible with the version of SwiftProtobuf to which you are linking.
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
-fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+fileprivate struct _GeneratedWithProtocGenSwiftVersion: IntentSwiftProtobuf.ProtobufAPIVersionCheck {
+  struct _2: IntentSwiftProtobuf.ProtobufAPIVersion_2 {}
   typealias Version = _2
 }
 
-struct ProtobufObjcUnittest_TestObjCStartupMessage: SwiftProtobuf.ExtensibleMessage {
+struct ProtobufObjcUnittest_TestObjCStartupMessage: IntentSwiftProtobuf.ExtensibleMessage {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
-  var _protobuf_extensionFieldValues = SwiftProtobuf.ExtensionFieldValueSet()
+  var _protobuf_extensionFieldValues = IntentSwiftProtobuf.ExtensionFieldValueSet()
 }
 
 struct ProtobufObjcUnittest_TestObjCStartupNested {
@@ -67,7 +67,7 @@ struct ProtobufObjcUnittest_TestObjCStartupNested {
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
@@ -142,7 +142,7 @@ extension ProtobufObjcUnittest_TestObjCStartupMessage {
 /// this .proto file. It can be used any place an `SwiftProtobuf.ExtensionMap` is needed
 /// in parsing, or it can be combined with other `SwiftProtobuf.SimpleExtensionMap`s to create
 /// a larger `SwiftProtobuf.SimpleExtensionMap`.
-let ProtobufObjcUnittest_UnittestSwiftStartup_Extensions: SwiftProtobuf.SimpleExtensionMap = [
+let ProtobufObjcUnittest_UnittestSwiftStartup_Extensions: IntentSwiftProtobuf.SimpleExtensionMap = [
   ProtobufObjcUnittest_Extensions_optional_int32_extension,
   ProtobufObjcUnittest_Extensions_repeated_int32_extension,
   ProtobufObjcUnittest_TestObjCStartupNested.Extensions.nested_string_extension
@@ -153,19 +153,19 @@ let ProtobufObjcUnittest_UnittestSwiftStartup_Extensions: SwiftProtobuf.SimpleEx
 // accessors for the extension fields on the messages directly.
 
 /// Singular
-let ProtobufObjcUnittest_Extensions_optional_int32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufObjcUnittest_TestObjCStartupMessage>(
+let ProtobufObjcUnittest_Extensions_optional_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufObjcUnittest_TestObjCStartupMessage>(
   _protobuf_fieldNumber: 1,
   fieldName: "protobuf_objc_unittest.optional_int32_extension"
 )
 
-let ProtobufObjcUnittest_Extensions_repeated_int32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufObjcUnittest_TestObjCStartupMessage>(
+let ProtobufObjcUnittest_Extensions_repeated_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufObjcUnittest_TestObjCStartupMessage>(
   _protobuf_fieldNumber: 2,
   fieldName: "protobuf_objc_unittest.repeated_int32_extension"
 )
 
 extension ProtobufObjcUnittest_TestObjCStartupNested {
   enum Extensions {
-    static let nested_string_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufObjcUnittest_TestObjCStartupMessage>(
+    static let nested_string_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufObjcUnittest_TestObjCStartupMessage>(
       _protobuf_fieldNumber: 3,
       fieldName: "protobuf_objc_unittest.TestObjCStartupNested.nested_string_extension"
     )
@@ -176,16 +176,16 @@ extension ProtobufObjcUnittest_TestObjCStartupNested {
 
 fileprivate let _protobuf_package = "protobuf_objc_unittest"
 
-extension ProtobufObjcUnittest_TestObjCStartupMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufObjcUnittest_TestObjCStartupMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestObjCStartupMessage"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
   public var isInitialized: Bool {
     if !_protobuf_extensionFieldValues.isInitialized {return false}
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       if (1 <= fieldNumber && fieldNumber < 536870912) {
         try decoder.decodeExtensionField(values: &_protobuf_extensionFieldValues, messageType: ProtobufObjcUnittest_TestObjCStartupMessage.self, fieldNumber: fieldNumber)
@@ -193,7 +193,7 @@ extension ProtobufObjcUnittest_TestObjCStartupMessage: SwiftProtobuf.Message, Sw
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 1, end: 536870912)
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -205,16 +205,16 @@ extension ProtobufObjcUnittest_TestObjCStartupMessage: SwiftProtobuf.Message, Sw
   }
 }
 
-extension ProtobufObjcUnittest_TestObjCStartupNested: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufObjcUnittest_TestObjCStartupNested: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestObjCStartupNested"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let _ = try decoder.nextFieldNumber() {
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 

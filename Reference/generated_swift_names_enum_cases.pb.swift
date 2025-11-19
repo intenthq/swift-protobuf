@@ -19,12 +19,12 @@ import SwiftProtobuf
 // incompatible with the version of SwiftProtobuf to which you are linking.
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
-fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+fileprivate struct _GeneratedWithProtocGenSwiftVersion: IntentSwiftProtobuf.ProtobufAPIVersionCheck {
+  struct _2: IntentSwiftProtobuf.ProtobufAPIVersion_2 {}
   typealias Version = _2
 }
 
-enum ProtobufUnittestGenerated_GeneratedSwiftReservedEnum: SwiftProtobuf.Enum {
+enum ProtobufUnittestGenerated_GeneratedSwiftReservedEnum: IntentSwiftProtobuf.Enum {
   typealias RawValue = Int
   case none // = 0
   case adjusted // = 1
@@ -3630,8 +3630,8 @@ extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnum: @unchecked Senda
 
 // MARK: - Code below here is support for the SwiftProtobuf runtime.
 
-extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnum: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     0: .same(proto: "NONE"),
     1: .same(proto: "adjusted"),
     2: .same(proto: "aggregateValue"),

@@ -31,8 +31,8 @@ import IntentSwiftProtobuf
 // incompatible with the version of SwiftProtobuf to which you are linking.
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
-fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+fileprivate struct _GeneratedWithProtocGenSwiftVersion: IntentSwiftProtobuf.ProtobufAPIVersionCheck {
+  struct _2: IntentSwiftProtobuf.ProtobufAPIVersion_2 {}
   typealias Version = _2
 }
 
@@ -41,7 +41,7 @@ struct ProtobufUnittest_Extend_EnumOptionalDefault {
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   struct NestedMessage {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -68,9 +68,9 @@ struct ProtobufUnittest_Extend_EnumOptionalDefault {
     /// Clears the value of `optionalEnum`. Subsequent reads from it will return its default value.
     mutating func clearOptionalEnum() {_uniqueStorage()._optionalEnum = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
-    enum Enum: SwiftProtobuf.Enum {
+    enum Enum: IntentSwiftProtobuf.Enum {
       typealias RawValue = Int
       case foo // = 0
 
@@ -112,9 +112,9 @@ struct ProtobufUnittest_Extend_EnumOptionalDefault {
     /// Clears the value of `optionalEnum`. Subsequent reads from it will return its default value.
     mutating func clearOptionalEnum() {self._optionalEnum = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
-    enum Enum: SwiftProtobuf.Enum {
+    enum Enum: IntentSwiftProtobuf.Enum {
       typealias RawValue = Int
       case foo // = 0
 
@@ -169,16 +169,16 @@ extension ProtobufUnittest_Extend_EnumOptionalDefault.NestedMessage2.Enum: @unch
 
 fileprivate let _protobuf_package = "protobuf_unittest.extend"
 
-extension ProtobufUnittest_Extend_EnumOptionalDefault: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_Extend_EnumOptionalDefault: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".EnumOptionalDefault"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let _ = try decoder.nextFieldNumber() {
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -188,9 +188,9 @@ extension ProtobufUnittest_Extend_EnumOptionalDefault: SwiftProtobuf.Message, Sw
   }
 }
 
-extension ProtobufUnittest_Extend_EnumOptionalDefault.NestedMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_Extend_EnumOptionalDefault.NestedMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_Extend_EnumOptionalDefault.protoMessageName + ".NestedMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "message"),
     17: .standard(proto: "optional_enum"),
   ]
@@ -216,7 +216,7 @@ extension ProtobufUnittest_Extend_EnumOptionalDefault.NestedMessage: SwiftProtob
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -232,7 +232,7 @@ extension ProtobufUnittest_Extend_EnumOptionalDefault.NestedMessage: SwiftProtob
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -264,19 +264,19 @@ extension ProtobufUnittest_Extend_EnumOptionalDefault.NestedMessage: SwiftProtob
   }
 }
 
-extension ProtobufUnittest_Extend_EnumOptionalDefault.NestedMessage.Enum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_Extend_EnumOptionalDefault.NestedMessage.Enum: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     0: .same(proto: "FOO"),
   ]
 }
 
-extension ProtobufUnittest_Extend_EnumOptionalDefault.NestedMessage2: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_Extend_EnumOptionalDefault.NestedMessage2: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_Extend_EnumOptionalDefault.protoMessageName + ".NestedMessage2"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     17: .standard(proto: "optional_enum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -288,7 +288,7 @@ extension ProtobufUnittest_Extend_EnumOptionalDefault.NestedMessage2: SwiftProto
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -306,8 +306,8 @@ extension ProtobufUnittest_Extend_EnumOptionalDefault.NestedMessage2: SwiftProto
   }
 }
 
-extension ProtobufUnittest_Extend_EnumOptionalDefault.NestedMessage2.Enum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_Extend_EnumOptionalDefault.NestedMessage2.Enum: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     0: .same(proto: "FOO"),
   ]
 }

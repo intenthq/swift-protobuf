@@ -49,12 +49,12 @@ import IntentSwiftProtobuf
 // incompatible with the version of SwiftProtobuf to which you are linking.
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
-fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+fileprivate struct _GeneratedWithProtocGenSwiftVersion: IntentSwiftProtobuf.ProtobufAPIVersionCheck {
+  struct _2: IntentSwiftProtobuf.ProtobufAPIVersion_2 {}
   typealias Version = _2
 }
 
-enum ProtobufUnittestImport_ImportEnumLite: SwiftProtobuf.Enum {
+enum ProtobufUnittestImport_ImportEnumLite: IntentSwiftProtobuf.Enum {
   typealias RawValue = Int
   case importLiteFoo // = 7
   case importLiteBar // = 8
@@ -105,7 +105,7 @@ struct ProtobufUnittestImport_ImportMessageLite {
   /// Clears the value of `d`. Subsequent reads from it will return its default value.
   mutating func clearD() {self._d = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -121,21 +121,21 @@ extension ProtobufUnittestImport_ImportMessageLite: @unchecked Sendable {}
 
 fileprivate let _protobuf_package = "protobuf_unittest_import"
 
-extension ProtobufUnittestImport_ImportEnumLite: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittestImport_ImportEnumLite: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     7: .same(proto: "IMPORT_LITE_FOO"),
     8: .same(proto: "IMPORT_LITE_BAR"),
     9: .same(proto: "IMPORT_LITE_BAZ"),
   ]
 }
 
-extension ProtobufUnittestImport_ImportMessageLite: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittestImport_ImportMessageLite: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".ImportMessageLite"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "d"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -147,7 +147,7 @@ extension ProtobufUnittestImport_ImportMessageLite: SwiftProtobuf.Message, Swift
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and

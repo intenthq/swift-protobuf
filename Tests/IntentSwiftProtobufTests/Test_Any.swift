@@ -825,24 +825,24 @@ class Test_Any: XCTestCase {
 
 struct ConflictingImportMessage:
     SwiftProtobuf.Message,
-    SwiftProtobuf._MessageImplementationBase,
-    SwiftProtobuf._ProtoNameProviding {
+    IntentSwiftProtobuf._MessageImplementationBase,
+    IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = "protobuf_unittest_import.ImportMessage"
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let _ = try decoder.nextFieldNumber() {
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [:]
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [:]
 
   func _protobuf_generated_isEqualTo(other: ConflictingImportMessage) -> Bool {
     if unknownFields != other.unknownFields {return false}

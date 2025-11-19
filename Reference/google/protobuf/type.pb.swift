@@ -44,13 +44,13 @@ import Foundation
 // incompatible with the version of SwiftProtobuf to which you are linking.
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
-fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+fileprivate struct _GeneratedWithProtocGenSwiftVersion: IntentSwiftProtobuf.ProtobufAPIVersionCheck {
+  struct _2: IntentSwiftProtobuf.ProtobufAPIVersion_2 {}
   typealias Version = _2
 }
 
 /// The syntax in which a protocol buffer element is defined.
-enum Google_Protobuf_Syntax: SwiftProtobuf.Enum {
+enum Google_Protobuf_Syntax: IntentSwiftProtobuf.Enum {
   typealias RawValue = Int
 
   /// Syntax `proto2`.
@@ -125,7 +125,7 @@ struct Google_Protobuf_Type {
   /// The source syntax.
   var syntax: Google_Protobuf_Syntax = .proto2
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -170,10 +170,10 @@ struct Google_Protobuf_Field {
   /// The string value of the default value of this field. Proto2 syntax only.
   var defaultValue: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   /// Basic field types.
-  enum Kind: SwiftProtobuf.Enum {
+  enum Kind: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
 
     /// Field type unknown.
@@ -291,7 +291,7 @@ struct Google_Protobuf_Field {
   }
 
   /// Whether a field is optional, required, or repeated.
-  enum Cardinality: SwiftProtobuf.Enum {
+  enum Cardinality: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
 
     /// For fields with unknown cardinality.
@@ -403,7 +403,7 @@ struct Google_Protobuf_Enum {
   /// The source syntax.
   var syntax: Google_Protobuf_Syntax = .proto2
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -425,7 +425,7 @@ struct Google_Protobuf_EnumValue {
   /// Protocol buffer options.
   var options: [Google_Protobuf_Option] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
@@ -456,7 +456,7 @@ struct Google_Protobuf_Option {
   /// Clears the value of `value`. Subsequent reads from it will return its default value.
   mutating func clearValue() {self._value = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -478,16 +478,16 @@ extension Google_Protobuf_Option: @unchecked Sendable {}
 
 fileprivate let _protobuf_package = "google.protobuf"
 
-extension Google_Protobuf_Syntax: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension Google_Protobuf_Syntax: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     0: .same(proto: "SYNTAX_PROTO2"),
     1: .same(proto: "SYNTAX_PROTO3"),
   ]
 }
 
-extension Google_Protobuf_Type: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension Google_Protobuf_Type: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".Type"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "name"),
     2: .same(proto: "fields"),
     3: .same(proto: "oneofs"),
@@ -496,7 +496,7 @@ extension Google_Protobuf_Type: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
     6: .same(proto: "syntax"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -513,7 +513,7 @@ extension Google_Protobuf_Type: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -551,9 +551,9 @@ extension Google_Protobuf_Type: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
   }
 }
 
-extension Google_Protobuf_Field: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension Google_Protobuf_Field: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".Field"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "kind"),
     2: .same(proto: "cardinality"),
     3: .same(proto: "number"),
@@ -566,7 +566,7 @@ extension Google_Protobuf_Field: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     11: .standard(proto: "default_value"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -587,7 +587,7 @@ extension Google_Protobuf_Field: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if self.kind != .typeUnknown {
       try visitor.visitSingularEnumField(value: self.kind, fieldNumber: 1)
     }
@@ -637,8 +637,8 @@ extension Google_Protobuf_Field: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
   }
 }
 
-extension Google_Protobuf_Field.Kind: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension Google_Protobuf_Field.Kind: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     0: .same(proto: "TYPE_UNKNOWN"),
     1: .same(proto: "TYPE_DOUBLE"),
     2: .same(proto: "TYPE_FLOAT"),
@@ -661,8 +661,8 @@ extension Google_Protobuf_Field.Kind: SwiftProtobuf._ProtoNameProviding {
   ]
 }
 
-extension Google_Protobuf_Field.Cardinality: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension Google_Protobuf_Field.Cardinality: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     0: .same(proto: "CARDINALITY_UNKNOWN"),
     1: .same(proto: "CARDINALITY_OPTIONAL"),
     2: .same(proto: "CARDINALITY_REQUIRED"),
@@ -670,9 +670,9 @@ extension Google_Protobuf_Field.Cardinality: SwiftProtobuf._ProtoNameProviding {
   ]
 }
 
-extension Google_Protobuf_Enum: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension Google_Protobuf_Enum: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".Enum"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "name"),
     2: .same(proto: "enumvalue"),
     3: .same(proto: "options"),
@@ -680,7 +680,7 @@ extension Google_Protobuf_Enum: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
     5: .same(proto: "syntax"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -696,7 +696,7 @@ extension Google_Protobuf_Enum: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -730,15 +730,15 @@ extension Google_Protobuf_Enum: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
   }
 }
 
-extension Google_Protobuf_EnumValue: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension Google_Protobuf_EnumValue: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".EnumValue"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "name"),
     2: .same(proto: "number"),
     3: .same(proto: "options"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -752,7 +752,7 @@ extension Google_Protobuf_EnumValue: SwiftProtobuf.Message, SwiftProtobuf._Messa
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.name.isEmpty {
       try visitor.visitSingularStringField(value: self.name, fieldNumber: 1)
     }
@@ -774,14 +774,14 @@ extension Google_Protobuf_EnumValue: SwiftProtobuf.Message, SwiftProtobuf._Messa
   }
 }
 
-extension Google_Protobuf_Option: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension Google_Protobuf_Option: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".Option"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "name"),
     2: .same(proto: "value"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -794,7 +794,7 @@ extension Google_Protobuf_Option: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and

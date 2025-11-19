@@ -51,12 +51,12 @@ import SwiftProtobuf
 // incompatible with the version of SwiftProtobuf to which you are linking.
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
-fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+fileprivate struct _GeneratedWithProtocGenSwiftVersion: IntentSwiftProtobuf.ProtobufAPIVersionCheck {
+  struct _2: IntentSwiftProtobuf.ProtobufAPIVersion_2 {}
   typealias Version = _2
 }
 
-enum ProtobufTestMessages_Proto3_ForeignEnum: SwiftProtobuf.Enum {
+enum ProtobufTestMessages_Proto3_ForeignEnum: IntentSwiftProtobuf.Enum {
   typealias RawValue = Int
   case foreignFoo // = 0
   case foreignBar // = 1
@@ -661,7 +661,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
     set {_uniqueStorage()._oneofField = .oneofEnum(newValue)}
   }
 
-  var oneofNullValue: SwiftProtobuf.Google_Protobuf_NullValue {
+  var oneofNullValue: IntentSwiftProtobuf.Google_Protobuf_NullValue {
     get {
       if case .oneofNullValue(let v)? = _storage._oneofField {return v}
       return .nullValue
@@ -670,7 +670,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
   }
 
   /// Well-known types
-  var optionalBoolWrapper: SwiftProtobuf.Google_Protobuf_BoolValue {
+  var optionalBoolWrapper: IntentSwiftProtobuf.Google_Protobuf_BoolValue {
     get {return _storage._optionalBoolWrapper ?? SwiftProtobuf.Google_Protobuf_BoolValue()}
     set {_uniqueStorage()._optionalBoolWrapper = newValue}
   }
@@ -679,7 +679,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
   /// Clears the value of `optionalBoolWrapper`. Subsequent reads from it will return its default value.
   mutating func clearOptionalBoolWrapper() {_uniqueStorage()._optionalBoolWrapper = nil}
 
-  var optionalInt32Wrapper: SwiftProtobuf.Google_Protobuf_Int32Value {
+  var optionalInt32Wrapper: IntentSwiftProtobuf.Google_Protobuf_Int32Value {
     get {return _storage._optionalInt32Wrapper ?? SwiftProtobuf.Google_Protobuf_Int32Value()}
     set {_uniqueStorage()._optionalInt32Wrapper = newValue}
   }
@@ -688,7 +688,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
   /// Clears the value of `optionalInt32Wrapper`. Subsequent reads from it will return its default value.
   mutating func clearOptionalInt32Wrapper() {_uniqueStorage()._optionalInt32Wrapper = nil}
 
-  var optionalInt64Wrapper: SwiftProtobuf.Google_Protobuf_Int64Value {
+  var optionalInt64Wrapper: IntentSwiftProtobuf.Google_Protobuf_Int64Value {
     get {return _storage._optionalInt64Wrapper ?? SwiftProtobuf.Google_Protobuf_Int64Value()}
     set {_uniqueStorage()._optionalInt64Wrapper = newValue}
   }
@@ -697,7 +697,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
   /// Clears the value of `optionalInt64Wrapper`. Subsequent reads from it will return its default value.
   mutating func clearOptionalInt64Wrapper() {_uniqueStorage()._optionalInt64Wrapper = nil}
 
-  var optionalUint32Wrapper: SwiftProtobuf.Google_Protobuf_UInt32Value {
+  var optionalUint32Wrapper: IntentSwiftProtobuf.Google_Protobuf_UInt32Value {
     get {return _storage._optionalUint32Wrapper ?? SwiftProtobuf.Google_Protobuf_UInt32Value()}
     set {_uniqueStorage()._optionalUint32Wrapper = newValue}
   }
@@ -706,7 +706,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
   /// Clears the value of `optionalUint32Wrapper`. Subsequent reads from it will return its default value.
   mutating func clearOptionalUint32Wrapper() {_uniqueStorage()._optionalUint32Wrapper = nil}
 
-  var optionalUint64Wrapper: SwiftProtobuf.Google_Protobuf_UInt64Value {
+  var optionalUint64Wrapper: IntentSwiftProtobuf.Google_Protobuf_UInt64Value {
     get {return _storage._optionalUint64Wrapper ?? SwiftProtobuf.Google_Protobuf_UInt64Value()}
     set {_uniqueStorage()._optionalUint64Wrapper = newValue}
   }
@@ -715,7 +715,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
   /// Clears the value of `optionalUint64Wrapper`. Subsequent reads from it will return its default value.
   mutating func clearOptionalUint64Wrapper() {_uniqueStorage()._optionalUint64Wrapper = nil}
 
-  var optionalFloatWrapper: SwiftProtobuf.Google_Protobuf_FloatValue {
+  var optionalFloatWrapper: IntentSwiftProtobuf.Google_Protobuf_FloatValue {
     get {return _storage._optionalFloatWrapper ?? SwiftProtobuf.Google_Protobuf_FloatValue()}
     set {_uniqueStorage()._optionalFloatWrapper = newValue}
   }
@@ -724,7 +724,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
   /// Clears the value of `optionalFloatWrapper`. Subsequent reads from it will return its default value.
   mutating func clearOptionalFloatWrapper() {_uniqueStorage()._optionalFloatWrapper = nil}
 
-  var optionalDoubleWrapper: SwiftProtobuf.Google_Protobuf_DoubleValue {
+  var optionalDoubleWrapper: IntentSwiftProtobuf.Google_Protobuf_DoubleValue {
     get {return _storage._optionalDoubleWrapper ?? SwiftProtobuf.Google_Protobuf_DoubleValue()}
     set {_uniqueStorage()._optionalDoubleWrapper = newValue}
   }
@@ -733,7 +733,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
   /// Clears the value of `optionalDoubleWrapper`. Subsequent reads from it will return its default value.
   mutating func clearOptionalDoubleWrapper() {_uniqueStorage()._optionalDoubleWrapper = nil}
 
-  var optionalStringWrapper: SwiftProtobuf.Google_Protobuf_StringValue {
+  var optionalStringWrapper: IntentSwiftProtobuf.Google_Protobuf_StringValue {
     get {return _storage._optionalStringWrapper ?? SwiftProtobuf.Google_Protobuf_StringValue()}
     set {_uniqueStorage()._optionalStringWrapper = newValue}
   }
@@ -742,7 +742,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
   /// Clears the value of `optionalStringWrapper`. Subsequent reads from it will return its default value.
   mutating func clearOptionalStringWrapper() {_uniqueStorage()._optionalStringWrapper = nil}
 
-  var optionalBytesWrapper: SwiftProtobuf.Google_Protobuf_BytesValue {
+  var optionalBytesWrapper: IntentSwiftProtobuf.Google_Protobuf_BytesValue {
     get {return _storage._optionalBytesWrapper ?? SwiftProtobuf.Google_Protobuf_BytesValue()}
     set {_uniqueStorage()._optionalBytesWrapper = newValue}
   }
@@ -796,7 +796,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
     set {_uniqueStorage()._repeatedBytesWrapper = newValue}
   }
 
-  var optionalDuration: SwiftProtobuf.Google_Protobuf_Duration {
+  var optionalDuration: IntentSwiftProtobuf.Google_Protobuf_Duration {
     get {return _storage._optionalDuration ?? SwiftProtobuf.Google_Protobuf_Duration()}
     set {_uniqueStorage()._optionalDuration = newValue}
   }
@@ -805,7 +805,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
   /// Clears the value of `optionalDuration`. Subsequent reads from it will return its default value.
   mutating func clearOptionalDuration() {_uniqueStorage()._optionalDuration = nil}
 
-  var optionalTimestamp: SwiftProtobuf.Google_Protobuf_Timestamp {
+  var optionalTimestamp: IntentSwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._optionalTimestamp ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._optionalTimestamp = newValue}
   }
@@ -814,7 +814,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
   /// Clears the value of `optionalTimestamp`. Subsequent reads from it will return its default value.
   mutating func clearOptionalTimestamp() {_uniqueStorage()._optionalTimestamp = nil}
 
-  var optionalFieldMask: SwiftProtobuf.Google_Protobuf_FieldMask {
+  var optionalFieldMask: IntentSwiftProtobuf.Google_Protobuf_FieldMask {
     get {return _storage._optionalFieldMask ?? SwiftProtobuf.Google_Protobuf_FieldMask()}
     set {_uniqueStorage()._optionalFieldMask = newValue}
   }
@@ -823,7 +823,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
   /// Clears the value of `optionalFieldMask`. Subsequent reads from it will return its default value.
   mutating func clearOptionalFieldMask() {_uniqueStorage()._optionalFieldMask = nil}
 
-  var optionalStruct: SwiftProtobuf.Google_Protobuf_Struct {
+  var optionalStruct: IntentSwiftProtobuf.Google_Protobuf_Struct {
     get {return _storage._optionalStruct ?? SwiftProtobuf.Google_Protobuf_Struct()}
     set {_uniqueStorage()._optionalStruct = newValue}
   }
@@ -832,7 +832,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
   /// Clears the value of `optionalStruct`. Subsequent reads from it will return its default value.
   mutating func clearOptionalStruct() {_uniqueStorage()._optionalStruct = nil}
 
-  var optionalAny: SwiftProtobuf.Google_Protobuf_Any {
+  var optionalAny: IntentSwiftProtobuf.Google_Protobuf_Any {
     get {return _storage._optionalAny ?? SwiftProtobuf.Google_Protobuf_Any()}
     set {_uniqueStorage()._optionalAny = newValue}
   }
@@ -841,7 +841,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
   /// Clears the value of `optionalAny`. Subsequent reads from it will return its default value.
   mutating func clearOptionalAny() {_uniqueStorage()._optionalAny = nil}
 
-  var optionalValue: SwiftProtobuf.Google_Protobuf_Value {
+  var optionalValue: IntentSwiftProtobuf.Google_Protobuf_Value {
     get {return _storage._optionalValue ?? SwiftProtobuf.Google_Protobuf_Value()}
     set {_uniqueStorage()._optionalValue = newValue}
   }
@@ -850,7 +850,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
   /// Clears the value of `optionalValue`. Subsequent reads from it will return its default value.
   mutating func clearOptionalValue() {_uniqueStorage()._optionalValue = nil}
 
-  var optionalNullValue: SwiftProtobuf.Google_Protobuf_NullValue {
+  var optionalNullValue: IntentSwiftProtobuf.Google_Protobuf_NullValue {
     get {return _storage._optionalNullValue}
     set {_uniqueStorage()._optionalNullValue = newValue}
   }
@@ -982,7 +982,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
     set {_uniqueStorage()._fieldName18__ = newValue}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   enum OneOf_OneofField: Equatable {
     case oneofUint32(UInt32)
@@ -1048,7 +1048,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
   #endif
   }
 
-  enum NestedEnum: SwiftProtobuf.Enum {
+  enum NestedEnum: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
     case foo // = 0
     case bar // = 1
@@ -1084,7 +1084,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
 
   }
 
-  enum AliasedEnum: SwiftProtobuf.Enum {
+  enum AliasedEnum: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
     case aliasFoo // = 0
     case aliasBar // = 1
@@ -1136,7 +1136,7 @@ struct ProtobufTestMessages_Proto3_TestAllTypesProto3 {
     /// Clears the value of `corecursive`. Subsequent reads from it will return its default value.
     mutating func clearCorecursive() {_uniqueStorage()._corecursive = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -1178,7 +1178,7 @@ struct ProtobufTestMessages_Proto3_ForeignMessage {
 
   var c: Int32 = 0
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
@@ -1188,7 +1188,7 @@ struct ProtobufTestMessages_Proto3_NullHypothesisProto3 {
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
@@ -1198,9 +1198,9 @@ struct ProtobufTestMessages_Proto3_EnumOnlyProto3 {
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
-  enum BoolEnum: SwiftProtobuf.Enum {
+  enum BoolEnum: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
     case kFalse // = 0
     case kTrue // = 1
@@ -1260,17 +1260,17 @@ extension ProtobufTestMessages_Proto3_EnumOnlyProto3.BoolEnum: @unchecked Sendab
 
 fileprivate let _protobuf_package = "protobuf_test_messages.proto3"
 
-extension ProtobufTestMessages_Proto3_ForeignEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufTestMessages_Proto3_ForeignEnum: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     0: .same(proto: "FOREIGN_FOO"),
     1: .same(proto: "FOREIGN_BAR"),
     2: .same(proto: "FOREIGN_BAZ"),
   ]
 }
 
-extension ProtobufTestMessages_Proto3_TestAllTypesProto3: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufTestMessages_Proto3_TestAllTypesProto3: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestAllTypesProto3"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "optional_int32"),
     2: .standard(proto: "optional_int64"),
     3: .standard(proto: "optional_uint32"),
@@ -1517,15 +1517,15 @@ extension ProtobufTestMessages_Proto3_TestAllTypesProto3: SwiftProtobuf.Message,
     var _mapStringNestedEnum: Dictionary<String,ProtobufTestMessages_Proto3_TestAllTypesProto3.NestedEnum> = [:]
     var _mapStringForeignEnum: Dictionary<String,ProtobufTestMessages_Proto3_ForeignEnum> = [:]
     var _oneofField: ProtobufTestMessages_Proto3_TestAllTypesProto3.OneOf_OneofField?
-    var _optionalBoolWrapper: SwiftProtobuf.Google_Protobuf_BoolValue? = nil
-    var _optionalInt32Wrapper: SwiftProtobuf.Google_Protobuf_Int32Value? = nil
-    var _optionalInt64Wrapper: SwiftProtobuf.Google_Protobuf_Int64Value? = nil
-    var _optionalUint32Wrapper: SwiftProtobuf.Google_Protobuf_UInt32Value? = nil
-    var _optionalUint64Wrapper: SwiftProtobuf.Google_Protobuf_UInt64Value? = nil
-    var _optionalFloatWrapper: SwiftProtobuf.Google_Protobuf_FloatValue? = nil
-    var _optionalDoubleWrapper: SwiftProtobuf.Google_Protobuf_DoubleValue? = nil
-    var _optionalStringWrapper: SwiftProtobuf.Google_Protobuf_StringValue? = nil
-    var _optionalBytesWrapper: SwiftProtobuf.Google_Protobuf_BytesValue? = nil
+    var _optionalBoolWrapper: IntentSwiftProtobuf.Google_Protobuf_BoolValue? = nil
+    var _optionalInt32Wrapper: IntentSwiftProtobuf.Google_Protobuf_Int32Value? = nil
+    var _optionalInt64Wrapper: IntentSwiftProtobuf.Google_Protobuf_Int64Value? = nil
+    var _optionalUint32Wrapper: IntentSwiftProtobuf.Google_Protobuf_UInt32Value? = nil
+    var _optionalUint64Wrapper: IntentSwiftProtobuf.Google_Protobuf_UInt64Value? = nil
+    var _optionalFloatWrapper: IntentSwiftProtobuf.Google_Protobuf_FloatValue? = nil
+    var _optionalDoubleWrapper: IntentSwiftProtobuf.Google_Protobuf_DoubleValue? = nil
+    var _optionalStringWrapper: IntentSwiftProtobuf.Google_Protobuf_StringValue? = nil
+    var _optionalBytesWrapper: IntentSwiftProtobuf.Google_Protobuf_BytesValue? = nil
     var _repeatedBoolWrapper: [SwiftProtobuf.Google_Protobuf_BoolValue] = []
     var _repeatedInt32Wrapper: [SwiftProtobuf.Google_Protobuf_Int32Value] = []
     var _repeatedInt64Wrapper: [SwiftProtobuf.Google_Protobuf_Int64Value] = []
@@ -1535,13 +1535,13 @@ extension ProtobufTestMessages_Proto3_TestAllTypesProto3: SwiftProtobuf.Message,
     var _repeatedDoubleWrapper: [SwiftProtobuf.Google_Protobuf_DoubleValue] = []
     var _repeatedStringWrapper: [SwiftProtobuf.Google_Protobuf_StringValue] = []
     var _repeatedBytesWrapper: [SwiftProtobuf.Google_Protobuf_BytesValue] = []
-    var _optionalDuration: SwiftProtobuf.Google_Protobuf_Duration? = nil
-    var _optionalTimestamp: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
-    var _optionalFieldMask: SwiftProtobuf.Google_Protobuf_FieldMask? = nil
-    var _optionalStruct: SwiftProtobuf.Google_Protobuf_Struct? = nil
-    var _optionalAny: SwiftProtobuf.Google_Protobuf_Any? = nil
-    var _optionalValue: SwiftProtobuf.Google_Protobuf_Value? = nil
-    var _optionalNullValue: SwiftProtobuf.Google_Protobuf_NullValue = .nullValue
+    var _optionalDuration: IntentSwiftProtobuf.Google_Protobuf_Duration? = nil
+    var _optionalTimestamp: IntentSwiftProtobuf.Google_Protobuf_Timestamp? = nil
+    var _optionalFieldMask: IntentSwiftProtobuf.Google_Protobuf_FieldMask? = nil
+    var _optionalStruct: IntentSwiftProtobuf.Google_Protobuf_Struct? = nil
+    var _optionalAny: IntentSwiftProtobuf.Google_Protobuf_Any? = nil
+    var _optionalValue: IntentSwiftProtobuf.Google_Protobuf_Value? = nil
+    var _optionalNullValue: IntentSwiftProtobuf.Google_Protobuf_NullValue = .nullValue
     var _repeatedDuration: [SwiftProtobuf.Google_Protobuf_Duration] = []
     var _repeatedTimestamp: [SwiftProtobuf.Google_Protobuf_Timestamp] = []
     var _repeatedFieldmask: [SwiftProtobuf.Google_Protobuf_FieldMask] = []
@@ -1725,7 +1725,7 @@ extension ProtobufTestMessages_Proto3_TestAllTypesProto3: SwiftProtobuf.Message,
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -1777,25 +1777,25 @@ extension ProtobufTestMessages_Proto3_TestAllTypesProto3: SwiftProtobuf.Message,
         case 52: try { try decoder.decodeRepeatedEnumField(value: &_storage._repeatedForeignEnum) }()
         case 54: try { try decoder.decodeRepeatedStringField(value: &_storage._repeatedStringPiece) }()
         case 55: try { try decoder.decodeRepeatedStringField(value: &_storage._repeatedCord) }()
-        case 56: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufInt32,SwiftProtobuf.ProtobufInt32>.self, value: &_storage._mapInt32Int32) }()
-        case 57: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufInt64,SwiftProtobuf.ProtobufInt64>.self, value: &_storage._mapInt64Int64) }()
-        case 58: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufUInt32,SwiftProtobuf.ProtobufUInt32>.self, value: &_storage._mapUint32Uint32) }()
-        case 59: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufUInt64,SwiftProtobuf.ProtobufUInt64>.self, value: &_storage._mapUint64Uint64) }()
-        case 60: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufSInt32,SwiftProtobuf.ProtobufSInt32>.self, value: &_storage._mapSint32Sint32) }()
-        case 61: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufSInt64,SwiftProtobuf.ProtobufSInt64>.self, value: &_storage._mapSint64Sint64) }()
-        case 62: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufFixed32,SwiftProtobuf.ProtobufFixed32>.self, value: &_storage._mapFixed32Fixed32) }()
-        case 63: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufFixed64,SwiftProtobuf.ProtobufFixed64>.self, value: &_storage._mapFixed64Fixed64) }()
-        case 64: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufSFixed32,SwiftProtobuf.ProtobufSFixed32>.self, value: &_storage._mapSfixed32Sfixed32) }()
-        case 65: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufSFixed64,SwiftProtobuf.ProtobufSFixed64>.self, value: &_storage._mapSfixed64Sfixed64) }()
-        case 66: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufInt32,SwiftProtobuf.ProtobufFloat>.self, value: &_storage._mapInt32Float) }()
-        case 67: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufInt32,SwiftProtobuf.ProtobufDouble>.self, value: &_storage._mapInt32Double) }()
-        case 68: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufBool,SwiftProtobuf.ProtobufBool>.self, value: &_storage._mapBoolBool) }()
-        case 69: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufString>.self, value: &_storage._mapStringString) }()
-        case 70: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufBytes>.self, value: &_storage._mapStringBytes) }()
-        case 71: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufMessageMap<SwiftProtobuf.ProtobufString,ProtobufTestMessages_Proto3_TestAllTypesProto3.NestedMessage>.self, value: &_storage._mapStringNestedMessage) }()
-        case 72: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufMessageMap<SwiftProtobuf.ProtobufString,ProtobufTestMessages_Proto3_ForeignMessage>.self, value: &_storage._mapStringForeignMessage) }()
-        case 73: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufEnumMap<SwiftProtobuf.ProtobufString,ProtobufTestMessages_Proto3_TestAllTypesProto3.NestedEnum>.self, value: &_storage._mapStringNestedEnum) }()
-        case 74: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufEnumMap<SwiftProtobuf.ProtobufString,ProtobufTestMessages_Proto3_ForeignEnum>.self, value: &_storage._mapStringForeignEnum) }()
+        case 56: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufInt32,SwiftProtobuf.ProtobufInt32>.self, value: &_storage._mapInt32Int32) }()
+        case 57: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufInt64,SwiftProtobuf.ProtobufInt64>.self, value: &_storage._mapInt64Int64) }()
+        case 58: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufUInt32,SwiftProtobuf.ProtobufUInt32>.self, value: &_storage._mapUint32Uint32) }()
+        case 59: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufUInt64,SwiftProtobuf.ProtobufUInt64>.self, value: &_storage._mapUint64Uint64) }()
+        case 60: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufSInt32,SwiftProtobuf.ProtobufSInt32>.self, value: &_storage._mapSint32Sint32) }()
+        case 61: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufSInt64,SwiftProtobuf.ProtobufSInt64>.self, value: &_storage._mapSint64Sint64) }()
+        case 62: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufFixed32,SwiftProtobuf.ProtobufFixed32>.self, value: &_storage._mapFixed32Fixed32) }()
+        case 63: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufFixed64,SwiftProtobuf.ProtobufFixed64>.self, value: &_storage._mapFixed64Fixed64) }()
+        case 64: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufSFixed32,SwiftProtobuf.ProtobufSFixed32>.self, value: &_storage._mapSfixed32Sfixed32) }()
+        case 65: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufSFixed64,SwiftProtobuf.ProtobufSFixed64>.self, value: &_storage._mapSfixed64Sfixed64) }()
+        case 66: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufInt32,SwiftProtobuf.ProtobufFloat>.self, value: &_storage._mapInt32Float) }()
+        case 67: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufInt32,SwiftProtobuf.ProtobufDouble>.self, value: &_storage._mapInt32Double) }()
+        case 68: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufBool,SwiftProtobuf.ProtobufBool>.self, value: &_storage._mapBoolBool) }()
+        case 69: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufString>.self, value: &_storage._mapStringString) }()
+        case 70: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufBytes>.self, value: &_storage._mapStringBytes) }()
+        case 71: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMessageMap<SwiftProtobuf.ProtobufString,ProtobufTestMessages_Proto3_TestAllTypesProto3.NestedMessage>.self, value: &_storage._mapStringNestedMessage) }()
+        case 72: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMessageMap<SwiftProtobuf.ProtobufString,ProtobufTestMessages_Proto3_ForeignMessage>.self, value: &_storage._mapStringForeignMessage) }()
+        case 73: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufEnumMap<SwiftProtobuf.ProtobufString,ProtobufTestMessages_Proto3_TestAllTypesProto3.NestedEnum>.self, value: &_storage._mapStringNestedEnum) }()
+        case 74: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufEnumMap<SwiftProtobuf.ProtobufString,ProtobufTestMessages_Proto3_ForeignEnum>.self, value: &_storage._mapStringForeignEnum) }()
         case 75: try { try decoder.decodeRepeatedInt32Field(value: &_storage._packedInt32) }()
         case 76: try { try decoder.decodeRepeatedInt64Field(value: &_storage._packedInt64) }()
         case 77: try { try decoder.decodeRepeatedUInt32Field(value: &_storage._packedUint32) }()
@@ -1902,7 +1902,7 @@ extension ProtobufTestMessages_Proto3_TestAllTypesProto3: SwiftProtobuf.Message,
           }
         }()
         case 120: try {
-          var v: SwiftProtobuf.Google_Protobuf_NullValue?
+          var v: IntentSwiftProtobuf.Google_Protobuf_NullValue?
           try decoder.decodeSingularEnumField(value: &v)
           if let v = v {
             if _storage._oneofField != nil {try decoder.handleConflictingOneOf()}
@@ -1965,7 +1965,7 @@ extension ProtobufTestMessages_Proto3_TestAllTypesProto3: SwiftProtobuf.Message,
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -2104,61 +2104,61 @@ extension ProtobufTestMessages_Proto3_TestAllTypesProto3: SwiftProtobuf.Message,
         try visitor.visitRepeatedStringField(value: _storage._repeatedCord, fieldNumber: 55)
       }
       if !_storage._mapInt32Int32.isEmpty {
-        try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufInt32,SwiftProtobuf.ProtobufInt32>.self, value: _storage._mapInt32Int32, fieldNumber: 56)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufInt32,SwiftProtobuf.ProtobufInt32>.self, value: _storage._mapInt32Int32, fieldNumber: 56)
       }
       if !_storage._mapInt64Int64.isEmpty {
-        try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufInt64,SwiftProtobuf.ProtobufInt64>.self, value: _storage._mapInt64Int64, fieldNumber: 57)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufInt64,SwiftProtobuf.ProtobufInt64>.self, value: _storage._mapInt64Int64, fieldNumber: 57)
       }
       if !_storage._mapUint32Uint32.isEmpty {
-        try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufUInt32,SwiftProtobuf.ProtobufUInt32>.self, value: _storage._mapUint32Uint32, fieldNumber: 58)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufUInt32,SwiftProtobuf.ProtobufUInt32>.self, value: _storage._mapUint32Uint32, fieldNumber: 58)
       }
       if !_storage._mapUint64Uint64.isEmpty {
-        try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufUInt64,SwiftProtobuf.ProtobufUInt64>.self, value: _storage._mapUint64Uint64, fieldNumber: 59)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufUInt64,SwiftProtobuf.ProtobufUInt64>.self, value: _storage._mapUint64Uint64, fieldNumber: 59)
       }
       if !_storage._mapSint32Sint32.isEmpty {
-        try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufSInt32,SwiftProtobuf.ProtobufSInt32>.self, value: _storage._mapSint32Sint32, fieldNumber: 60)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufSInt32,SwiftProtobuf.ProtobufSInt32>.self, value: _storage._mapSint32Sint32, fieldNumber: 60)
       }
       if !_storage._mapSint64Sint64.isEmpty {
-        try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufSInt64,SwiftProtobuf.ProtobufSInt64>.self, value: _storage._mapSint64Sint64, fieldNumber: 61)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufSInt64,SwiftProtobuf.ProtobufSInt64>.self, value: _storage._mapSint64Sint64, fieldNumber: 61)
       }
       if !_storage._mapFixed32Fixed32.isEmpty {
-        try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufFixed32,SwiftProtobuf.ProtobufFixed32>.self, value: _storage._mapFixed32Fixed32, fieldNumber: 62)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufFixed32,SwiftProtobuf.ProtobufFixed32>.self, value: _storage._mapFixed32Fixed32, fieldNumber: 62)
       }
       if !_storage._mapFixed64Fixed64.isEmpty {
-        try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufFixed64,SwiftProtobuf.ProtobufFixed64>.self, value: _storage._mapFixed64Fixed64, fieldNumber: 63)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufFixed64,SwiftProtobuf.ProtobufFixed64>.self, value: _storage._mapFixed64Fixed64, fieldNumber: 63)
       }
       if !_storage._mapSfixed32Sfixed32.isEmpty {
-        try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufSFixed32,SwiftProtobuf.ProtobufSFixed32>.self, value: _storage._mapSfixed32Sfixed32, fieldNumber: 64)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufSFixed32,SwiftProtobuf.ProtobufSFixed32>.self, value: _storage._mapSfixed32Sfixed32, fieldNumber: 64)
       }
       if !_storage._mapSfixed64Sfixed64.isEmpty {
-        try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufSFixed64,SwiftProtobuf.ProtobufSFixed64>.self, value: _storage._mapSfixed64Sfixed64, fieldNumber: 65)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufSFixed64,SwiftProtobuf.ProtobufSFixed64>.self, value: _storage._mapSfixed64Sfixed64, fieldNumber: 65)
       }
       if !_storage._mapInt32Float.isEmpty {
-        try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufInt32,SwiftProtobuf.ProtobufFloat>.self, value: _storage._mapInt32Float, fieldNumber: 66)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufInt32,SwiftProtobuf.ProtobufFloat>.self, value: _storage._mapInt32Float, fieldNumber: 66)
       }
       if !_storage._mapInt32Double.isEmpty {
-        try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufInt32,SwiftProtobuf.ProtobufDouble>.self, value: _storage._mapInt32Double, fieldNumber: 67)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufInt32,SwiftProtobuf.ProtobufDouble>.self, value: _storage._mapInt32Double, fieldNumber: 67)
       }
       if !_storage._mapBoolBool.isEmpty {
-        try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufBool,SwiftProtobuf.ProtobufBool>.self, value: _storage._mapBoolBool, fieldNumber: 68)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufBool,SwiftProtobuf.ProtobufBool>.self, value: _storage._mapBoolBool, fieldNumber: 68)
       }
       if !_storage._mapStringString.isEmpty {
-        try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufString>.self, value: _storage._mapStringString, fieldNumber: 69)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufString>.self, value: _storage._mapStringString, fieldNumber: 69)
       }
       if !_storage._mapStringBytes.isEmpty {
-        try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufBytes>.self, value: _storage._mapStringBytes, fieldNumber: 70)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufBytes>.self, value: _storage._mapStringBytes, fieldNumber: 70)
       }
       if !_storage._mapStringNestedMessage.isEmpty {
-        try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMessageMap<SwiftProtobuf.ProtobufString,ProtobufTestMessages_Proto3_TestAllTypesProto3.NestedMessage>.self, value: _storage._mapStringNestedMessage, fieldNumber: 71)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMessageMap<SwiftProtobuf.ProtobufString,ProtobufTestMessages_Proto3_TestAllTypesProto3.NestedMessage>.self, value: _storage._mapStringNestedMessage, fieldNumber: 71)
       }
       if !_storage._mapStringForeignMessage.isEmpty {
-        try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMessageMap<SwiftProtobuf.ProtobufString,ProtobufTestMessages_Proto3_ForeignMessage>.self, value: _storage._mapStringForeignMessage, fieldNumber: 72)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMessageMap<SwiftProtobuf.ProtobufString,ProtobufTestMessages_Proto3_ForeignMessage>.self, value: _storage._mapStringForeignMessage, fieldNumber: 72)
       }
       if !_storage._mapStringNestedEnum.isEmpty {
-        try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufEnumMap<SwiftProtobuf.ProtobufString,ProtobufTestMessages_Proto3_TestAllTypesProto3.NestedEnum>.self, value: _storage._mapStringNestedEnum, fieldNumber: 73)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufEnumMap<SwiftProtobuf.ProtobufString,ProtobufTestMessages_Proto3_TestAllTypesProto3.NestedEnum>.self, value: _storage._mapStringNestedEnum, fieldNumber: 73)
       }
       if !_storage._mapStringForeignEnum.isEmpty {
-        try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufEnumMap<SwiftProtobuf.ProtobufString,ProtobufTestMessages_Proto3_ForeignEnum>.self, value: _storage._mapStringForeignEnum, fieldNumber: 74)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufEnumMap<SwiftProtobuf.ProtobufString,ProtobufTestMessages_Proto3_ForeignEnum>.self, value: _storage._mapStringForeignEnum, fieldNumber: 74)
       }
       if !_storage._packedInt32.isEmpty {
         try visitor.visitPackedInt32Field(value: _storage._packedInt32, fieldNumber: 75)
@@ -2597,8 +2597,8 @@ extension ProtobufTestMessages_Proto3_TestAllTypesProto3: SwiftProtobuf.Message,
   }
 }
 
-extension ProtobufTestMessages_Proto3_TestAllTypesProto3.NestedEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufTestMessages_Proto3_TestAllTypesProto3.NestedEnum: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     -1: .same(proto: "NEG"),
     0: .same(proto: "FOO"),
     1: .same(proto: "BAR"),
@@ -2606,17 +2606,17 @@ extension ProtobufTestMessages_Proto3_TestAllTypesProto3.NestedEnum: SwiftProtob
   ]
 }
 
-extension ProtobufTestMessages_Proto3_TestAllTypesProto3.AliasedEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufTestMessages_Proto3_TestAllTypesProto3.AliasedEnum: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     0: .same(proto: "ALIAS_FOO"),
     1: .same(proto: "ALIAS_BAR"),
     2: .aliased(proto: "ALIAS_BAZ", aliases: ["MOO", "moo", "bAz"]),
   ]
 }
 
-extension ProtobufTestMessages_Proto3_TestAllTypesProto3.NestedMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufTestMessages_Proto3_TestAllTypesProto3.NestedMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufTestMessages_Proto3_TestAllTypesProto3.protoMessageName + ".NestedMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "a"),
     2: .same(proto: "corecursive"),
   ]
@@ -2642,7 +2642,7 @@ extension ProtobufTestMessages_Proto3_TestAllTypesProto3.NestedMessage: SwiftPro
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -2658,7 +2658,7 @@ extension ProtobufTestMessages_Proto3_TestAllTypesProto3.NestedMessage: SwiftPro
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -2690,13 +2690,13 @@ extension ProtobufTestMessages_Proto3_TestAllTypesProto3.NestedMessage: SwiftPro
   }
 }
 
-extension ProtobufTestMessages_Proto3_ForeignMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufTestMessages_Proto3_ForeignMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".ForeignMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "c"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -2708,7 +2708,7 @@ extension ProtobufTestMessages_Proto3_ForeignMessage: SwiftProtobuf.Message, Swi
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if self.c != 0 {
       try visitor.visitSingularInt32Field(value: self.c, fieldNumber: 1)
     }
@@ -2722,16 +2722,16 @@ extension ProtobufTestMessages_Proto3_ForeignMessage: SwiftProtobuf.Message, Swi
   }
 }
 
-extension ProtobufTestMessages_Proto3_NullHypothesisProto3: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufTestMessages_Proto3_NullHypothesisProto3: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".NullHypothesisProto3"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let _ = try decoder.nextFieldNumber() {
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -2741,16 +2741,16 @@ extension ProtobufTestMessages_Proto3_NullHypothesisProto3: SwiftProtobuf.Messag
   }
 }
 
-extension ProtobufTestMessages_Proto3_EnumOnlyProto3: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufTestMessages_Proto3_EnumOnlyProto3: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".EnumOnlyProto3"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let _ = try decoder.nextFieldNumber() {
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -2760,8 +2760,8 @@ extension ProtobufTestMessages_Proto3_EnumOnlyProto3: SwiftProtobuf.Message, Swi
   }
 }
 
-extension ProtobufTestMessages_Proto3_EnumOnlyProto3.BoolEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufTestMessages_Proto3_EnumOnlyProto3.BoolEnum: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     0: .same(proto: "kFalse"),
     1: .same(proto: "kTrue"),
   ]

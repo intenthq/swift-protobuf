@@ -85,7 +85,7 @@ struct GeneratorPlugin {
     print(Version.copyright)
     print("")
 
-    let version = SwiftProtobuf.Version.self
+    let version = IntentSwiftProtobuf.Version.self
     let packageVersion = "\(version.major),\(version.minor),\(version.revision)"
 
     let help = (

@@ -20,7 +20,7 @@ import IntentSwiftProtobuf
 
 class Test_Extensions: XCTestCase, PBTestHelpers {
     typealias MessageTestType = ProtobufUnittest_TestAllExtensions
-    var extensions = SwiftProtobuf.SimpleExtensionMap()
+    var extensions = IntentSwiftProtobuf.SimpleExtensionMap()
 
     func assertEncode(_ expected: [UInt8], file: XCTestFileArgType = #file, line: UInt = #line, configure: (inout MessageTestType) -> Void) {
         let empty = MessageTestType()

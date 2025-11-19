@@ -45,8 +45,8 @@ import SwiftProtobuf
 // incompatible with the version of SwiftProtobuf to which you are linking.
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
-fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+fileprivate struct _GeneratedWithProtocGenSwiftVersion: IntentSwiftProtobuf.ProtobufAPIVersionCheck {
+  struct _2: IntentSwiftProtobuf.ProtobufAPIVersion_2 {}
   typealias Version = _2
 }
 
@@ -218,7 +218,7 @@ struct Swift_Performance_TestAllTypes {
     set {_uniqueStorage()._mapStringMessage = newValue}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -233,9 +233,9 @@ extension Swift_Performance_TestAllTypes: @unchecked Sendable {}
 
 fileprivate let _protobuf_package = "swift.performance"
 
-extension Swift_Performance_TestAllTypes: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension Swift_Performance_TestAllTypes: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestAllTypes"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "optional_int32"),
     2: .standard(proto: "optional_int64"),
     3: .standard(proto: "optional_uint32"),
@@ -351,7 +351,7 @@ extension Swift_Performance_TestAllTypes: SwiftProtobuf.Message, SwiftProtobuf._
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -390,14 +390,14 @@ extension Swift_Performance_TestAllTypes: SwiftProtobuf.Message, SwiftProtobuf._
         case 43: try { try decoder.decodeRepeatedBoolField(value: &_storage._repeatedBool) }()
         case 44: try { try decoder.decodeRepeatedStringField(value: &_storage._repeatedString) }()
         case 45: try { try decoder.decodeRepeatedBytesField(value: &_storage._repeatedBytes) }()
-        case 71: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufMessageMap<SwiftProtobuf.ProtobufString,Swift_Performance_TestAllTypes>.self, value: &_storage._mapStringMessage) }()
+        case 71: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMessageMap<SwiftProtobuf.ProtobufString,Swift_Performance_TestAllTypes>.self, value: &_storage._mapStringMessage) }()
         default: break
         }
       }
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       if _storage._optionalInt32 != 0 {
         try visitor.visitSingularInt32Field(value: _storage._optionalInt32, fieldNumber: 1)
@@ -493,7 +493,7 @@ extension Swift_Performance_TestAllTypes: SwiftProtobuf.Message, SwiftProtobuf._
         try visitor.visitRepeatedBytesField(value: _storage._repeatedBytes, fieldNumber: 45)
       }
       if !_storage._mapStringMessage.isEmpty {
-        try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMessageMap<SwiftProtobuf.ProtobufString,Swift_Performance_TestAllTypes>.self, value: _storage._mapStringMessage, fieldNumber: 71)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMessageMap<SwiftProtobuf.ProtobufString,Swift_Performance_TestAllTypes>.self, value: _storage._mapStringMessage, fieldNumber: 71)
       }
     }
     try unknownFields.traverse(visitor: &visitor)

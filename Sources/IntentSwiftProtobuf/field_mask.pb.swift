@@ -44,8 +44,8 @@ import Foundation
 // incompatible with the version of SwiftProtobuf to which you are linking.
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
-fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+fileprivate struct _GeneratedWithProtocGenSwiftVersion: IntentSwiftProtobuf.ProtobufAPIVersionCheck {
+  struct _2: IntentSwiftProtobuf.ProtobufAPIVersion_2 {}
   typealias Version = _2
 }
 
@@ -256,7 +256,7 @@ public struct Google_Protobuf_FieldMask {
   /// The set of field mask paths.
   public var paths: [String] = []
 
-  public var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   public init() {}
 }
@@ -269,13 +269,13 @@ extension Google_Protobuf_FieldMask: @unchecked Sendable {}
 
 fileprivate let _protobuf_package = "google.protobuf"
 
-extension Google_Protobuf_FieldMask: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension Google_Protobuf_FieldMask: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   public static let protoMessageName: String = _protobuf_package + ".FieldMask"
-  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "paths"),
   ]
 
-  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -287,7 +287,7 @@ extension Google_Protobuf_FieldMask: SwiftProtobuf.Message, SwiftProtobuf._Messa
     }
   }
 
-  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.paths.isEmpty {
       try visitor.visitRepeatedStringField(value: self.paths, fieldNumber: 1)
     }

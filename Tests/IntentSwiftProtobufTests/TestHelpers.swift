@@ -22,7 +22,7 @@ protocol PBTestHelpers {
     associatedtype MessageTestType
 }
 
-extension PBTestHelpers where MessageTestType: SwiftProtobuf.Message & Equatable {
+extension PBTestHelpers where MessageTestType: IntentSwiftProtobuf.Message & Equatable {
 
     private func string(from data: Data) -> String {
         return "[" + data.map { String($0) }.joined(separator: ", ") + "]"

@@ -280,7 +280,7 @@ Here is the actual first part of the generated code for `message Foo` above:
 ```swift
 public struct Foo: ProtobufGeneratedMessage {
   static let protoMessageName: String = "Foo"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "field1"),
     2: .same(proto: "field2"),
   ]
@@ -328,7 +328,7 @@ The storage class and the generated `traverse()` look like this:
     var _mapField: Dictionary<Int32,Bool> = [:]
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       if _storage._field1 != 0 {
         try visitor.visitSingularInt32Field(

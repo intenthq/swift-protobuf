@@ -53,12 +53,12 @@ import SwiftProtobuf
 // incompatible with the version of SwiftProtobuf to which you are linking.
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
-fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+fileprivate struct _GeneratedWithProtocGenSwiftVersion: IntentSwiftProtobuf.ProtobufAPIVersionCheck {
+  struct _2: IntentSwiftProtobuf.ProtobufAPIVersion_2 {}
   typealias Version = _2
 }
 
-enum ProtobufUnittest_ForeignEnum: SwiftProtobuf.Enum {
+enum ProtobufUnittest_ForeignEnum: IntentSwiftProtobuf.Enum {
   typealias RawValue = Int
   case foreignFoo // = 4
   case foreignBar // = 5
@@ -95,7 +95,7 @@ extension ProtobufUnittest_ForeignEnum: CaseIterable {
 
 #endif  // swift(>=4.2)
 
-enum ProtobufUnittest_TestReservedEnumFields: SwiftProtobuf.Enum {
+enum ProtobufUnittest_TestReservedEnumFields: IntentSwiftProtobuf.Enum {
   typealias RawValue = Int
   case unknown // = 0
 
@@ -127,7 +127,7 @@ extension ProtobufUnittest_TestReservedEnumFields: CaseIterable {
 #endif  // swift(>=4.2)
 
 /// Test an enum that has multiple values with the same number.
-enum ProtobufUnittest_TestEnumWithDupValue: SwiftProtobuf.Enum {
+enum ProtobufUnittest_TestEnumWithDupValue: IntentSwiftProtobuf.Enum {
   typealias RawValue = Int
   case foo1 // = 1
   case bar1 // = 2
@@ -167,7 +167,7 @@ extension ProtobufUnittest_TestEnumWithDupValue: CaseIterable {
 #endif  // swift(>=4.2)
 
 /// Test an enum with large, unordered values.
-enum ProtobufUnittest_TestSparseEnum: SwiftProtobuf.Enum {
+enum ProtobufUnittest_TestSparseEnum: IntentSwiftProtobuf.Enum {
   typealias RawValue = Int
   case sparseA // = 123
   case sparseB // = 62374
@@ -216,7 +216,7 @@ extension ProtobufUnittest_TestSparseEnum: CaseIterable {
 
 #endif  // swift(>=4.2)
 
-enum ProtobufUnittest_VeryLargeEnum: SwiftProtobuf.Enum {
+enum ProtobufUnittest_VeryLargeEnum: IntentSwiftProtobuf.Enum {
   typealias RawValue = Int
   case enumLabelDefault // = 0
   case enumLabel1 // = 1
@@ -1144,7 +1144,7 @@ struct ProtobufUnittest_TestAllTypes {
     set {_uniqueStorage()._oneofField = .oneofBytes(newValue)}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   /// For oneof test
   enum OneOf_OneofField: Equatable {
@@ -1181,7 +1181,7 @@ struct ProtobufUnittest_TestAllTypes {
   #endif
   }
 
-  enum NestedEnum: SwiftProtobuf.Enum {
+  enum NestedEnum: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
     case foo // = 1
     case bar // = 2
@@ -1232,7 +1232,7 @@ struct ProtobufUnittest_TestAllTypes {
     /// Clears the value of `bb`. Subsequent reads from it will return its default value.
     mutating func clearBb() {self._bb = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -1253,7 +1253,7 @@ struct ProtobufUnittest_TestAllTypes {
     /// Clears the value of `a`. Subsequent reads from it will return its default value.
     mutating func clearA() {self._a = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -1274,7 +1274,7 @@ struct ProtobufUnittest_TestAllTypes {
     /// Clears the value of `a`. Subsequent reads from it will return its default value.
     mutating func clearA() {self._a = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -1341,7 +1341,7 @@ struct ProtobufUnittest_NestedTestAllTypes {
   /// Clears the value of `eagerChild`. Subsequent reads from it will return its default value.
   mutating func clearEagerChild() {_uniqueStorage()._eagerChild = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -1398,7 +1398,7 @@ struct ProtobufUnittest_TestDeprecatedFields {
   /// Clears the value of `nested`. Subsequent reads from it will return its default value.
   mutating func clearNested() {_uniqueStorage()._nested = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   enum OneOf_OneofFields: Equatable {
     case deprecatedInt32InOneof(Int32)
@@ -1428,7 +1428,7 @@ struct ProtobufUnittest_TestDeprecatedMessage {
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
@@ -1458,7 +1458,7 @@ struct ProtobufUnittest_ForeignMessage {
   /// Clears the value of `d`. Subsequent reads from it will return its default value.
   mutating func clearD() {self._d = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -1471,21 +1471,21 @@ struct ProtobufUnittest_TestReservedFields {
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
 
-struct ProtobufUnittest_TestAllExtensions: SwiftProtobuf.ExtensibleMessage {
+struct ProtobufUnittest_TestAllExtensions: IntentSwiftProtobuf.ExtensibleMessage {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
-  var _protobuf_extensionFieldValues = SwiftProtobuf.ExtensionFieldValueSet()
+  var _protobuf_extensionFieldValues = IntentSwiftProtobuf.ExtensionFieldValueSet()
 }
 
 struct ProtobufUnittest_OptionalGroup_extension {
@@ -1502,7 +1502,7 @@ struct ProtobufUnittest_OptionalGroup_extension {
   /// Clears the value of `a`. Subsequent reads from it will return its default value.
   mutating func clearA() {self._a = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -1523,14 +1523,14 @@ struct ProtobufUnittest_RepeatedGroup_extension {
   /// Clears the value of `a`. Subsequent reads from it will return its default value.
   mutating func clearA() {self._a = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
   fileprivate var _a: Int32? = nil
 }
 
-struct ProtobufUnittest_TestMixedFieldsAndExtensions: SwiftProtobuf.ExtensibleMessage {
+struct ProtobufUnittest_TestMixedFieldsAndExtensions: IntentSwiftProtobuf.ExtensibleMessage {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1546,11 +1546,11 @@ struct ProtobufUnittest_TestMixedFieldsAndExtensions: SwiftProtobuf.ExtensibleMe
 
   var b: [UInt32] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
-  var _protobuf_extensionFieldValues = SwiftProtobuf.ExtensionFieldValueSet()
+  var _protobuf_extensionFieldValues = IntentSwiftProtobuf.ExtensionFieldValueSet()
   fileprivate var _a: Int32? = nil
 }
 
@@ -1577,7 +1577,7 @@ struct ProtobufUnittest_TestGroup {
   /// Clears the value of `optionalForeignEnum`. Subsequent reads from it will return its default value.
   mutating func clearOptionalForeignEnum() {self._optionalForeignEnum = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   struct OptionalGroup {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -1603,7 +1603,7 @@ struct ProtobufUnittest_TestGroup {
     /// Clears the value of `zz`. Subsequent reads from it will return its default value.
     mutating func clearZz() {self._zz = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -1617,16 +1617,16 @@ struct ProtobufUnittest_TestGroup {
   fileprivate var _optionalForeignEnum: ProtobufUnittest_ForeignEnum? = nil
 }
 
-struct ProtobufUnittest_TestGroupExtension: SwiftProtobuf.ExtensibleMessage {
+struct ProtobufUnittest_TestGroupExtension: IntentSwiftProtobuf.ExtensibleMessage {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
-  var _protobuf_extensionFieldValues = SwiftProtobuf.ExtensionFieldValueSet()
+  var _protobuf_extensionFieldValues = IntentSwiftProtobuf.ExtensionFieldValueSet()
 }
 
 struct ProtobufUnittest_TestNestedExtension {
@@ -1634,7 +1634,7 @@ struct ProtobufUnittest_TestNestedExtension {
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   struct OptionalGroup_extension {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -1650,7 +1650,7 @@ struct ProtobufUnittest_TestNestedExtension {
     /// Clears the value of `a`. Subsequent reads from it will return its default value.
     mutating func clearA() {self._a = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -1692,7 +1692,7 @@ struct ProtobufUnittest_TestChildExtension {
   /// Clears the value of `optionalExtension`. Subsequent reads from it will return its default value.
   mutating func clearOptionalExtension() {self._optionalExtension = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -1735,7 +1735,7 @@ struct ProtobufUnittest_TestChildExtensionData {
   /// Clears the value of `optionalExtension`. Subsequent reads from it will return its default value.
   mutating func clearOptionalExtension() {self._optionalExtension = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   struct NestedTestAllExtensionsData {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -1751,7 +1751,7 @@ struct ProtobufUnittest_TestChildExtensionData {
     /// Clears the value of `dynamic`. Subsequent reads from it will return its default value.
     mutating func clearDynamic() {self._dynamic = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     struct NestedDynamicExtensions {
       // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -1776,7 +1776,7 @@ struct ProtobufUnittest_TestChildExtensionData {
       /// Clears the value of `b`. Subsequent reads from it will return its default value.
       mutating func clearB() {self._b = nil}
 
-      var unknownFields = SwiftProtobuf.UnknownStorage()
+      var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
       init() {}
 
@@ -1819,7 +1819,7 @@ struct ProtobufUnittest_TestNestedChildExtension {
   /// Clears the value of `child`. Subsequent reads from it will return its default value.
   mutating func clearChild() {self._child = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -1852,7 +1852,7 @@ struct ProtobufUnittest_TestNestedChildExtensionData {
   /// Clears the value of `child`. Subsequent reads from it will return its default value.
   mutating func clearChild() {self._child = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -2179,7 +2179,7 @@ struct ProtobufUnittest_TestRequired {
   /// Clears the value of `optionalForeign`. Subsequent reads from it will return its default value.
   mutating func clearOptionalForeign() {_uniqueStorage()._optionalForeign = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -2221,7 +2221,7 @@ struct ProtobufUnittest_TestRequiredForeign {
   /// Clears the value of `optionalLazyMessage`. Subsequent reads from it will return its default value.
   mutating func clearOptionalLazyMessage() {self._optionalLazyMessage = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -2255,7 +2255,7 @@ struct ProtobufUnittest_TestRequiredMessage {
   /// Clears the value of `requiredMessage`. Subsequent reads from it will return its default value.
   mutating func clearRequiredMessage() {self._requiredMessage = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -2295,7 +2295,7 @@ struct ProtobufUnittest_TestNestedRequiredForeign {
   /// Clears the value of `dummy`. Subsequent reads from it will return its default value.
   mutating func clearDummy() {_uniqueStorage()._dummy = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -2317,7 +2317,7 @@ struct ProtobufUnittest_TestForeignNested {
   /// Clears the value of `foreignNested`. Subsequent reads from it will return its default value.
   mutating func clearForeignNested() {self._foreignNested = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -2330,23 +2330,23 @@ struct ProtobufUnittest_TestEmptyMessage {
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
 
 /// Like above, but declare all field numbers as potential extensions.  No
 /// actual extensions should ever be defined for this type.
-struct ProtobufUnittest_TestEmptyMessageWithExtensions: SwiftProtobuf.ExtensibleMessage {
+struct ProtobufUnittest_TestEmptyMessageWithExtensions: IntentSwiftProtobuf.ExtensibleMessage {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
-  var _protobuf_extensionFieldValues = SwiftProtobuf.ExtensionFieldValueSet()
+  var _protobuf_extensionFieldValues = IntentSwiftProtobuf.ExtensionFieldValueSet()
 }
 
 /// Needed for a Python test.
@@ -2355,7 +2355,7 @@ struct ProtobufUnittest_TestPickleNestedMessage {
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   struct NestedMessage {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -2371,7 +2371,7 @@ struct ProtobufUnittest_TestPickleNestedMessage {
     /// Clears the value of `bb`. Subsequent reads from it will return its default value.
     mutating func clearBb() {self._bb = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     struct NestedNestedMessage {
       // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -2387,7 +2387,7 @@ struct ProtobufUnittest_TestPickleNestedMessage {
       /// Clears the value of `cc`. Subsequent reads from it will return its default value.
       mutating func clearCc() {self._cc = nil}
 
-      var unknownFields = SwiftProtobuf.UnknownStorage()
+      var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
       init() {}
 
@@ -2402,16 +2402,16 @@ struct ProtobufUnittest_TestPickleNestedMessage {
   init() {}
 }
 
-struct ProtobufUnittest_TestMultipleExtensionRanges: SwiftProtobuf.ExtensibleMessage {
+struct ProtobufUnittest_TestMultipleExtensionRanges: IntentSwiftProtobuf.ExtensibleMessage {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
-  var _protobuf_extensionFieldValues = SwiftProtobuf.ExtensionFieldValueSet()
+  var _protobuf_extensionFieldValues = IntentSwiftProtobuf.ExtensionFieldValueSet()
 }
 
 /// Test that really large tag numbers don't break anything.
@@ -2440,7 +2440,7 @@ struct ProtobufUnittest_TestReallyLargeTagNumber {
   /// Clears the value of `bb`. Subsequent reads from it will return its default value.
   mutating func clearBb() {self._bb = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -2471,7 +2471,7 @@ struct ProtobufUnittest_TestRecursiveMessage {
   /// Clears the value of `i`. Subsequent reads from it will return its default value.
   mutating func clearI() {_uniqueStorage()._i = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -2502,7 +2502,7 @@ struct ProtobufUnittest_TestMutualRecursionA {
   /// Clears the value of `subGroup`. Subsequent reads from it will return its default value.
   mutating func clearSubGroup() {_uniqueStorage()._subGroup = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   struct SubMessage {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -2518,7 +2518,7 @@ struct ProtobufUnittest_TestMutualRecursionA {
     /// Clears the value of `b`. Subsequent reads from it will return its default value.
     mutating func clearB() {_uniqueStorage()._b = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -2549,7 +2549,7 @@ struct ProtobufUnittest_TestMutualRecursionA {
     /// Clears the value of `notInThisScc`. Subsequent reads from it will return its default value.
     mutating func clearNotInThisScc() {_uniqueStorage()._notInThisScc = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -2584,7 +2584,7 @@ struct ProtobufUnittest_TestMutualRecursionB {
   /// Clears the value of `optionalInt32`. Subsequent reads from it will return its default value.
   mutating func clearOptionalInt32() {_uniqueStorage()._optionalInt32 = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -2605,7 +2605,7 @@ struct ProtobufUnittest_TestIsInitialized {
   /// Clears the value of `subMessage`. Subsequent reads from it will return its default value.
   mutating func clearSubMessage() {self._subMessage = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   struct SubMessage {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -2621,7 +2621,7 @@ struct ProtobufUnittest_TestIsInitialized {
     /// Clears the value of `subGroup`. Subsequent reads from it will return its default value.
     mutating func clearSubGroup() {self._subGroup = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     struct SubGroup {
       // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -2637,7 +2637,7 @@ struct ProtobufUnittest_TestIsInitialized {
       /// Clears the value of `i`. Subsequent reads from it will return its default value.
       mutating func clearI() {self._i = nil}
 
-      var unknownFields = SwiftProtobuf.UnknownStorage()
+      var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
       init() {}
 
@@ -2691,7 +2691,7 @@ struct ProtobufUnittest_TestDupFieldNumber {
   /// Clears the value of `bar`. Subsequent reads from it will return its default value.
   mutating func clearBar() {self._bar = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   struct Foo {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -2707,7 +2707,7 @@ struct ProtobufUnittest_TestDupFieldNumber {
     /// Clears the value of `a`. Subsequent reads from it will return its default value.
     mutating func clearA() {self._a = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -2728,7 +2728,7 @@ struct ProtobufUnittest_TestDupFieldNumber {
     /// Clears the value of `a`. Subsequent reads from it will return its default value.
     mutating func clearA() {self._a = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -2757,7 +2757,7 @@ struct ProtobufUnittest_TestEagerMessage {
   /// Clears the value of `subMessage`. Subsequent reads from it will return its default value.
   mutating func clearSubMessage() {self._subMessage = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -2778,7 +2778,7 @@ struct ProtobufUnittest_TestLazyMessage {
   /// Clears the value of `subMessage`. Subsequent reads from it will return its default value.
   mutating func clearSubMessage() {self._subMessage = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -2817,7 +2817,7 @@ struct ProtobufUnittest_TestEagerMaybeLazy {
   /// Clears the value of `messageBaz`. Subsequent reads from it will return its default value.
   mutating func clearMessageBaz() {self._messageBaz = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   struct NestedMessage {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -2833,7 +2833,7 @@ struct ProtobufUnittest_TestEagerMaybeLazy {
     /// Clears the value of `packed`. Subsequent reads from it will return its default value.
     mutating func clearPacked() {self._packed = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -2862,7 +2862,7 @@ struct ProtobufUnittest_TestNestedMessageHasBits {
   /// Clears the value of `optionalNestedMessage`. Subsequent reads from it will return its default value.
   mutating func clearOptionalNestedMessage() {self._optionalNestedMessage = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   struct NestedMessage {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -2873,7 +2873,7 @@ struct ProtobufUnittest_TestNestedMessageHasBits {
 
     var nestedmessageRepeatedForeignmessage: [ProtobufUnittest_ForeignMessage] = []
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
   }
@@ -2956,7 +2956,7 @@ struct ProtobufUnittest_TestCamelCaseFieldNames {
 
   var repeatedCordField: [String] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -2970,7 +2970,7 @@ struct ProtobufUnittest_TestCamelCaseFieldNames {
 
 /// We list fields out of order, to ensure that we're using field number and not
 /// field index to determine serialization order.
-struct ProtobufUnittest_TestFieldOrderings: SwiftProtobuf.ExtensibleMessage {
+struct ProtobufUnittest_TestFieldOrderings: IntentSwiftProtobuf.ExtensibleMessage {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3011,7 +3011,7 @@ struct ProtobufUnittest_TestFieldOrderings: SwiftProtobuf.ExtensibleMessage {
   /// Clears the value of `optionalNestedMessage`. Subsequent reads from it will return its default value.
   mutating func clearOptionalNestedMessage() {self._optionalNestedMessage = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   struct NestedMessage {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -3039,7 +3039,7 @@ struct ProtobufUnittest_TestFieldOrderings: SwiftProtobuf.ExtensibleMessage {
     /// Clears the value of `bb`. Subsequent reads from it will return its default value.
     mutating func clearBb() {self._bb = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -3049,7 +3049,7 @@ struct ProtobufUnittest_TestFieldOrderings: SwiftProtobuf.ExtensibleMessage {
 
   init() {}
 
-  var _protobuf_extensionFieldValues = SwiftProtobuf.ExtensionFieldValueSet()
+  var _protobuf_extensionFieldValues = IntentSwiftProtobuf.ExtensionFieldValueSet()
   fileprivate var _myString: String? = nil
   fileprivate var _myInt: Int64? = nil
   fileprivate var _myFloat: Float? = nil
@@ -3070,7 +3070,7 @@ struct ProtobufUnittest_TestExtensionOrderings1 {
   /// Clears the value of `myString`. Subsequent reads from it will return its default value.
   mutating func clearMyString() {self._myString = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -3091,7 +3091,7 @@ struct ProtobufUnittest_TestExtensionOrderings2 {
   /// Clears the value of `myString`. Subsequent reads from it will return its default value.
   mutating func clearMyString() {self._myString = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   struct TestExtensionOrderings3 {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -3107,7 +3107,7 @@ struct ProtobufUnittest_TestExtensionOrderings2 {
     /// Clears the value of `myString`. Subsequent reads from it will return its default value.
     mutating func clearMyString() {self._myString = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -3379,7 +3379,7 @@ struct ProtobufUnittest_TestExtremeDefaultValues {
   /// Clears the value of `replacementString`. Subsequent reads from it will return its default value.
   mutating func clearReplacementString() {_uniqueStorage()._replacementString = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -3400,7 +3400,7 @@ struct ProtobufUnittest_SparseEnumMessage {
   /// Clears the value of `sparseEnum`. Subsequent reads from it will return its default value.
   mutating func clearSparseEnum() {self._sparseEnum = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -3422,7 +3422,7 @@ struct ProtobufUnittest_OneString {
   /// Clears the value of `data`. Subsequent reads from it will return its default value.
   mutating func clearData() {self._data = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -3436,7 +3436,7 @@ struct ProtobufUnittest_MoreString {
 
   var data: [String] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
@@ -3455,7 +3455,7 @@ struct ProtobufUnittest_OneBytes {
   /// Clears the value of `data`. Subsequent reads from it will return its default value.
   mutating func clearData() {self._data = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -3469,7 +3469,7 @@ struct ProtobufUnittest_MoreBytes {
 
   var data: [Data] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
@@ -3767,7 +3767,7 @@ struct ProtobufUnittest_ManyOptionalString {
   /// Clears the value of `str32`. Subsequent reads from it will return its default value.
   mutating func clearStr32() {_uniqueStorage()._str32 = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -3789,7 +3789,7 @@ struct ProtobufUnittest_Int32Message {
   /// Clears the value of `data`. Subsequent reads from it will return its default value.
   mutating func clearData() {self._data = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -3810,7 +3810,7 @@ struct ProtobufUnittest_Uint32Message {
   /// Clears the value of `data`. Subsequent reads from it will return its default value.
   mutating func clearData() {self._data = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -3831,7 +3831,7 @@ struct ProtobufUnittest_Int64Message {
   /// Clears the value of `data`. Subsequent reads from it will return its default value.
   mutating func clearData() {self._data = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -3852,7 +3852,7 @@ struct ProtobufUnittest_Uint64Message {
   /// Clears the value of `data`. Subsequent reads from it will return its default value.
   mutating func clearData() {self._data = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -3873,7 +3873,7 @@ struct ProtobufUnittest_BoolMessage {
   /// Clears the value of `data`. Subsequent reads from it will return its default value.
   mutating func clearData() {self._data = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -3920,7 +3920,7 @@ struct ProtobufUnittest_TestOneof {
     set {foo = .fooGroup(newValue)}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   enum OneOf_Foo: Equatable {
     case fooInt(Int32)
@@ -3979,7 +3979,7 @@ struct ProtobufUnittest_TestOneof {
     /// Clears the value of `b`. Subsequent reads from it will return its default value.
     mutating func clearB() {self._b = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -4031,7 +4031,7 @@ struct ProtobufUnittest_TestOneofBackwardsCompatible {
   /// Clears the value of `fooGroup`. Subsequent reads from it will return its default value.
   mutating func clearFooGroup() {self._fooGroup = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   struct FooGroup {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -4056,7 +4056,7 @@ struct ProtobufUnittest_TestOneofBackwardsCompatible {
     /// Clears the value of `b`. Subsequent reads from it will return its default value.
     mutating func clearB() {self._b = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -4251,7 +4251,7 @@ struct ProtobufUnittest_TestOneof2 {
   /// Clears the value of `bazString`. Subsequent reads from it will return its default value.
   mutating func clearBazString() {self._bazString = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   enum OneOf_Foo: Equatable {
     case fooInt(Int32)
@@ -4376,7 +4376,7 @@ struct ProtobufUnittest_TestOneof2 {
   #endif
   }
 
-  enum NestedEnum: SwiftProtobuf.Enum {
+  enum NestedEnum: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
     case foo // = 1
     case bar // = 2
@@ -4428,7 +4428,7 @@ struct ProtobufUnittest_TestOneof2 {
     /// Clears the value of `b`. Subsequent reads from it will return its default value.
     mutating func clearB() {self._b = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -4452,7 +4452,7 @@ struct ProtobufUnittest_TestOneof2 {
 
     var corgeInt: [Int32] = []
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -4512,7 +4512,7 @@ struct ProtobufUnittest_TestRequiredOneof {
     set {foo = .fooLazyMessage(newValue)}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   enum OneOf_Foo: Equatable {
     case fooInt(Int32)
@@ -4579,7 +4579,7 @@ struct ProtobufUnittest_TestRequiredOneof {
     /// Clears the value of `requiredDouble`. Subsequent reads from it will return its default value.
     mutating func clearRequiredDouble() {self._requiredDouble = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -4622,7 +4622,7 @@ struct ProtobufUnittest_TestPackedTypes {
 
   var packedEnum: [ProtobufUnittest_ForeignEnum] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
@@ -4662,33 +4662,33 @@ struct ProtobufUnittest_TestUnpackedTypes {
 
   var unpackedEnum: [ProtobufUnittest_ForeignEnum] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
 
-struct ProtobufUnittest_TestPackedExtensions: SwiftProtobuf.ExtensibleMessage {
+struct ProtobufUnittest_TestPackedExtensions: IntentSwiftProtobuf.ExtensibleMessage {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
-  var _protobuf_extensionFieldValues = SwiftProtobuf.ExtensionFieldValueSet()
+  var _protobuf_extensionFieldValues = IntentSwiftProtobuf.ExtensionFieldValueSet()
 }
 
-struct ProtobufUnittest_TestUnpackedExtensions: SwiftProtobuf.ExtensibleMessage {
+struct ProtobufUnittest_TestUnpackedExtensions: IntentSwiftProtobuf.ExtensibleMessage {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
-  var _protobuf_extensionFieldValues = SwiftProtobuf.ExtensionFieldValueSet()
+  var _protobuf_extensionFieldValues = IntentSwiftProtobuf.ExtensionFieldValueSet()
 }
 
 /// Used by ExtensionSetTest/DynamicExtensions.  The test actually builds
@@ -4748,9 +4748,9 @@ struct ProtobufUnittest_TestDynamicExtensions {
 
   var packedExtension: [Int32] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
-  enum DynamicEnumType: SwiftProtobuf.Enum {
+  enum DynamicEnumType: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
     case dynamicFoo // = 2200
     case dynamicBar // = 2201
@@ -4793,7 +4793,7 @@ struct ProtobufUnittest_TestDynamicExtensions {
     /// Clears the value of `dynamicField`. Subsequent reads from it will return its default value.
     mutating func clearDynamicField() {self._dynamicField = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -4830,7 +4830,7 @@ struct ProtobufUnittest_TestRepeatedString {
 
   var repeatedBytes12: [Data] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
@@ -4858,14 +4858,14 @@ struct ProtobufUnittest_TestRepeatedScalarDifferentTagSizes {
 
   var repeatedUint64: [UInt64] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
 
 /// Test that if an optional or required message/group field appears multiple
 /// times in the input, they need to be merged.
-struct ProtobufUnittest_TestParsingMerge: SwiftProtobuf.ExtensibleMessage {
+struct ProtobufUnittest_TestParsingMerge: IntentSwiftProtobuf.ExtensibleMessage {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4901,7 +4901,7 @@ struct ProtobufUnittest_TestParsingMerge: SwiftProtobuf.ExtensibleMessage {
 
   var repeatedGroup: [ProtobufUnittest_TestParsingMerge.RepeatedGroup] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   /// RepeatedFieldsGenerator defines matching field types as TestParsingMerge,
   /// except that all fields are repeated. In the tests, we will serialize the
@@ -4927,7 +4927,7 @@ struct ProtobufUnittest_TestParsingMerge: SwiftProtobuf.ExtensibleMessage {
 
     var ext2: [ProtobufUnittest_TestAllTypes] = []
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     struct Group1 {
       // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -4943,7 +4943,7 @@ struct ProtobufUnittest_TestParsingMerge: SwiftProtobuf.ExtensibleMessage {
       /// Clears the value of `field1`. Subsequent reads from it will return its default value.
       mutating func clearField1() {self._field1 = nil}
 
-      var unknownFields = SwiftProtobuf.UnknownStorage()
+      var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
       init() {}
 
@@ -4964,7 +4964,7 @@ struct ProtobufUnittest_TestParsingMerge: SwiftProtobuf.ExtensibleMessage {
       /// Clears the value of `field1`. Subsequent reads from it will return its default value.
       mutating func clearField1() {self._field1 = nil}
 
-      var unknownFields = SwiftProtobuf.UnknownStorage()
+      var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
       init() {}
 
@@ -4988,7 +4988,7 @@ struct ProtobufUnittest_TestParsingMerge: SwiftProtobuf.ExtensibleMessage {
     /// Clears the value of `optionalGroupAllTypes`. Subsequent reads from it will return its default value.
     mutating func clearOptionalGroupAllTypes() {self._optionalGroupAllTypes = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -5009,7 +5009,7 @@ struct ProtobufUnittest_TestParsingMerge: SwiftProtobuf.ExtensibleMessage {
     /// Clears the value of `repeatedGroupAllTypes`. Subsequent reads from it will return its default value.
     mutating func clearRepeatedGroupAllTypes() {self._repeatedGroupAllTypes = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -5018,7 +5018,7 @@ struct ProtobufUnittest_TestParsingMerge: SwiftProtobuf.ExtensibleMessage {
 
   init() {}
 
-  var _protobuf_extensionFieldValues = SwiftProtobuf.ExtensionFieldValueSet()
+  var _protobuf_extensionFieldValues = IntentSwiftProtobuf.ExtensionFieldValueSet()
   fileprivate var _requiredAllTypes: ProtobufUnittest_TestAllTypes? = nil
   fileprivate var _optionalAllTypes: ProtobufUnittest_TestAllTypes? = nil
   fileprivate var _optionalGroup: ProtobufUnittest_TestParsingMerge.OptionalGroup? = nil
@@ -5040,7 +5040,7 @@ struct ProtobufUnittest_TestMergeException {
   /// Clears the value of `allExtensions`. Subsequent reads from it will return its default value.
   mutating func clearAllExtensions() {self._allExtensions = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -5062,7 +5062,7 @@ struct ProtobufUnittest_TestCommentInjectionMessage {
   /// Clears the value of `a`. Subsequent reads from it will return its default value.
   mutating func clearA() {self._a = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -5130,7 +5130,7 @@ struct ProtobufUnittest_TestMessageSize {
   /// Clears the value of `m6`. Subsequent reads from it will return its default value.
   mutating func clearM6() {self._m6 = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -5148,7 +5148,7 @@ struct ProtobufUnittest_FooRequest {
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
@@ -5158,7 +5158,7 @@ struct ProtobufUnittest_FooResponse {
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
@@ -5168,7 +5168,7 @@ struct ProtobufUnittest_FooClientMessage {
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
@@ -5178,7 +5178,7 @@ struct ProtobufUnittest_FooServerMessage {
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
@@ -5188,7 +5188,7 @@ struct ProtobufUnittest_BarRequest {
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
@@ -5198,7 +5198,7 @@ struct ProtobufUnittest_BarResponse {
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 }
@@ -5271,7 +5271,7 @@ struct ProtobufUnittest_TestJsonName {
   /// Clears the value of `fieldname7`. Subsequent reads from it will return its default value.
   mutating func clearFieldname7() {self._fieldname7 = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -5284,7 +5284,7 @@ struct ProtobufUnittest_TestJsonName {
   fileprivate var _fieldname7: Int32? = nil
 }
 
-struct ProtobufUnittest_TestHugeFieldNumbers: SwiftProtobuf.ExtensibleMessage {
+struct ProtobufUnittest_TestHugeFieldNumbers: IntentSwiftProtobuf.ExtensibleMessage {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -5392,7 +5392,7 @@ struct ProtobufUnittest_TestHugeFieldNumbers: SwiftProtobuf.ExtensibleMessage {
     set {oneofField = .oneofBytes(newValue)}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   enum OneOf_OneofField: Equatable {
     case oneofUint32(UInt32)
@@ -5442,7 +5442,7 @@ struct ProtobufUnittest_TestHugeFieldNumbers: SwiftProtobuf.ExtensibleMessage {
     /// Clears the value of `groupA`. Subsequent reads from it will return its default value.
     mutating func clearGroupA() {self._groupA = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -5451,7 +5451,7 @@ struct ProtobufUnittest_TestHugeFieldNumbers: SwiftProtobuf.ExtensibleMessage {
 
   init() {}
 
-  var _protobuf_extensionFieldValues = SwiftProtobuf.ExtensionFieldValueSet()
+  var _protobuf_extensionFieldValues = IntentSwiftProtobuf.ExtensionFieldValueSet()
   fileprivate var _optionalInt32: Int32? = nil
   fileprivate var _fixed32: Int32? = nil
   fileprivate var _optionalEnum: ProtobufUnittest_ForeignEnum? = nil
@@ -5461,7 +5461,7 @@ struct ProtobufUnittest_TestHugeFieldNumbers: SwiftProtobuf.ExtensibleMessage {
   fileprivate var _optionalGroup: ProtobufUnittest_TestHugeFieldNumbers.OptionalGroup? = nil
 }
 
-struct ProtobufUnittest_TestExtensionInsideTable: SwiftProtobuf.ExtensibleMessage {
+struct ProtobufUnittest_TestExtensionInsideTable: IntentSwiftProtobuf.ExtensibleMessage {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -5547,11 +5547,11 @@ struct ProtobufUnittest_TestExtensionInsideTable: SwiftProtobuf.ExtensibleMessag
   /// Clears the value of `field10`. Subsequent reads from it will return its default value.
   mutating func clearField10() {self._field10 = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
-  var _protobuf_extensionFieldValues = SwiftProtobuf.ExtensionFieldValueSet()
+  var _protobuf_extensionFieldValues = IntentSwiftProtobuf.ExtensionFieldValueSet()
   fileprivate var _field1: Int32? = nil
   fileprivate var _field2: Int32? = nil
   fileprivate var _field3: Int32? = nil
@@ -5578,7 +5578,7 @@ struct ProtobufUnittest_TestNestedGroupExtensionOuter {
   /// Clears the value of `layer1OptionalGroup`. Subsequent reads from it will return its default value.
   mutating func clearLayer1OptionalGroup() {self._layer1OptionalGroup = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   struct Layer1OptionalGroup {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -5589,9 +5589,9 @@ struct ProtobufUnittest_TestNestedGroupExtensionOuter {
 
     var layer2AnotherOptionalRepeatedGroup: [ProtobufUnittest_TestNestedGroupExtensionOuter.Layer1OptionalGroup.Layer2AnotherOptionalRepeatedGroup] = []
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
-    struct Layer2RepeatedGroup: SwiftProtobuf.ExtensibleMessage {
+    struct Layer2RepeatedGroup: IntentSwiftProtobuf.ExtensibleMessage {
       // SwiftProtobuf.Message conformance is added in an extension below. See the
       // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
       // methods supported on all messages.
@@ -5605,11 +5605,11 @@ struct ProtobufUnittest_TestNestedGroupExtensionOuter {
       /// Clears the value of `anotherField`. Subsequent reads from it will return its default value.
       mutating func clearAnotherField() {self._anotherField = nil}
 
-      var unknownFields = SwiftProtobuf.UnknownStorage()
+      var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
       init() {}
 
-      var _protobuf_extensionFieldValues = SwiftProtobuf.ExtensionFieldValueSet()
+      var _protobuf_extensionFieldValues = IntentSwiftProtobuf.ExtensionFieldValueSet()
       fileprivate var _anotherField: String? = nil
     }
 
@@ -5627,7 +5627,7 @@ struct ProtobufUnittest_TestNestedGroupExtensionOuter {
       /// Clears the value of `butWhyTho`. Subsequent reads from it will return its default value.
       mutating func clearButWhyTho() {self._butWhyTho = nil}
 
-      var unknownFields = SwiftProtobuf.UnknownStorage()
+      var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
       init() {}
 
@@ -5656,14 +5656,14 @@ struct ProtobufUnittest_TestNestedGroupExtensionInnerExtension {
   /// Clears the value of `innerName`. Subsequent reads from it will return its default value.
   mutating func clearInnerName() {self._innerName = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
   fileprivate var _innerName: String? = nil
 }
 
-struct ProtobufUnittest_TestExtensionRangeSerialize: SwiftProtobuf.ExtensibleMessage {
+struct ProtobufUnittest_TestExtensionRangeSerialize: IntentSwiftProtobuf.ExtensibleMessage {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -5704,11 +5704,11 @@ struct ProtobufUnittest_TestExtensionRangeSerialize: SwiftProtobuf.ExtensibleMes
   /// Clears the value of `fooFour`. Subsequent reads from it will return its default value.
   mutating func clearFooFour() {self._fooFour = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
-  var _protobuf_extensionFieldValues = SwiftProtobuf.ExtensionFieldValueSet()
+  var _protobuf_extensionFieldValues = IntentSwiftProtobuf.ExtensionFieldValueSet()
   fileprivate var _fooOne: Int32? = nil
   fileprivate var _fooTwo: Int32? = nil
   fileprivate var _fooThree: Int32? = nil
@@ -5756,7 +5756,7 @@ struct ProtobufUnittest_TestVerifyInt32Simple {
   /// Clears the value of `optionalInt3264`. Subsequent reads from it will return its default value.
   mutating func clearOptionalInt3264() {self._optionalInt3264 = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -5818,7 +5818,7 @@ struct ProtobufUnittest_TestVerifyInt32 {
 
   var repeatedAllTypes: [ProtobufUnittest_TestAllTypes] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -5908,7 +5908,7 @@ struct ProtobufUnittest_TestVerifyMostlyInt32 {
 
   var repeatedAllTypes: [ProtobufUnittest_TestAllTypes] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -6010,7 +6010,7 @@ struct ProtobufUnittest_TestVerifyMostlyInt32BigFieldNumber {
 
   var repeatedAllTypes: [ProtobufUnittest_TestAllTypes] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -6066,7 +6066,7 @@ struct ProtobufUnittest_TestVerifyUint32Simple {
   /// Clears the value of `optionalUint3264`. Subsequent reads from it will return its default value.
   mutating func clearOptionalUint3264() {self._optionalUint3264 = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -6128,7 +6128,7 @@ struct ProtobufUnittest_TestVerifyUint32 {
 
   var repeatedAllTypes: [ProtobufUnittest_TestAllTypes] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -6191,7 +6191,7 @@ struct ProtobufUnittest_TestVerifyOneUint32 {
 
   var repeatedAllTypes: [ProtobufUnittest_TestAllTypes] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -6263,7 +6263,7 @@ struct ProtobufUnittest_TestVerifyOneInt32BigFieldNumber {
 
   var repeatedAllTypes: [ProtobufUnittest_TestAllTypes] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -6345,7 +6345,7 @@ struct ProtobufUnittest_TestVerifyInt32BigFieldNumber {
 
   var repeatedAllTypes: [ProtobufUnittest_TestAllTypes] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -6428,7 +6428,7 @@ struct ProtobufUnittest_TestVerifyUint32BigFieldNumber {
 
   var repeatedAllTypes: [ProtobufUnittest_TestAllTypes] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -6455,7 +6455,7 @@ struct ProtobufUnittest_TestVerifyBigFieldNumberUint32 {
   /// Clears the value of `optionalNested`. Subsequent reads from it will return its default value.
   mutating func clearOptionalNested() {self._optionalNested = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   struct Nested {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -6548,7 +6548,7 @@ struct ProtobufUnittest_TestVerifyBigFieldNumberUint32 {
       set {_uniqueStorage()._repeatedNested = newValue}
     }
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
@@ -6805,9 +6805,9 @@ struct ProtobufUnittest_EnumParseTester {
   /// Clears the value of `otherField`. Subsequent reads from it will return its default value.
   mutating func clearOtherField() {_uniqueStorage()._otherField = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
-  enum SeqSmall0: SwiftProtobuf.Enum {
+  enum SeqSmall0: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
     case `default` // = 0
     case seqSmall01 // = 1
@@ -6836,7 +6836,7 @@ struct ProtobufUnittest_EnumParseTester {
 
   }
 
-  enum SeqSmall1: SwiftProtobuf.Enum {
+  enum SeqSmall1: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
     case `default` // = 1
     case seqSmall12 // = 2
@@ -6865,7 +6865,7 @@ struct ProtobufUnittest_EnumParseTester {
 
   }
 
-  enum SeqLarge: SwiftProtobuf.Enum {
+  enum SeqLarge: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
     case `default` // = -1
     case seqLarge0 // = 0
@@ -6990,7 +6990,7 @@ struct ProtobufUnittest_EnumParseTester {
 
   }
 
-  enum Arbitrary: SwiftProtobuf.Enum {
+  enum Arbitrary: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
     case `default` // = -123123
     case arbitrary1 // = -123
@@ -7109,7 +7109,7 @@ struct ProtobufUnittest_BoolParseTester {
   /// Clears the value of `otherField`. Subsequent reads from it will return its default value.
   mutating func clearOtherField() {self._otherField = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -7157,7 +7157,7 @@ struct ProtobufUnittest_StringParseTester {
 
   var repeatedStringHifield: [String] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -7189,7 +7189,7 @@ struct ProtobufUnittest_BadFieldNames {
   /// Clears the value of ``for``. Subsequent reads from it will return its default value.
   mutating func clearFor() {self._for = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -7211,7 +7211,7 @@ struct ProtobufUnittest_RedactedFields {
   /// Clears the value of `optionalRedactedString`. Subsequent reads from it will return its default value.
   mutating func clearOptionalRedactedString() {self._optionalRedactedString = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -9332,7 +9332,7 @@ extension ProtobufUnittest_TestUnpackedExtensions {
 /// this .proto file. It can be used any place an `SwiftProtobuf.ExtensionMap` is needed
 /// in parsing, or it can be combined with other `SwiftProtobuf.SimpleExtensionMap`s to create
 /// a larger `SwiftProtobuf.SimpleExtensionMap`.
-let ProtobufUnittest_Unittest_Extensions: SwiftProtobuf.SimpleExtensionMap = [
+let ProtobufUnittest_Unittest_Extensions: IntentSwiftProtobuf.SimpleExtensionMap = [
   ProtobufUnittest_Extensions_optional_int32_extension,
   ProtobufUnittest_Extensions_optional_int64_extension,
   ProtobufUnittest_Extensions_optional_uint32_extension,
@@ -9467,562 +9467,562 @@ let ProtobufUnittest_Unittest_Extensions: SwiftProtobuf.SimpleExtensionMap = [
 // accessors for the extension fields on the messages directly.
 
 /// Singular
-let ProtobufUnittest_Extensions_optional_int32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 1,
   fieldName: "protobuf_unittest.optional_int32_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_int64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_int64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 2,
   fieldName: "protobuf_unittest.optional_int64_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_uint32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_uint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 3,
   fieldName: "protobuf_unittest.optional_uint32_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_uint64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufUInt64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_uint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufUInt64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 4,
   fieldName: "protobuf_unittest.optional_uint64_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_sint32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSInt32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_sint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSInt32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 5,
   fieldName: "protobuf_unittest.optional_sint32_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_sint64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSInt64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_sint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSInt64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 6,
   fieldName: "protobuf_unittest.optional_sint64_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_fixed32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_fixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 7,
   fieldName: "protobuf_unittest.optional_fixed32_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_fixed64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFixed64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_fixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFixed64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 8,
   fieldName: "protobuf_unittest.optional_fixed64_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_sfixed32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSFixed32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_sfixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSFixed32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 9,
   fieldName: "protobuf_unittest.optional_sfixed32_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_sfixed64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSFixed64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_sfixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSFixed64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 10,
   fieldName: "protobuf_unittest.optional_sfixed64_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_float_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFloat>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_float_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFloat>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 11,
   fieldName: "protobuf_unittest.optional_float_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_double_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufDouble>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_double_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufDouble>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 12,
   fieldName: "protobuf_unittest.optional_double_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_bool_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_bool_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 13,
   fieldName: "protobuf_unittest.optional_bool_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_string_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_string_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 14,
   fieldName: "protobuf_unittest.optional_string_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_bytes_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBytes>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_bytes_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBytes>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 15,
   fieldName: "protobuf_unittest.optional_bytes_extension"
 )
 
-let ProtobufUnittest_Extensions_OptionalGroup_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalGroupExtensionField<ProtobufUnittest_OptionalGroup_extension>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_OptionalGroup_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalGroupExtensionField<ProtobufUnittest_OptionalGroup_extension>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 16,
   fieldName: "protobuf_unittest.optionalgroup_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_nested_message_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestAllTypes.NestedMessage>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_nested_message_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestAllTypes.NestedMessage>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 18,
   fieldName: "protobuf_unittest.optional_nested_message_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_foreign_message_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_ForeignMessage>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_foreign_message_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_ForeignMessage>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 19,
   fieldName: "protobuf_unittest.optional_foreign_message_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_import_message_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittestImport_ImportMessage>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_import_message_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittestImport_ImportMessage>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 20,
   fieldName: "protobuf_unittest.optional_import_message_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_nested_enum_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalEnumExtensionField<ProtobufUnittest_TestAllTypes.NestedEnum>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_nested_enum_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalEnumExtensionField<ProtobufUnittest_TestAllTypes.NestedEnum>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 21,
   fieldName: "protobuf_unittest.optional_nested_enum_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_foreign_enum_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalEnumExtensionField<ProtobufUnittest_ForeignEnum>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_foreign_enum_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalEnumExtensionField<ProtobufUnittest_ForeignEnum>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 22,
   fieldName: "protobuf_unittest.optional_foreign_enum_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_import_enum_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalEnumExtensionField<ProtobufUnittestImport_ImportEnum>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_import_enum_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalEnumExtensionField<ProtobufUnittestImport_ImportEnum>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 23,
   fieldName: "protobuf_unittest.optional_import_enum_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_string_piece_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_string_piece_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 24,
   fieldName: "protobuf_unittest.optional_string_piece_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_cord_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_cord_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 25,
   fieldName: "protobuf_unittest.optional_cord_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_public_import_message_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittestImport_PublicImportMessage>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_public_import_message_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittestImport_PublicImportMessage>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 26,
   fieldName: "protobuf_unittest.optional_public_import_message_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_lazy_message_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestAllTypes.NestedMessage>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_lazy_message_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestAllTypes.NestedMessage>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 27,
   fieldName: "protobuf_unittest.optional_lazy_message_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_unverified_lazy_message_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestAllTypes.NestedMessage>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_unverified_lazy_message_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestAllTypes.NestedMessage>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 28,
   fieldName: "protobuf_unittest.optional_unverified_lazy_message_extension"
 )
 
 /// Repeated
-let ProtobufUnittest_Extensions_repeated_int32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 31,
   fieldName: "protobuf_unittest.repeated_int32_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_int64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufInt64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_int64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufInt64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 32,
   fieldName: "protobuf_unittest.repeated_int64_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_uint32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_uint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 33,
   fieldName: "protobuf_unittest.repeated_uint32_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_uint64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufUInt64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_uint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufUInt64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 34,
   fieldName: "protobuf_unittest.repeated_uint64_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_sint32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSInt32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_sint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSInt32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 35,
   fieldName: "protobuf_unittest.repeated_sint32_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_sint64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSInt64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_sint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSInt64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 36,
   fieldName: "protobuf_unittest.repeated_sint64_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_fixed32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_fixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 37,
   fieldName: "protobuf_unittest.repeated_fixed32_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_fixed64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFixed64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_fixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFixed64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 38,
   fieldName: "protobuf_unittest.repeated_fixed64_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_sfixed32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSFixed32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_sfixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSFixed32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 39,
   fieldName: "protobuf_unittest.repeated_sfixed32_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_sfixed64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSFixed64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_sfixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSFixed64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 40,
   fieldName: "protobuf_unittest.repeated_sfixed64_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_float_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFloat>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_float_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFloat>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 41,
   fieldName: "protobuf_unittest.repeated_float_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_double_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufDouble>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_double_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufDouble>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 42,
   fieldName: "protobuf_unittest.repeated_double_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_bool_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_bool_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 43,
   fieldName: "protobuf_unittest.repeated_bool_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_string_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_string_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 44,
   fieldName: "protobuf_unittest.repeated_string_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_bytes_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufBytes>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_bytes_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufBytes>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 45,
   fieldName: "protobuf_unittest.repeated_bytes_extension"
 )
 
-let ProtobufUnittest_Extensions_RepeatedGroup_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedGroupExtensionField<ProtobufUnittest_RepeatedGroup_extension>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_RepeatedGroup_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedGroupExtensionField<ProtobufUnittest_RepeatedGroup_extension>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 46,
   fieldName: "protobuf_unittest.repeatedgroup_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_nested_message_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedMessageExtensionField<ProtobufUnittest_TestAllTypes.NestedMessage>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_nested_message_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedMessageExtensionField<ProtobufUnittest_TestAllTypes.NestedMessage>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 48,
   fieldName: "protobuf_unittest.repeated_nested_message_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_foreign_message_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedMessageExtensionField<ProtobufUnittest_ForeignMessage>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_foreign_message_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedMessageExtensionField<ProtobufUnittest_ForeignMessage>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 49,
   fieldName: "protobuf_unittest.repeated_foreign_message_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_import_message_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedMessageExtensionField<ProtobufUnittestImport_ImportMessage>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_import_message_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedMessageExtensionField<ProtobufUnittestImport_ImportMessage>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 50,
   fieldName: "protobuf_unittest.repeated_import_message_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_nested_enum_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedEnumExtensionField<ProtobufUnittest_TestAllTypes.NestedEnum>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_nested_enum_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedEnumExtensionField<ProtobufUnittest_TestAllTypes.NestedEnum>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 51,
   fieldName: "protobuf_unittest.repeated_nested_enum_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_foreign_enum_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedEnumExtensionField<ProtobufUnittest_ForeignEnum>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_foreign_enum_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedEnumExtensionField<ProtobufUnittest_ForeignEnum>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 52,
   fieldName: "protobuf_unittest.repeated_foreign_enum_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_import_enum_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedEnumExtensionField<ProtobufUnittestImport_ImportEnum>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_import_enum_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedEnumExtensionField<ProtobufUnittestImport_ImportEnum>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 53,
   fieldName: "protobuf_unittest.repeated_import_enum_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_string_piece_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_string_piece_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 54,
   fieldName: "protobuf_unittest.repeated_string_piece_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_cord_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_cord_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 55,
   fieldName: "protobuf_unittest.repeated_cord_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_lazy_message_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedMessageExtensionField<ProtobufUnittest_TestAllTypes.NestedMessage>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_lazy_message_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedMessageExtensionField<ProtobufUnittest_TestAllTypes.NestedMessage>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 57,
   fieldName: "protobuf_unittest.repeated_lazy_message_extension"
 )
 
 /// Singular with defaults
-let ProtobufUnittest_Extensions_default_int32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 61,
   fieldName: "protobuf_unittest.default_int32_extension"
 )
 
-let ProtobufUnittest_Extensions_default_int64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_int64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 62,
   fieldName: "protobuf_unittest.default_int64_extension"
 )
 
-let ProtobufUnittest_Extensions_default_uint32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_uint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 63,
   fieldName: "protobuf_unittest.default_uint32_extension"
 )
 
-let ProtobufUnittest_Extensions_default_uint64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufUInt64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_uint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufUInt64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 64,
   fieldName: "protobuf_unittest.default_uint64_extension"
 )
 
-let ProtobufUnittest_Extensions_default_sint32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSInt32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_sint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSInt32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 65,
   fieldName: "protobuf_unittest.default_sint32_extension"
 )
 
-let ProtobufUnittest_Extensions_default_sint64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSInt64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_sint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSInt64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 66,
   fieldName: "protobuf_unittest.default_sint64_extension"
 )
 
-let ProtobufUnittest_Extensions_default_fixed32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_fixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 67,
   fieldName: "protobuf_unittest.default_fixed32_extension"
 )
 
-let ProtobufUnittest_Extensions_default_fixed64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFixed64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_fixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFixed64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 68,
   fieldName: "protobuf_unittest.default_fixed64_extension"
 )
 
-let ProtobufUnittest_Extensions_default_sfixed32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSFixed32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_sfixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSFixed32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 69,
   fieldName: "protobuf_unittest.default_sfixed32_extension"
 )
 
-let ProtobufUnittest_Extensions_default_sfixed64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSFixed64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_sfixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSFixed64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 70,
   fieldName: "protobuf_unittest.default_sfixed64_extension"
 )
 
-let ProtobufUnittest_Extensions_default_float_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFloat>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_float_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFloat>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 71,
   fieldName: "protobuf_unittest.default_float_extension"
 )
 
-let ProtobufUnittest_Extensions_default_double_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufDouble>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_double_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufDouble>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 72,
   fieldName: "protobuf_unittest.default_double_extension"
 )
 
-let ProtobufUnittest_Extensions_default_bool_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_bool_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 73,
   fieldName: "protobuf_unittest.default_bool_extension"
 )
 
-let ProtobufUnittest_Extensions_default_string_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_string_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 74,
   fieldName: "protobuf_unittest.default_string_extension"
 )
 
-let ProtobufUnittest_Extensions_default_bytes_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBytes>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_bytes_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBytes>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 75,
   fieldName: "protobuf_unittest.default_bytes_extension"
 )
 
-let ProtobufUnittest_Extensions_default_nested_enum_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalEnumExtensionField<ProtobufUnittest_TestAllTypes.NestedEnum>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_nested_enum_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalEnumExtensionField<ProtobufUnittest_TestAllTypes.NestedEnum>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 81,
   fieldName: "protobuf_unittest.default_nested_enum_extension"
 )
 
-let ProtobufUnittest_Extensions_default_foreign_enum_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalEnumExtensionField<ProtobufUnittest_ForeignEnum>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_foreign_enum_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalEnumExtensionField<ProtobufUnittest_ForeignEnum>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 82,
   fieldName: "protobuf_unittest.default_foreign_enum_extension"
 )
 
-let ProtobufUnittest_Extensions_default_import_enum_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalEnumExtensionField<ProtobufUnittestImport_ImportEnum>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_import_enum_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalEnumExtensionField<ProtobufUnittestImport_ImportEnum>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 83,
   fieldName: "protobuf_unittest.default_import_enum_extension"
 )
 
-let ProtobufUnittest_Extensions_default_string_piece_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_string_piece_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 84,
   fieldName: "protobuf_unittest.default_string_piece_extension"
 )
 
-let ProtobufUnittest_Extensions_default_cord_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_cord_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 85,
   fieldName: "protobuf_unittest.default_cord_extension"
 )
 
 /// For oneof test
-let ProtobufUnittest_Extensions_oneof_uint32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_oneof_uint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 111,
   fieldName: "protobuf_unittest.oneof_uint32_extension"
 )
 
-let ProtobufUnittest_Extensions_oneof_nested_message_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestAllTypes.NestedMessage>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_oneof_nested_message_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestAllTypes.NestedMessage>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 112,
   fieldName: "protobuf_unittest.oneof_nested_message_extension"
 )
 
-let ProtobufUnittest_Extensions_oneof_string_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_oneof_string_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 113,
   fieldName: "protobuf_unittest.oneof_string_extension"
 )
 
-let ProtobufUnittest_Extensions_oneof_bytes_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBytes>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_oneof_bytes_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBytes>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 114,
   fieldName: "protobuf_unittest.oneof_bytes_extension"
 )
 
-let ProtobufUnittest_Extensions_my_extension_string = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestFieldOrderings>(
+let ProtobufUnittest_Extensions_my_extension_string = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestFieldOrderings>(
   _protobuf_fieldNumber: 50,
   fieldName: "protobuf_unittest.my_extension_string"
 )
 
-let ProtobufUnittest_Extensions_my_extension_int = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestFieldOrderings>(
+let ProtobufUnittest_Extensions_my_extension_int = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestFieldOrderings>(
   _protobuf_fieldNumber: 5,
   fieldName: "protobuf_unittest.my_extension_int"
 )
 
-let ProtobufUnittest_Extensions_packed_int32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 90,
   fieldName: "protobuf_unittest.packed_int32_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_int64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufInt64>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_int64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufInt64>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 91,
   fieldName: "protobuf_unittest.packed_int64_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_uint32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_uint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 92,
   fieldName: "protobuf_unittest.packed_uint32_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_uint64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufUInt64>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_uint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufUInt64>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 93,
   fieldName: "protobuf_unittest.packed_uint64_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_sint32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufSInt32>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_sint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufSInt32>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 94,
   fieldName: "protobuf_unittest.packed_sint32_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_sint64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufSInt64>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_sint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufSInt64>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 95,
   fieldName: "protobuf_unittest.packed_sint64_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_fixed32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_fixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 96,
   fieldName: "protobuf_unittest.packed_fixed32_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_fixed64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufFixed64>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_fixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufFixed64>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 97,
   fieldName: "protobuf_unittest.packed_fixed64_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_sfixed32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufSFixed32>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_sfixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufSFixed32>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 98,
   fieldName: "protobuf_unittest.packed_sfixed32_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_sfixed64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufSFixed64>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_sfixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufSFixed64>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 99,
   fieldName: "protobuf_unittest.packed_sfixed64_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_float_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufFloat>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_float_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufFloat>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 100,
   fieldName: "protobuf_unittest.packed_float_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_double_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufDouble>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_double_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufDouble>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 101,
   fieldName: "protobuf_unittest.packed_double_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_bool_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_bool_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 102,
   fieldName: "protobuf_unittest.packed_bool_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_enum_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.PackedEnumExtensionField<ProtobufUnittest_ForeignEnum>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_enum_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedEnumExtensionField<ProtobufUnittest_ForeignEnum>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 103,
   fieldName: "protobuf_unittest.packed_enum_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_int32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 90,
   fieldName: "protobuf_unittest.unpacked_int32_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_int64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufInt64>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_int64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufInt64>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 91,
   fieldName: "protobuf_unittest.unpacked_int64_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_uint32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_uint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 92,
   fieldName: "protobuf_unittest.unpacked_uint32_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_uint64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufUInt64>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_uint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufUInt64>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 93,
   fieldName: "protobuf_unittest.unpacked_uint64_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_sint32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSInt32>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_sint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSInt32>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 94,
   fieldName: "protobuf_unittest.unpacked_sint32_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_sint64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSInt64>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_sint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSInt64>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 95,
   fieldName: "protobuf_unittest.unpacked_sint64_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_fixed32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_fixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 96,
   fieldName: "protobuf_unittest.unpacked_fixed32_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_fixed64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFixed64>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_fixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFixed64>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 97,
   fieldName: "protobuf_unittest.unpacked_fixed64_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_sfixed32_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSFixed32>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_sfixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSFixed32>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 98,
   fieldName: "protobuf_unittest.unpacked_sfixed32_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_sfixed64_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSFixed64>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_sfixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSFixed64>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 99,
   fieldName: "protobuf_unittest.unpacked_sfixed64_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_float_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFloat>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_float_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFloat>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 100,
   fieldName: "protobuf_unittest.unpacked_float_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_double_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufDouble>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_double_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufDouble>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 101,
   fieldName: "protobuf_unittest.unpacked_double_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_bool_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_bool_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 102,
   fieldName: "protobuf_unittest.unpacked_bool_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_enum_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedEnumExtensionField<ProtobufUnittest_ForeignEnum>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_enum_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedEnumExtensionField<ProtobufUnittest_ForeignEnum>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 103,
   fieldName: "protobuf_unittest.unpacked_enum_extension"
 )
 
-let ProtobufUnittest_Extensions_test_all_types = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestAllTypes>, ProtobufUnittest_TestHugeFieldNumbers>(
+let ProtobufUnittest_Extensions_test_all_types = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestAllTypes>, ProtobufUnittest_TestHugeFieldNumbers>(
   _protobuf_fieldNumber: 536860000,
   fieldName: "protobuf_unittest.test_all_types"
 )
 
-let ProtobufUnittest_Extensions_test_extension_inside_table_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionInsideTable>(
+let ProtobufUnittest_Extensions_test_extension_inside_table_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionInsideTable>(
   _protobuf_fieldNumber: 5,
   fieldName: "protobuf_unittest.test_extension_inside_table_extension"
 )
 
-let ProtobufUnittest_Extensions_inner = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestNestedGroupExtensionInnerExtension>, ProtobufUnittest_TestNestedGroupExtensionOuter.Layer1OptionalGroup.Layer2RepeatedGroup>(
+let ProtobufUnittest_Extensions_inner = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestNestedGroupExtensionInnerExtension>, ProtobufUnittest_TestNestedGroupExtensionOuter.Layer1OptionalGroup.Layer2RepeatedGroup>(
   _protobuf_fieldNumber: 3,
   fieldName: "protobuf_unittest.inner"
 )
 
 extension ProtobufUnittest_TestMixedFieldsAndExtensions {
   enum Extensions {
-    static let c = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestMixedFieldsAndExtensions>(
+    static let c = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestMixedFieldsAndExtensions>(
       _protobuf_fieldNumber: 2,
       fieldName: "protobuf_unittest.TestMixedFieldsAndExtensions.c"
     )
 
-    static let d = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestMixedFieldsAndExtensions>(
+    static let d = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestMixedFieldsAndExtensions>(
       _protobuf_fieldNumber: 4,
       fieldName: "protobuf_unittest.TestMixedFieldsAndExtensions.d"
     )
@@ -10033,24 +10033,24 @@ extension ProtobufUnittest_TestNestedExtension {
   enum Extensions {
     /// Check for bug where string extensions declared in tested scope did not
     /// compile.
-    static let test = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+    static let test = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
       _protobuf_fieldNumber: 1002,
       fieldName: "protobuf_unittest.TestNestedExtension.test"
     )
 
     /// Used to test if generated extension name is correct when there are
     /// underscores.
-    static let nested_string_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+    static let nested_string_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
       _protobuf_fieldNumber: 1003,
       fieldName: "protobuf_unittest.TestNestedExtension.nested_string_extension"
     )
 
-    static let OptionalGroup_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalGroupExtensionField<ProtobufUnittest_TestNestedExtension.OptionalGroup_extension>, ProtobufUnittest_TestGroupExtension>(
+    static let OptionalGroup_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalGroupExtensionField<ProtobufUnittest_TestNestedExtension.OptionalGroup_extension>, ProtobufUnittest_TestGroupExtension>(
       _protobuf_fieldNumber: 16,
       fieldName: "protobuf_unittest.TestNestedExtension.optionalgroup_extension"
     )
 
-    static let optional_foreign_enum_extension = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalEnumExtensionField<ProtobufUnittest_ForeignEnum>, ProtobufUnittest_TestGroupExtension>(
+    static let optional_foreign_enum_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalEnumExtensionField<ProtobufUnittest_ForeignEnum>, ProtobufUnittest_TestGroupExtension>(
       _protobuf_fieldNumber: 22,
       fieldName: "protobuf_unittest.TestNestedExtension.optional_foreign_enum_extension"
     )
@@ -10059,12 +10059,12 @@ extension ProtobufUnittest_TestNestedExtension {
 
 extension ProtobufUnittest_TestRequired {
   enum Extensions {
-    static let single = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestRequired>, ProtobufUnittest_TestAllExtensions>(
+    static let single = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestRequired>, ProtobufUnittest_TestAllExtensions>(
       _protobuf_fieldNumber: 1000,
       fieldName: "protobuf_unittest.TestRequired.single"
     )
 
-    static let multi = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedMessageExtensionField<ProtobufUnittest_TestRequired>, ProtobufUnittest_TestAllExtensions>(
+    static let multi = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedMessageExtensionField<ProtobufUnittest_TestRequired>, ProtobufUnittest_TestAllExtensions>(
       _protobuf_fieldNumber: 1001,
       fieldName: "protobuf_unittest.TestRequired.multi"
     )
@@ -10073,7 +10073,7 @@ extension ProtobufUnittest_TestRequired {
 
 extension ProtobufUnittest_TestExtensionOrderings1 {
   enum Extensions {
-    static let test_ext_orderings1 = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestExtensionOrderings1>, ProtobufUnittest_TestFieldOrderings>(
+    static let test_ext_orderings1 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestExtensionOrderings1>, ProtobufUnittest_TestFieldOrderings>(
       _protobuf_fieldNumber: 13,
       fieldName: "protobuf_unittest.TestExtensionOrderings1.test_ext_orderings1"
     )
@@ -10082,7 +10082,7 @@ extension ProtobufUnittest_TestExtensionOrderings1 {
 
 extension ProtobufUnittest_TestExtensionOrderings2 {
   enum Extensions {
-    static let test_ext_orderings2 = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestExtensionOrderings2>, ProtobufUnittest_TestFieldOrderings>(
+    static let test_ext_orderings2 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestExtensionOrderings2>, ProtobufUnittest_TestFieldOrderings>(
       _protobuf_fieldNumber: 12,
       fieldName: "protobuf_unittest.TestExtensionOrderings2.test_ext_orderings2"
     )
@@ -10091,7 +10091,7 @@ extension ProtobufUnittest_TestExtensionOrderings2 {
 
 extension ProtobufUnittest_TestExtensionOrderings2.TestExtensionOrderings3 {
   enum Extensions {
-    static let test_ext_orderings3 = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestExtensionOrderings2.TestExtensionOrderings3>, ProtobufUnittest_TestFieldOrderings>(
+    static let test_ext_orderings3 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestExtensionOrderings2.TestExtensionOrderings3>, ProtobufUnittest_TestFieldOrderings>(
       _protobuf_fieldNumber: 14,
       fieldName: "protobuf_unittest.TestExtensionOrderings2.TestExtensionOrderings3.test_ext_orderings3"
     )
@@ -10100,12 +10100,12 @@ extension ProtobufUnittest_TestExtensionOrderings2.TestExtensionOrderings3 {
 
 extension ProtobufUnittest_TestParsingMerge {
   enum Extensions {
-    static let optional_ext = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestAllTypes>, ProtobufUnittest_TestParsingMerge>(
+    static let optional_ext = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalMessageExtensionField<ProtobufUnittest_TestAllTypes>, ProtobufUnittest_TestParsingMerge>(
       _protobuf_fieldNumber: 1000,
       fieldName: "protobuf_unittest.TestParsingMerge.optional_ext"
     )
 
-    static let repeated_ext = SwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedMessageExtensionField<ProtobufUnittest_TestAllTypes>, ProtobufUnittest_TestParsingMerge>(
+    static let repeated_ext = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedMessageExtensionField<ProtobufUnittest_TestAllTypes>, ProtobufUnittest_TestParsingMerge>(
       _protobuf_fieldNumber: 1001,
       fieldName: "protobuf_unittest.TestParsingMerge.repeated_ext"
     )
@@ -10114,27 +10114,27 @@ extension ProtobufUnittest_TestParsingMerge {
 
 extension ProtobufUnittest_TestExtensionRangeSerialize {
   enum Extensions {
-    static let bar_one = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionRangeSerialize>(
+    static let bar_one = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionRangeSerialize>(
       _protobuf_fieldNumber: 2,
       fieldName: "protobuf_unittest.TestExtensionRangeSerialize.bar_one"
     )
 
-    static let bar_two = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionRangeSerialize>(
+    static let bar_two = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionRangeSerialize>(
       _protobuf_fieldNumber: 4,
       fieldName: "protobuf_unittest.TestExtensionRangeSerialize.bar_two"
     )
 
-    static let bar_three = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionRangeSerialize>(
+    static let bar_three = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionRangeSerialize>(
       _protobuf_fieldNumber: 10,
       fieldName: "protobuf_unittest.TestExtensionRangeSerialize.bar_three"
     )
 
-    static let bar_four = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionRangeSerialize>(
+    static let bar_four = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionRangeSerialize>(
       _protobuf_fieldNumber: 15,
       fieldName: "protobuf_unittest.TestExtensionRangeSerialize.bar_four"
     )
 
-    static let bar_five = SwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionRangeSerialize>(
+    static let bar_five = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionRangeSerialize>(
       _protobuf_fieldNumber: 19,
       fieldName: "protobuf_unittest.TestExtensionRangeSerialize.bar_five"
     )
@@ -10145,30 +10145,30 @@ extension ProtobufUnittest_TestExtensionRangeSerialize {
 
 fileprivate let _protobuf_package = "protobuf_unittest"
 
-extension ProtobufUnittest_ForeignEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_ForeignEnum: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     4: .same(proto: "FOREIGN_FOO"),
     5: .same(proto: "FOREIGN_BAR"),
     6: .same(proto: "FOREIGN_BAZ"),
   ]
 }
 
-extension ProtobufUnittest_TestReservedEnumFields: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_TestReservedEnumFields: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     0: .same(proto: "UNKNOWN"),
   ]
 }
 
-extension ProtobufUnittest_TestEnumWithDupValue: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_TestEnumWithDupValue: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .aliased(proto: "FOO1", aliases: ["FOO2"]),
     2: .aliased(proto: "BAR1", aliases: ["BAR2"]),
     3: .same(proto: "BAZ"),
   ]
 }
 
-extension ProtobufUnittest_TestSparseEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_TestSparseEnum: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     -53452: .same(proto: "SPARSE_E"),
     -15: .same(proto: "SPARSE_D"),
     0: .same(proto: "SPARSE_F"),
@@ -10179,8 +10179,8 @@ extension ProtobufUnittest_TestSparseEnum: SwiftProtobuf._ProtoNameProviding {
   ]
 }
 
-extension ProtobufUnittest_VeryLargeEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_VeryLargeEnum: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     0: .same(proto: "ENUM_LABEL_DEFAULT"),
     1: .same(proto: "ENUM_LABEL_1"),
     2: .same(proto: "ENUM_LABEL_2"),
@@ -10285,9 +10285,9 @@ extension ProtobufUnittest_VeryLargeEnum: SwiftProtobuf._ProtoNameProviding {
   ]
 }
 
-extension ProtobufUnittest_TestAllTypes: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestAllTypes: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestAllTypes"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "optional_int32"),
     2: .standard(proto: "optional_int64"),
     3: .standard(proto: "optional_uint32"),
@@ -10529,7 +10529,7 @@ extension ProtobufUnittest_TestAllTypes: SwiftProtobuf.Message, SwiftProtobuf._M
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -10652,7 +10652,7 @@ extension ProtobufUnittest_TestAllTypes: SwiftProtobuf.Message, SwiftProtobuf._M
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -10984,8 +10984,8 @@ extension ProtobufUnittest_TestAllTypes: SwiftProtobuf.Message, SwiftProtobuf._M
   }
 }
 
-extension ProtobufUnittest_TestAllTypes.NestedEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_TestAllTypes.NestedEnum: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     -1: .same(proto: "NEG"),
     1: .same(proto: "FOO"),
     2: .same(proto: "BAR"),
@@ -10993,13 +10993,13 @@ extension ProtobufUnittest_TestAllTypes.NestedEnum: SwiftProtobuf._ProtoNameProv
   ]
 }
 
-extension ProtobufUnittest_TestAllTypes.NestedMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestAllTypes.NestedMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestAllTypes.protoMessageName + ".NestedMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "bb"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11011,7 +11011,7 @@ extension ProtobufUnittest_TestAllTypes.NestedMessage: SwiftProtobuf.Message, Sw
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -11029,13 +11029,13 @@ extension ProtobufUnittest_TestAllTypes.NestedMessage: SwiftProtobuf.Message, Sw
   }
 }
 
-extension ProtobufUnittest_TestAllTypes.OptionalGroup: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestAllTypes.OptionalGroup: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestAllTypes.protoMessageName + ".OptionalGroup"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     17: .same(proto: "a"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11047,7 +11047,7 @@ extension ProtobufUnittest_TestAllTypes.OptionalGroup: SwiftProtobuf.Message, Sw
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -11065,13 +11065,13 @@ extension ProtobufUnittest_TestAllTypes.OptionalGroup: SwiftProtobuf.Message, Sw
   }
 }
 
-extension ProtobufUnittest_TestAllTypes.RepeatedGroup: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestAllTypes.RepeatedGroup: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestAllTypes.protoMessageName + ".RepeatedGroup"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     47: .same(proto: "a"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11083,7 +11083,7 @@ extension ProtobufUnittest_TestAllTypes.RepeatedGroup: SwiftProtobuf.Message, Sw
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -11101,9 +11101,9 @@ extension ProtobufUnittest_TestAllTypes.RepeatedGroup: SwiftProtobuf.Message, Sw
   }
 }
 
-extension ProtobufUnittest_NestedTestAllTypes: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_NestedTestAllTypes: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".NestedTestAllTypes"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "child"),
     2: .same(proto: "payload"),
     3: .standard(proto: "repeated_child"),
@@ -11138,7 +11138,7 @@ extension ProtobufUnittest_NestedTestAllTypes: SwiftProtobuf.Message, SwiftProto
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -11157,7 +11157,7 @@ extension ProtobufUnittest_NestedTestAllTypes: SwiftProtobuf.Message, SwiftProto
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -11201,9 +11201,9 @@ extension ProtobufUnittest_NestedTestAllTypes: SwiftProtobuf.Message, SwiftProto
   }
 }
 
-extension ProtobufUnittest_TestDeprecatedFields: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestDeprecatedFields: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestDeprecatedFields"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "deprecated_int32"),
     4: .standard(proto: "deprecated_repeated_string"),
     3: .standard(proto: "deprecated_message"),
@@ -11238,7 +11238,7 @@ extension ProtobufUnittest_TestDeprecatedFields: SwiftProtobuf.Message, SwiftPro
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -11264,7 +11264,7 @@ extension ProtobufUnittest_TestDeprecatedFields: SwiftProtobuf.Message, SwiftPro
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -11308,16 +11308,16 @@ extension ProtobufUnittest_TestDeprecatedFields: SwiftProtobuf.Message, SwiftPro
   }
 }
 
-extension ProtobufUnittest_TestDeprecatedMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestDeprecatedMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestDeprecatedMessage"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let _ = try decoder.nextFieldNumber() {
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -11327,14 +11327,14 @@ extension ProtobufUnittest_TestDeprecatedMessage: SwiftProtobuf.Message, SwiftPr
   }
 }
 
-extension ProtobufUnittest_ForeignMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_ForeignMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".ForeignMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "c"),
     2: .same(proto: "d"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11347,7 +11347,7 @@ extension ProtobufUnittest_ForeignMessage: SwiftProtobuf.Message, SwiftProtobuf.
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -11369,16 +11369,16 @@ extension ProtobufUnittest_ForeignMessage: SwiftProtobuf.Message, SwiftProtobuf.
   }
 }
 
-extension ProtobufUnittest_TestReservedFields: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestReservedFields: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestReservedFields"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let _ = try decoder.nextFieldNumber() {
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -11388,16 +11388,16 @@ extension ProtobufUnittest_TestReservedFields: SwiftProtobuf.Message, SwiftProto
   }
 }
 
-extension ProtobufUnittest_TestAllExtensions: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestAllExtensions: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestAllExtensions"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
   public var isInitialized: Bool {
     if !_protobuf_extensionFieldValues.isInitialized {return false}
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       if (1 <= fieldNumber && fieldNumber < 536870912) {
         try decoder.decodeExtensionField(values: &_protobuf_extensionFieldValues, messageType: ProtobufUnittest_TestAllExtensions.self, fieldNumber: fieldNumber)
@@ -11405,7 +11405,7 @@ extension ProtobufUnittest_TestAllExtensions: SwiftProtobuf.Message, SwiftProtob
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 1, end: 536870912)
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -11417,13 +11417,13 @@ extension ProtobufUnittest_TestAllExtensions: SwiftProtobuf.Message, SwiftProtob
   }
 }
 
-extension ProtobufUnittest_OptionalGroup_extension: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_OptionalGroup_extension: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".OptionalGroup_extension"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     17: .same(proto: "a"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11435,7 +11435,7 @@ extension ProtobufUnittest_OptionalGroup_extension: SwiftProtobuf.Message, Swift
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -11453,13 +11453,13 @@ extension ProtobufUnittest_OptionalGroup_extension: SwiftProtobuf.Message, Swift
   }
 }
 
-extension ProtobufUnittest_RepeatedGroup_extension: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_RepeatedGroup_extension: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".RepeatedGroup_extension"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     47: .same(proto: "a"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11471,7 +11471,7 @@ extension ProtobufUnittest_RepeatedGroup_extension: SwiftProtobuf.Message, Swift
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -11489,9 +11489,9 @@ extension ProtobufUnittest_RepeatedGroup_extension: SwiftProtobuf.Message, Swift
   }
 }
 
-extension ProtobufUnittest_TestMixedFieldsAndExtensions: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestMixedFieldsAndExtensions: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestMixedFieldsAndExtensions"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "a"),
     3: .same(proto: "b"),
   ]
@@ -11501,7 +11501,7 @@ extension ProtobufUnittest_TestMixedFieldsAndExtensions: SwiftProtobuf.Message, 
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11516,7 +11516,7 @@ extension ProtobufUnittest_TestMixedFieldsAndExtensions: SwiftProtobuf.Message, 
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -11541,14 +11541,14 @@ extension ProtobufUnittest_TestMixedFieldsAndExtensions: SwiftProtobuf.Message, 
   }
 }
 
-extension ProtobufUnittest_TestGroup: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestGroup: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestGroup"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     16: .unique(proto: "OptionalGroup", json: "optionalgroup"),
     22: .standard(proto: "optional_foreign_enum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11561,7 +11561,7 @@ extension ProtobufUnittest_TestGroup: SwiftProtobuf.Message, SwiftProtobuf._Mess
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -11583,14 +11583,14 @@ extension ProtobufUnittest_TestGroup: SwiftProtobuf.Message, SwiftProtobuf._Mess
   }
 }
 
-extension ProtobufUnittest_TestGroup.OptionalGroup: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestGroup.OptionalGroup: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestGroup.protoMessageName + ".OptionalGroup"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     17: .same(proto: "a"),
     89: .same(proto: "zz"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11603,7 +11603,7 @@ extension ProtobufUnittest_TestGroup.OptionalGroup: SwiftProtobuf.Message, Swift
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -11625,16 +11625,16 @@ extension ProtobufUnittest_TestGroup.OptionalGroup: SwiftProtobuf.Message, Swift
   }
 }
 
-extension ProtobufUnittest_TestGroupExtension: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestGroupExtension: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestGroupExtension"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
   public var isInitialized: Bool {
     if !_protobuf_extensionFieldValues.isInitialized {return false}
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       if (1 <= fieldNumber && fieldNumber < 536870912) {
         try decoder.decodeExtensionField(values: &_protobuf_extensionFieldValues, messageType: ProtobufUnittest_TestGroupExtension.self, fieldNumber: fieldNumber)
@@ -11642,7 +11642,7 @@ extension ProtobufUnittest_TestGroupExtension: SwiftProtobuf.Message, SwiftProto
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 1, end: 536870912)
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -11654,16 +11654,16 @@ extension ProtobufUnittest_TestGroupExtension: SwiftProtobuf.Message, SwiftProto
   }
 }
 
-extension ProtobufUnittest_TestNestedExtension: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestNestedExtension: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestNestedExtension"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let _ = try decoder.nextFieldNumber() {
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -11673,13 +11673,13 @@ extension ProtobufUnittest_TestNestedExtension: SwiftProtobuf.Message, SwiftProt
   }
 }
 
-extension ProtobufUnittest_TestNestedExtension.OptionalGroup_extension: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestNestedExtension.OptionalGroup_extension: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestNestedExtension.protoMessageName + ".OptionalGroup_extension"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     17: .same(proto: "a"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11691,7 +11691,7 @@ extension ProtobufUnittest_TestNestedExtension.OptionalGroup_extension: SwiftPro
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -11709,9 +11709,9 @@ extension ProtobufUnittest_TestNestedExtension.OptionalGroup_extension: SwiftPro
   }
 }
 
-extension ProtobufUnittest_TestChildExtension: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestChildExtension: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestChildExtension"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "a"),
     2: .same(proto: "b"),
     3: .standard(proto: "optional_extension"),
@@ -11722,7 +11722,7 @@ extension ProtobufUnittest_TestChildExtension: SwiftProtobuf.Message, SwiftProto
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11736,7 +11736,7 @@ extension ProtobufUnittest_TestChildExtension: SwiftProtobuf.Message, SwiftProto
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -11762,15 +11762,15 @@ extension ProtobufUnittest_TestChildExtension: SwiftProtobuf.Message, SwiftProto
   }
 }
 
-extension ProtobufUnittest_TestChildExtensionData: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestChildExtensionData: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestChildExtensionData"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "a"),
     2: .same(proto: "b"),
     3: .standard(proto: "optional_extension"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11784,7 +11784,7 @@ extension ProtobufUnittest_TestChildExtensionData: SwiftProtobuf.Message, SwiftP
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -11810,13 +11810,13 @@ extension ProtobufUnittest_TestChildExtensionData: SwiftProtobuf.Message, SwiftP
   }
 }
 
-extension ProtobufUnittest_TestChildExtensionData.NestedTestAllExtensionsData: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestChildExtensionData.NestedTestAllExtensionsData: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestChildExtensionData.protoMessageName + ".NestedTestAllExtensionsData"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     409707008: .same(proto: "dynamic"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11828,7 +11828,7 @@ extension ProtobufUnittest_TestChildExtensionData.NestedTestAllExtensionsData: S
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -11846,14 +11846,14 @@ extension ProtobufUnittest_TestChildExtensionData.NestedTestAllExtensionsData: S
   }
 }
 
-extension ProtobufUnittest_TestChildExtensionData.NestedTestAllExtensionsData.NestedDynamicExtensions: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestChildExtensionData.NestedTestAllExtensionsData.NestedDynamicExtensions: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestChildExtensionData.NestedTestAllExtensionsData.protoMessageName + ".NestedDynamicExtensions"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "a"),
     2: .same(proto: "b"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11866,7 +11866,7 @@ extension ProtobufUnittest_TestChildExtensionData.NestedTestAllExtensionsData.Ne
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -11888,9 +11888,9 @@ extension ProtobufUnittest_TestChildExtensionData.NestedTestAllExtensionsData.Ne
   }
 }
 
-extension ProtobufUnittest_TestNestedChildExtension: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestNestedChildExtension: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestNestedChildExtension"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "a"),
     2: .same(proto: "child"),
   ]
@@ -11900,7 +11900,7 @@ extension ProtobufUnittest_TestNestedChildExtension: SwiftProtobuf.Message, Swif
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11913,7 +11913,7 @@ extension ProtobufUnittest_TestNestedChildExtension: SwiftProtobuf.Message, Swif
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -11935,14 +11935,14 @@ extension ProtobufUnittest_TestNestedChildExtension: SwiftProtobuf.Message, Swif
   }
 }
 
-extension ProtobufUnittest_TestNestedChildExtensionData: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestNestedChildExtensionData: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestNestedChildExtensionData"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "a"),
     2: .same(proto: "child"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11955,7 +11955,7 @@ extension ProtobufUnittest_TestNestedChildExtensionData: SwiftProtobuf.Message, 
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -11977,9 +11977,9 @@ extension ProtobufUnittest_TestNestedChildExtensionData: SwiftProtobuf.Message, 
   }
 }
 
-extension ProtobufUnittest_TestRequired: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestRequired: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestRequired"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "a"),
     2: .same(proto: "dummy2"),
     3: .same(proto: "b"),
@@ -12110,7 +12110,7 @@ extension ProtobufUnittest_TestRequired: SwiftProtobuf.Message, SwiftProtobuf._M
     }
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -12158,7 +12158,7 @@ extension ProtobufUnittest_TestRequired: SwiftProtobuf.Message, SwiftProtobuf._M
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -12318,9 +12318,9 @@ extension ProtobufUnittest_TestRequired: SwiftProtobuf.Message, SwiftProtobuf._M
   }
 }
 
-extension ProtobufUnittest_TestRequiredForeign: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestRequiredForeign: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestRequiredForeign"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "optional_message"),
     2: .standard(proto: "repeated_message"),
     3: .same(proto: "dummy"),
@@ -12329,11 +12329,11 @@ extension ProtobufUnittest_TestRequiredForeign: SwiftProtobuf.Message, SwiftProt
 
   public var isInitialized: Bool {
     if let v = self._optionalMessage, !v.isInitialized {return false}
-    if !SwiftProtobuf.Internal.areAllInitialized(self.repeatedMessage) {return false}
+    if !IntentSwiftProtobuf.Internal.areAllInitialized(self.repeatedMessage) {return false}
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -12348,7 +12348,7 @@ extension ProtobufUnittest_TestRequiredForeign: SwiftProtobuf.Message, SwiftProt
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -12378,9 +12378,9 @@ extension ProtobufUnittest_TestRequiredForeign: SwiftProtobuf.Message, SwiftProt
   }
 }
 
-extension ProtobufUnittest_TestRequiredMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestRequiredMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestRequiredMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "optional_message"),
     2: .standard(proto: "repeated_message"),
     3: .standard(proto: "required_message"),
@@ -12389,12 +12389,12 @@ extension ProtobufUnittest_TestRequiredMessage: SwiftProtobuf.Message, SwiftProt
   public var isInitialized: Bool {
     if self._requiredMessage == nil {return false}
     if let v = self._optionalMessage, !v.isInitialized {return false}
-    if !SwiftProtobuf.Internal.areAllInitialized(self.repeatedMessage) {return false}
+    if !IntentSwiftProtobuf.Internal.areAllInitialized(self.repeatedMessage) {return false}
     if let v = self._requiredMessage, !v.isInitialized {return false}
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -12408,7 +12408,7 @@ extension ProtobufUnittest_TestRequiredMessage: SwiftProtobuf.Message, SwiftProt
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -12434,9 +12434,9 @@ extension ProtobufUnittest_TestRequiredMessage: SwiftProtobuf.Message, SwiftProt
   }
 }
 
-extension ProtobufUnittest_TestNestedRequiredForeign: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestNestedRequiredForeign: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestNestedRequiredForeign"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "child"),
     2: .same(proto: "payload"),
     3: .same(proto: "dummy"),
@@ -12473,7 +12473,7 @@ extension ProtobufUnittest_TestNestedRequiredForeign: SwiftProtobuf.Message, Swi
     }
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -12490,7 +12490,7 @@ extension ProtobufUnittest_TestNestedRequiredForeign: SwiftProtobuf.Message, Swi
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -12526,13 +12526,13 @@ extension ProtobufUnittest_TestNestedRequiredForeign: SwiftProtobuf.Message, Swi
   }
 }
 
-extension ProtobufUnittest_TestForeignNested: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestForeignNested: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestForeignNested"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "foreign_nested"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -12544,7 +12544,7 @@ extension ProtobufUnittest_TestForeignNested: SwiftProtobuf.Message, SwiftProtob
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -12562,16 +12562,16 @@ extension ProtobufUnittest_TestForeignNested: SwiftProtobuf.Message, SwiftProtob
   }
 }
 
-extension ProtobufUnittest_TestEmptyMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestEmptyMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestEmptyMessage"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let _ = try decoder.nextFieldNumber() {
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -12581,16 +12581,16 @@ extension ProtobufUnittest_TestEmptyMessage: SwiftProtobuf.Message, SwiftProtobu
   }
 }
 
-extension ProtobufUnittest_TestEmptyMessageWithExtensions: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestEmptyMessageWithExtensions: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestEmptyMessageWithExtensions"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
   public var isInitialized: Bool {
     if !_protobuf_extensionFieldValues.isInitialized {return false}
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       if (1 <= fieldNumber && fieldNumber < 536870912) {
         try decoder.decodeExtensionField(values: &_protobuf_extensionFieldValues, messageType: ProtobufUnittest_TestEmptyMessageWithExtensions.self, fieldNumber: fieldNumber)
@@ -12598,7 +12598,7 @@ extension ProtobufUnittest_TestEmptyMessageWithExtensions: SwiftProtobuf.Message
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 1, end: 536870912)
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -12610,16 +12610,16 @@ extension ProtobufUnittest_TestEmptyMessageWithExtensions: SwiftProtobuf.Message
   }
 }
 
-extension ProtobufUnittest_TestPickleNestedMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestPickleNestedMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestPickleNestedMessage"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let _ = try decoder.nextFieldNumber() {
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -12629,13 +12629,13 @@ extension ProtobufUnittest_TestPickleNestedMessage: SwiftProtobuf.Message, Swift
   }
 }
 
-extension ProtobufUnittest_TestPickleNestedMessage.NestedMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestPickleNestedMessage.NestedMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestPickleNestedMessage.protoMessageName + ".NestedMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "bb"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -12647,7 +12647,7 @@ extension ProtobufUnittest_TestPickleNestedMessage.NestedMessage: SwiftProtobuf.
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -12665,13 +12665,13 @@ extension ProtobufUnittest_TestPickleNestedMessage.NestedMessage: SwiftProtobuf.
   }
 }
 
-extension ProtobufUnittest_TestPickleNestedMessage.NestedMessage.NestedNestedMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestPickleNestedMessage.NestedMessage.NestedNestedMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestPickleNestedMessage.NestedMessage.protoMessageName + ".NestedNestedMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "cc"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -12683,7 +12683,7 @@ extension ProtobufUnittest_TestPickleNestedMessage.NestedMessage.NestedNestedMes
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -12701,16 +12701,16 @@ extension ProtobufUnittest_TestPickleNestedMessage.NestedMessage.NestedNestedMes
   }
 }
 
-extension ProtobufUnittest_TestMultipleExtensionRanges: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestMultipleExtensionRanges: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestMultipleExtensionRanges"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
   public var isInitialized: Bool {
     if !_protobuf_extensionFieldValues.isInitialized {return false}
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       if (42 == fieldNumber) || (4143 <= fieldNumber && fieldNumber < 4244) || (65536 <= fieldNumber && fieldNumber < 536870912) {
         try decoder.decodeExtensionField(values: &_protobuf_extensionFieldValues, messageType: ProtobufUnittest_TestMultipleExtensionRanges.self, fieldNumber: fieldNumber)
@@ -12718,7 +12718,7 @@ extension ProtobufUnittest_TestMultipleExtensionRanges: SwiftProtobuf.Message, S
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 42, end: 536870912)
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -12730,14 +12730,14 @@ extension ProtobufUnittest_TestMultipleExtensionRanges: SwiftProtobuf.Message, S
   }
 }
 
-extension ProtobufUnittest_TestReallyLargeTagNumber: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestReallyLargeTagNumber: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestReallyLargeTagNumber"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "a"),
     268435455: .same(proto: "bb"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -12750,7 +12750,7 @@ extension ProtobufUnittest_TestReallyLargeTagNumber: SwiftProtobuf.Message, Swif
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -12772,9 +12772,9 @@ extension ProtobufUnittest_TestReallyLargeTagNumber: SwiftProtobuf.Message, Swif
   }
 }
 
-extension ProtobufUnittest_TestRecursiveMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestRecursiveMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestRecursiveMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "a"),
     2: .same(proto: "i"),
   ]
@@ -12800,7 +12800,7 @@ extension ProtobufUnittest_TestRecursiveMessage: SwiftProtobuf.Message, SwiftPro
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -12816,7 +12816,7 @@ extension ProtobufUnittest_TestRecursiveMessage: SwiftProtobuf.Message, SwiftPro
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -12848,9 +12848,9 @@ extension ProtobufUnittest_TestRecursiveMessage: SwiftProtobuf.Message, SwiftPro
   }
 }
 
-extension ProtobufUnittest_TestMutualRecursionA: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestMutualRecursionA: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestMutualRecursionA"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "bb"),
     2: .unique(proto: "SubGroup", json: "subgroup"),
   ]
@@ -12876,7 +12876,7 @@ extension ProtobufUnittest_TestMutualRecursionA: SwiftProtobuf.Message, SwiftPro
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -12892,7 +12892,7 @@ extension ProtobufUnittest_TestMutualRecursionA: SwiftProtobuf.Message, SwiftPro
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -12924,9 +12924,9 @@ extension ProtobufUnittest_TestMutualRecursionA: SwiftProtobuf.Message, SwiftPro
   }
 }
 
-extension ProtobufUnittest_TestMutualRecursionA.SubMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestMutualRecursionA.SubMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestMutualRecursionA.protoMessageName + ".SubMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "b"),
   ]
 
@@ -12949,7 +12949,7 @@ extension ProtobufUnittest_TestMutualRecursionA.SubMessage: SwiftProtobuf.Messag
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -12964,7 +12964,7 @@ extension ProtobufUnittest_TestMutualRecursionA.SubMessage: SwiftProtobuf.Messag
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -12992,9 +12992,9 @@ extension ProtobufUnittest_TestMutualRecursionA.SubMessage: SwiftProtobuf.Messag
   }
 }
 
-extension ProtobufUnittest_TestMutualRecursionA.SubGroup: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestMutualRecursionA.SubGroup: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestMutualRecursionA.protoMessageName + ".SubGroup"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     3: .standard(proto: "sub_message"),
     4: .standard(proto: "not_in_this_scc"),
   ]
@@ -13020,7 +13020,7 @@ extension ProtobufUnittest_TestMutualRecursionA.SubGroup: SwiftProtobuf.Message,
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -13036,7 +13036,7 @@ extension ProtobufUnittest_TestMutualRecursionA.SubGroup: SwiftProtobuf.Message,
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -13068,9 +13068,9 @@ extension ProtobufUnittest_TestMutualRecursionA.SubGroup: SwiftProtobuf.Message,
   }
 }
 
-extension ProtobufUnittest_TestMutualRecursionB: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestMutualRecursionB: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestMutualRecursionB"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "a"),
     2: .standard(proto: "optional_int32"),
   ]
@@ -13096,7 +13096,7 @@ extension ProtobufUnittest_TestMutualRecursionB: SwiftProtobuf.Message, SwiftPro
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -13112,7 +13112,7 @@ extension ProtobufUnittest_TestMutualRecursionB: SwiftProtobuf.Message, SwiftPro
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -13144,9 +13144,9 @@ extension ProtobufUnittest_TestMutualRecursionB: SwiftProtobuf.Message, SwiftPro
   }
 }
 
-extension ProtobufUnittest_TestIsInitialized: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestIsInitialized: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestIsInitialized"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "sub_message"),
   ]
 
@@ -13155,7 +13155,7 @@ extension ProtobufUnittest_TestIsInitialized: SwiftProtobuf.Message, SwiftProtob
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13167,7 +13167,7 @@ extension ProtobufUnittest_TestIsInitialized: SwiftProtobuf.Message, SwiftProtob
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -13185,9 +13185,9 @@ extension ProtobufUnittest_TestIsInitialized: SwiftProtobuf.Message, SwiftProtob
   }
 }
 
-extension ProtobufUnittest_TestIsInitialized.SubMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestIsInitialized.SubMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestIsInitialized.protoMessageName + ".SubMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .unique(proto: "SubGroup", json: "subgroup"),
   ]
 
@@ -13196,7 +13196,7 @@ extension ProtobufUnittest_TestIsInitialized.SubMessage: SwiftProtobuf.Message, 
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13208,7 +13208,7 @@ extension ProtobufUnittest_TestIsInitialized.SubMessage: SwiftProtobuf.Message, 
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -13226,9 +13226,9 @@ extension ProtobufUnittest_TestIsInitialized.SubMessage: SwiftProtobuf.Message, 
   }
 }
 
-extension ProtobufUnittest_TestIsInitialized.SubMessage.SubGroup: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestIsInitialized.SubMessage.SubGroup: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestIsInitialized.SubMessage.protoMessageName + ".SubGroup"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     2: .same(proto: "i"),
   ]
 
@@ -13237,7 +13237,7 @@ extension ProtobufUnittest_TestIsInitialized.SubMessage.SubGroup: SwiftProtobuf.
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13249,7 +13249,7 @@ extension ProtobufUnittest_TestIsInitialized.SubMessage.SubGroup: SwiftProtobuf.
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -13267,15 +13267,15 @@ extension ProtobufUnittest_TestIsInitialized.SubMessage.SubGroup: SwiftProtobuf.
   }
 }
 
-extension ProtobufUnittest_TestDupFieldNumber: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestDupFieldNumber: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestDupFieldNumber"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "a"),
     2: .unique(proto: "Foo", json: "foo"),
     3: .unique(proto: "Bar", json: "bar"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13289,7 +13289,7 @@ extension ProtobufUnittest_TestDupFieldNumber: SwiftProtobuf.Message, SwiftProto
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -13315,13 +13315,13 @@ extension ProtobufUnittest_TestDupFieldNumber: SwiftProtobuf.Message, SwiftProto
   }
 }
 
-extension ProtobufUnittest_TestDupFieldNumber.Foo: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestDupFieldNumber.Foo: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestDupFieldNumber.protoMessageName + ".Foo"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "a"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13333,7 +13333,7 @@ extension ProtobufUnittest_TestDupFieldNumber.Foo: SwiftProtobuf.Message, SwiftP
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -13351,13 +13351,13 @@ extension ProtobufUnittest_TestDupFieldNumber.Foo: SwiftProtobuf.Message, SwiftP
   }
 }
 
-extension ProtobufUnittest_TestDupFieldNumber.Bar: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestDupFieldNumber.Bar: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestDupFieldNumber.protoMessageName + ".Bar"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "a"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13369,7 +13369,7 @@ extension ProtobufUnittest_TestDupFieldNumber.Bar: SwiftProtobuf.Message, SwiftP
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -13387,13 +13387,13 @@ extension ProtobufUnittest_TestDupFieldNumber.Bar: SwiftProtobuf.Message, SwiftP
   }
 }
 
-extension ProtobufUnittest_TestEagerMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestEagerMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestEagerMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "sub_message"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13405,7 +13405,7 @@ extension ProtobufUnittest_TestEagerMessage: SwiftProtobuf.Message, SwiftProtobu
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -13423,13 +13423,13 @@ extension ProtobufUnittest_TestEagerMessage: SwiftProtobuf.Message, SwiftProtobu
   }
 }
 
-extension ProtobufUnittest_TestLazyMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestLazyMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestLazyMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "sub_message"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13441,7 +13441,7 @@ extension ProtobufUnittest_TestLazyMessage: SwiftProtobuf.Message, SwiftProtobuf
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -13459,15 +13459,15 @@ extension ProtobufUnittest_TestLazyMessage: SwiftProtobuf.Message, SwiftProtobuf
   }
 }
 
-extension ProtobufUnittest_TestEagerMaybeLazy: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestEagerMaybeLazy: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestEagerMaybeLazy"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "message_foo"),
     2: .standard(proto: "message_bar"),
     3: .standard(proto: "message_baz"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13481,7 +13481,7 @@ extension ProtobufUnittest_TestEagerMaybeLazy: SwiftProtobuf.Message, SwiftProto
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -13507,13 +13507,13 @@ extension ProtobufUnittest_TestEagerMaybeLazy: SwiftProtobuf.Message, SwiftProto
   }
 }
 
-extension ProtobufUnittest_TestEagerMaybeLazy.NestedMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestEagerMaybeLazy.NestedMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestEagerMaybeLazy.protoMessageName + ".NestedMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "packed"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13525,7 +13525,7 @@ extension ProtobufUnittest_TestEagerMaybeLazy.NestedMessage: SwiftProtobuf.Messa
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -13543,13 +13543,13 @@ extension ProtobufUnittest_TestEagerMaybeLazy.NestedMessage: SwiftProtobuf.Messa
   }
 }
 
-extension ProtobufUnittest_TestNestedMessageHasBits: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestNestedMessageHasBits: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestNestedMessageHasBits"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "optional_nested_message"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13561,7 +13561,7 @@ extension ProtobufUnittest_TestNestedMessageHasBits: SwiftProtobuf.Message, Swif
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -13579,14 +13579,14 @@ extension ProtobufUnittest_TestNestedMessageHasBits: SwiftProtobuf.Message, Swif
   }
 }
 
-extension ProtobufUnittest_TestNestedMessageHasBits.NestedMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestNestedMessageHasBits.NestedMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestNestedMessageHasBits.protoMessageName + ".NestedMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "nestedmessage_repeated_int32"),
     2: .standard(proto: "nestedmessage_repeated_foreignmessage"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13599,7 +13599,7 @@ extension ProtobufUnittest_TestNestedMessageHasBits.NestedMessage: SwiftProtobuf
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.nestedmessageRepeatedInt32.isEmpty {
       try visitor.visitRepeatedInt32Field(value: self.nestedmessageRepeatedInt32, fieldNumber: 1)
     }
@@ -13617,9 +13617,9 @@ extension ProtobufUnittest_TestNestedMessageHasBits.NestedMessage: SwiftProtobuf
   }
 }
 
-extension ProtobufUnittest_TestCamelCaseFieldNames: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestCamelCaseFieldNames: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestCamelCaseFieldNames"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "PrimitiveField"),
     2: .same(proto: "StringField"),
     3: .same(proto: "EnumField"),
@@ -13634,7 +13634,7 @@ extension ProtobufUnittest_TestCamelCaseFieldNames: SwiftProtobuf.Message, Swift
     12: .same(proto: "RepeatedCordField"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13657,7 +13657,7 @@ extension ProtobufUnittest_TestCamelCaseFieldNames: SwiftProtobuf.Message, Swift
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -13719,9 +13719,9 @@ extension ProtobufUnittest_TestCamelCaseFieldNames: SwiftProtobuf.Message, Swift
   }
 }
 
-extension ProtobufUnittest_TestFieldOrderings: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestFieldOrderings: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestFieldOrderings"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     11: .standard(proto: "my_string"),
     1: .standard(proto: "my_int"),
     101: .standard(proto: "my_float"),
@@ -13733,7 +13733,7 @@ extension ProtobufUnittest_TestFieldOrderings: SwiftProtobuf.Message, SwiftProto
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13750,7 +13750,7 @@ extension ProtobufUnittest_TestFieldOrderings: SwiftProtobuf.Message, SwiftProto
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -13783,14 +13783,14 @@ extension ProtobufUnittest_TestFieldOrderings: SwiftProtobuf.Message, SwiftProto
   }
 }
 
-extension ProtobufUnittest_TestFieldOrderings.NestedMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestFieldOrderings.NestedMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestFieldOrderings.protoMessageName + ".NestedMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     2: .same(proto: "oo"),
     1: .same(proto: "bb"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13803,7 +13803,7 @@ extension ProtobufUnittest_TestFieldOrderings.NestedMessage: SwiftProtobuf.Messa
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -13825,13 +13825,13 @@ extension ProtobufUnittest_TestFieldOrderings.NestedMessage: SwiftProtobuf.Messa
   }
 }
 
-extension ProtobufUnittest_TestExtensionOrderings1: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestExtensionOrderings1: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestExtensionOrderings1"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "my_string"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13843,7 +13843,7 @@ extension ProtobufUnittest_TestExtensionOrderings1: SwiftProtobuf.Message, Swift
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -13861,13 +13861,13 @@ extension ProtobufUnittest_TestExtensionOrderings1: SwiftProtobuf.Message, Swift
   }
 }
 
-extension ProtobufUnittest_TestExtensionOrderings2: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestExtensionOrderings2: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestExtensionOrderings2"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "my_string"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13879,7 +13879,7 @@ extension ProtobufUnittest_TestExtensionOrderings2: SwiftProtobuf.Message, Swift
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -13897,13 +13897,13 @@ extension ProtobufUnittest_TestExtensionOrderings2: SwiftProtobuf.Message, Swift
   }
 }
 
-extension ProtobufUnittest_TestExtensionOrderings2.TestExtensionOrderings3: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestExtensionOrderings2.TestExtensionOrderings3: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestExtensionOrderings2.protoMessageName + ".TestExtensionOrderings3"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "my_string"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13915,7 +13915,7 @@ extension ProtobufUnittest_TestExtensionOrderings2.TestExtensionOrderings3: Swif
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -13933,9 +13933,9 @@ extension ProtobufUnittest_TestExtensionOrderings2.TestExtensionOrderings3: Swif
   }
 }
 
-extension ProtobufUnittest_TestExtremeDefaultValues: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestExtremeDefaultValues: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestExtremeDefaultValues"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "escaped_bytes"),
     2: .standard(proto: "large_uint32"),
     3: .standard(proto: "large_uint64"),
@@ -14036,7 +14036,7 @@ extension ProtobufUnittest_TestExtremeDefaultValues: SwiftProtobuf.Message, Swif
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -14077,7 +14077,7 @@ extension ProtobufUnittest_TestExtremeDefaultValues: SwiftProtobuf.Message, Swif
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -14209,13 +14209,13 @@ extension ProtobufUnittest_TestExtremeDefaultValues: SwiftProtobuf.Message, Swif
   }
 }
 
-extension ProtobufUnittest_SparseEnumMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_SparseEnumMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".SparseEnumMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "sparse_enum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -14227,7 +14227,7 @@ extension ProtobufUnittest_SparseEnumMessage: SwiftProtobuf.Message, SwiftProtob
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -14245,13 +14245,13 @@ extension ProtobufUnittest_SparseEnumMessage: SwiftProtobuf.Message, SwiftProtob
   }
 }
 
-extension ProtobufUnittest_OneString: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_OneString: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".OneString"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "data"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -14263,7 +14263,7 @@ extension ProtobufUnittest_OneString: SwiftProtobuf.Message, SwiftProtobuf._Mess
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -14281,13 +14281,13 @@ extension ProtobufUnittest_OneString: SwiftProtobuf.Message, SwiftProtobuf._Mess
   }
 }
 
-extension ProtobufUnittest_MoreString: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_MoreString: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".MoreString"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "data"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -14299,7 +14299,7 @@ extension ProtobufUnittest_MoreString: SwiftProtobuf.Message, SwiftProtobuf._Mes
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.data.isEmpty {
       try visitor.visitRepeatedStringField(value: self.data, fieldNumber: 1)
     }
@@ -14313,13 +14313,13 @@ extension ProtobufUnittest_MoreString: SwiftProtobuf.Message, SwiftProtobuf._Mes
   }
 }
 
-extension ProtobufUnittest_OneBytes: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_OneBytes: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".OneBytes"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "data"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -14331,7 +14331,7 @@ extension ProtobufUnittest_OneBytes: SwiftProtobuf.Message, SwiftProtobuf._Messa
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -14349,13 +14349,13 @@ extension ProtobufUnittest_OneBytes: SwiftProtobuf.Message, SwiftProtobuf._Messa
   }
 }
 
-extension ProtobufUnittest_MoreBytes: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_MoreBytes: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".MoreBytes"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "data"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -14367,7 +14367,7 @@ extension ProtobufUnittest_MoreBytes: SwiftProtobuf.Message, SwiftProtobuf._Mess
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.data.isEmpty {
       try visitor.visitRepeatedBytesField(value: self.data, fieldNumber: 1)
     }
@@ -14381,9 +14381,9 @@ extension ProtobufUnittest_MoreBytes: SwiftProtobuf.Message, SwiftProtobuf._Mess
   }
 }
 
-extension ProtobufUnittest_ManyOptionalString: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_ManyOptionalString: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".ManyOptionalString"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "str1"),
     2: .same(proto: "str2"),
     3: .same(proto: "str3"),
@@ -14499,7 +14499,7 @@ extension ProtobufUnittest_ManyOptionalString: SwiftProtobuf.Message, SwiftProto
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -14545,7 +14545,7 @@ extension ProtobufUnittest_ManyOptionalString: SwiftProtobuf.Message, SwiftProto
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -14697,13 +14697,13 @@ extension ProtobufUnittest_ManyOptionalString: SwiftProtobuf.Message, SwiftProto
   }
 }
 
-extension ProtobufUnittest_Int32Message: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_Int32Message: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".Int32Message"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "data"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -14715,7 +14715,7 @@ extension ProtobufUnittest_Int32Message: SwiftProtobuf.Message, SwiftProtobuf._M
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -14733,13 +14733,13 @@ extension ProtobufUnittest_Int32Message: SwiftProtobuf.Message, SwiftProtobuf._M
   }
 }
 
-extension ProtobufUnittest_Uint32Message: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_Uint32Message: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".Uint32Message"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "data"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -14751,7 +14751,7 @@ extension ProtobufUnittest_Uint32Message: SwiftProtobuf.Message, SwiftProtobuf._
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -14769,13 +14769,13 @@ extension ProtobufUnittest_Uint32Message: SwiftProtobuf.Message, SwiftProtobuf._
   }
 }
 
-extension ProtobufUnittest_Int64Message: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_Int64Message: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".Int64Message"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "data"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -14787,7 +14787,7 @@ extension ProtobufUnittest_Int64Message: SwiftProtobuf.Message, SwiftProtobuf._M
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -14805,13 +14805,13 @@ extension ProtobufUnittest_Int64Message: SwiftProtobuf.Message, SwiftProtobuf._M
   }
 }
 
-extension ProtobufUnittest_Uint64Message: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_Uint64Message: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".Uint64Message"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "data"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -14823,7 +14823,7 @@ extension ProtobufUnittest_Uint64Message: SwiftProtobuf.Message, SwiftProtobuf._
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -14841,13 +14841,13 @@ extension ProtobufUnittest_Uint64Message: SwiftProtobuf.Message, SwiftProtobuf._
   }
 }
 
-extension ProtobufUnittest_BoolMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_BoolMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".BoolMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "data"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -14859,7 +14859,7 @@ extension ProtobufUnittest_BoolMessage: SwiftProtobuf.Message, SwiftProtobuf._Me
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -14877,16 +14877,16 @@ extension ProtobufUnittest_BoolMessage: SwiftProtobuf.Message, SwiftProtobuf._Me
   }
 }
 
-extension ProtobufUnittest_TestOneof: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestOneof: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestOneof"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "foo_int"),
     2: .standard(proto: "foo_string"),
     3: .standard(proto: "foo_message"),
     4: .unique(proto: "FooGroup", json: "foogroup"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -14939,7 +14939,7 @@ extension ProtobufUnittest_TestOneof: SwiftProtobuf.Message, SwiftProtobuf._Mess
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -14973,14 +14973,14 @@ extension ProtobufUnittest_TestOneof: SwiftProtobuf.Message, SwiftProtobuf._Mess
   }
 }
 
-extension ProtobufUnittest_TestOneof.FooGroup: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestOneof.FooGroup: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestOneof.protoMessageName + ".FooGroup"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     5: .same(proto: "a"),
     6: .same(proto: "b"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -14993,7 +14993,7 @@ extension ProtobufUnittest_TestOneof.FooGroup: SwiftProtobuf.Message, SwiftProto
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -15015,16 +15015,16 @@ extension ProtobufUnittest_TestOneof.FooGroup: SwiftProtobuf.Message, SwiftProto
   }
 }
 
-extension ProtobufUnittest_TestOneofBackwardsCompatible: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestOneofBackwardsCompatible: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestOneofBackwardsCompatible"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "foo_int"),
     2: .standard(proto: "foo_string"),
     3: .standard(proto: "foo_message"),
     4: .unique(proto: "FooGroup", json: "foogroup"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -15039,7 +15039,7 @@ extension ProtobufUnittest_TestOneofBackwardsCompatible: SwiftProtobuf.Message, 
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -15069,14 +15069,14 @@ extension ProtobufUnittest_TestOneofBackwardsCompatible: SwiftProtobuf.Message, 
   }
 }
 
-extension ProtobufUnittest_TestOneofBackwardsCompatible.FooGroup: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestOneofBackwardsCompatible.FooGroup: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestOneofBackwardsCompatible.protoMessageName + ".FooGroup"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     5: .same(proto: "a"),
     6: .same(proto: "b"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -15089,7 +15089,7 @@ extension ProtobufUnittest_TestOneofBackwardsCompatible.FooGroup: SwiftProtobuf.
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -15111,9 +15111,9 @@ extension ProtobufUnittest_TestOneofBackwardsCompatible.FooGroup: SwiftProtobuf.
   }
 }
 
-extension ProtobufUnittest_TestOneof2: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestOneof2: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestOneof2"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "foo_int"),
     2: .standard(proto: "foo_string"),
     3: .standard(proto: "foo_cord"),
@@ -15137,7 +15137,7 @@ extension ProtobufUnittest_TestOneof2: SwiftProtobuf.Message, SwiftProtobuf._Mes
     19: .standard(proto: "baz_string"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -15317,7 +15317,7 @@ extension ProtobufUnittest_TestOneof2: SwiftProtobuf.Message, SwiftProtobuf._Mes
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -15426,22 +15426,22 @@ extension ProtobufUnittest_TestOneof2: SwiftProtobuf.Message, SwiftProtobuf._Mes
   }
 }
 
-extension ProtobufUnittest_TestOneof2.NestedEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_TestOneof2.NestedEnum: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "FOO"),
     2: .same(proto: "BAR"),
     3: .same(proto: "BAZ"),
   ]
 }
 
-extension ProtobufUnittest_TestOneof2.FooGroup: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestOneof2.FooGroup: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestOneof2.protoMessageName + ".FooGroup"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     9: .same(proto: "a"),
     10: .same(proto: "b"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -15454,7 +15454,7 @@ extension ProtobufUnittest_TestOneof2.FooGroup: SwiftProtobuf.Message, SwiftProt
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -15476,14 +15476,14 @@ extension ProtobufUnittest_TestOneof2.FooGroup: SwiftProtobuf.Message, SwiftProt
   }
 }
 
-extension ProtobufUnittest_TestOneof2.NestedMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestOneof2.NestedMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestOneof2.protoMessageName + ".NestedMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "moo_int"),
     2: .standard(proto: "corge_int"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -15496,7 +15496,7 @@ extension ProtobufUnittest_TestOneof2.NestedMessage: SwiftProtobuf.Message, Swif
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -15518,9 +15518,9 @@ extension ProtobufUnittest_TestOneof2.NestedMessage: SwiftProtobuf.Message, Swif
   }
 }
 
-extension ProtobufUnittest_TestRequiredOneof: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestRequiredOneof: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestRequiredOneof"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "foo_int"),
     2: .standard(proto: "foo_string"),
     3: .standard(proto: "foo_message"),
@@ -15532,7 +15532,7 @@ extension ProtobufUnittest_TestRequiredOneof: SwiftProtobuf.Message, SwiftProtob
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -15585,7 +15585,7 @@ extension ProtobufUnittest_TestRequiredOneof: SwiftProtobuf.Message, SwiftProtob
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -15619,9 +15619,9 @@ extension ProtobufUnittest_TestRequiredOneof: SwiftProtobuf.Message, SwiftProtob
   }
 }
 
-extension ProtobufUnittest_TestRequiredOneof.NestedMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestRequiredOneof.NestedMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestRequiredOneof.protoMessageName + ".NestedMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "required_double"),
   ]
 
@@ -15630,7 +15630,7 @@ extension ProtobufUnittest_TestRequiredOneof.NestedMessage: SwiftProtobuf.Messag
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -15642,7 +15642,7 @@ extension ProtobufUnittest_TestRequiredOneof.NestedMessage: SwiftProtobuf.Messag
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -15660,9 +15660,9 @@ extension ProtobufUnittest_TestRequiredOneof.NestedMessage: SwiftProtobuf.Messag
   }
 }
 
-extension ProtobufUnittest_TestPackedTypes: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestPackedTypes: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestPackedTypes"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     90: .standard(proto: "packed_int32"),
     91: .standard(proto: "packed_int64"),
     92: .standard(proto: "packed_uint32"),
@@ -15679,7 +15679,7 @@ extension ProtobufUnittest_TestPackedTypes: SwiftProtobuf.Message, SwiftProtobuf
     103: .standard(proto: "packed_enum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -15704,7 +15704,7 @@ extension ProtobufUnittest_TestPackedTypes: SwiftProtobuf.Message, SwiftProtobuf
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.packedInt32.isEmpty {
       try visitor.visitPackedInt32Field(value: self.packedInt32, fieldNumber: 90)
     }
@@ -15770,9 +15770,9 @@ extension ProtobufUnittest_TestPackedTypes: SwiftProtobuf.Message, SwiftProtobuf
   }
 }
 
-extension ProtobufUnittest_TestUnpackedTypes: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestUnpackedTypes: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestUnpackedTypes"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     90: .standard(proto: "unpacked_int32"),
     91: .standard(proto: "unpacked_int64"),
     92: .standard(proto: "unpacked_uint32"),
@@ -15789,7 +15789,7 @@ extension ProtobufUnittest_TestUnpackedTypes: SwiftProtobuf.Message, SwiftProtob
     103: .standard(proto: "unpacked_enum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -15814,7 +15814,7 @@ extension ProtobufUnittest_TestUnpackedTypes: SwiftProtobuf.Message, SwiftProtob
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.unpackedInt32.isEmpty {
       try visitor.visitRepeatedInt32Field(value: self.unpackedInt32, fieldNumber: 90)
     }
@@ -15880,16 +15880,16 @@ extension ProtobufUnittest_TestUnpackedTypes: SwiftProtobuf.Message, SwiftProtob
   }
 }
 
-extension ProtobufUnittest_TestPackedExtensions: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestPackedExtensions: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestPackedExtensions"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
   public var isInitialized: Bool {
     if !_protobuf_extensionFieldValues.isInitialized {return false}
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       if (1 <= fieldNumber && fieldNumber < 536870912) {
         try decoder.decodeExtensionField(values: &_protobuf_extensionFieldValues, messageType: ProtobufUnittest_TestPackedExtensions.self, fieldNumber: fieldNumber)
@@ -15897,7 +15897,7 @@ extension ProtobufUnittest_TestPackedExtensions: SwiftProtobuf.Message, SwiftPro
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 1, end: 536870912)
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -15909,16 +15909,16 @@ extension ProtobufUnittest_TestPackedExtensions: SwiftProtobuf.Message, SwiftPro
   }
 }
 
-extension ProtobufUnittest_TestUnpackedExtensions: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestUnpackedExtensions: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestUnpackedExtensions"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
   public var isInitialized: Bool {
     if !_protobuf_extensionFieldValues.isInitialized {return false}
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       if (1 <= fieldNumber && fieldNumber < 536870912) {
         try decoder.decodeExtensionField(values: &_protobuf_extensionFieldValues, messageType: ProtobufUnittest_TestUnpackedExtensions.self, fieldNumber: fieldNumber)
@@ -15926,7 +15926,7 @@ extension ProtobufUnittest_TestUnpackedExtensions: SwiftProtobuf.Message, SwiftP
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 1, end: 536870912)
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -15938,9 +15938,9 @@ extension ProtobufUnittest_TestUnpackedExtensions: SwiftProtobuf.Message, SwiftP
   }
 }
 
-extension ProtobufUnittest_TestDynamicExtensions: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestDynamicExtensions: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestDynamicExtensions"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     2000: .standard(proto: "scalar_extension"),
     2001: .standard(proto: "enum_extension"),
     2002: .standard(proto: "dynamic_enum_extension"),
@@ -15950,7 +15950,7 @@ extension ProtobufUnittest_TestDynamicExtensions: SwiftProtobuf.Message, SwiftPr
     2006: .standard(proto: "packed_extension"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -15968,7 +15968,7 @@ extension ProtobufUnittest_TestDynamicExtensions: SwiftProtobuf.Message, SwiftPr
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -16010,21 +16010,21 @@ extension ProtobufUnittest_TestDynamicExtensions: SwiftProtobuf.Message, SwiftPr
   }
 }
 
-extension ProtobufUnittest_TestDynamicExtensions.DynamicEnumType: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_TestDynamicExtensions.DynamicEnumType: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     2200: .same(proto: "DYNAMIC_FOO"),
     2201: .same(proto: "DYNAMIC_BAR"),
     2202: .same(proto: "DYNAMIC_BAZ"),
   ]
 }
 
-extension ProtobufUnittest_TestDynamicExtensions.DynamicMessageType: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestDynamicExtensions.DynamicMessageType: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestDynamicExtensions.protoMessageName + ".DynamicMessageType"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     2100: .standard(proto: "dynamic_field"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -16036,7 +16036,7 @@ extension ProtobufUnittest_TestDynamicExtensions.DynamicMessageType: SwiftProtob
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -16054,16 +16054,16 @@ extension ProtobufUnittest_TestDynamicExtensions.DynamicMessageType: SwiftProtob
   }
 }
 
-extension ProtobufUnittest_TestRepeatedString: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestRepeatedString: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestRepeatedString"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "repeated_string1"),
     2: .standard(proto: "repeated_string2"),
     11: .standard(proto: "repeated_bytes11"),
     12: .standard(proto: "repeated_bytes12"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -16078,7 +16078,7 @@ extension ProtobufUnittest_TestRepeatedString: SwiftProtobuf.Message, SwiftProto
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.repeatedString1.isEmpty {
       try visitor.visitRepeatedStringField(value: self.repeatedString1, fieldNumber: 1)
     }
@@ -16104,9 +16104,9 @@ extension ProtobufUnittest_TestRepeatedString: SwiftProtobuf.Message, SwiftProto
   }
 }
 
-extension ProtobufUnittest_TestRepeatedScalarDifferentTagSizes: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestRepeatedScalarDifferentTagSizes: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestRepeatedScalarDifferentTagSizes"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     12: .standard(proto: "repeated_fixed32"),
     13: .standard(proto: "repeated_int32"),
     2046: .standard(proto: "repeated_fixed64"),
@@ -16115,7 +16115,7 @@ extension ProtobufUnittest_TestRepeatedScalarDifferentTagSizes: SwiftProtobuf.Me
     262143: .standard(proto: "repeated_uint64"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -16132,7 +16132,7 @@ extension ProtobufUnittest_TestRepeatedScalarDifferentTagSizes: SwiftProtobuf.Me
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.repeatedFixed32.isEmpty {
       try visitor.visitRepeatedFixed32Field(value: self.repeatedFixed32, fieldNumber: 12)
     }
@@ -16166,9 +16166,9 @@ extension ProtobufUnittest_TestRepeatedScalarDifferentTagSizes: SwiftProtobuf.Me
   }
 }
 
-extension ProtobufUnittest_TestParsingMerge: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestParsingMerge: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestParsingMerge"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "required_all_types"),
     2: .standard(proto: "optional_all_types"),
     3: .standard(proto: "repeated_all_types"),
@@ -16182,7 +16182,7 @@ extension ProtobufUnittest_TestParsingMerge: SwiftProtobuf.Message, SwiftProtobu
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -16200,7 +16200,7 @@ extension ProtobufUnittest_TestParsingMerge: SwiftProtobuf.Message, SwiftProtobu
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -16236,9 +16236,9 @@ extension ProtobufUnittest_TestParsingMerge: SwiftProtobuf.Message, SwiftProtobu
   }
 }
 
-extension ProtobufUnittest_TestParsingMerge.RepeatedFieldsGenerator: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestParsingMerge.RepeatedFieldsGenerator: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestParsingMerge.protoMessageName + ".RepeatedFieldsGenerator"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "field1"),
     2: .same(proto: "field2"),
     3: .same(proto: "field3"),
@@ -16248,7 +16248,7 @@ extension ProtobufUnittest_TestParsingMerge.RepeatedFieldsGenerator: SwiftProtob
     1001: .same(proto: "ext2"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -16266,7 +16266,7 @@ extension ProtobufUnittest_TestParsingMerge.RepeatedFieldsGenerator: SwiftProtob
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.field1.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.field1, fieldNumber: 1)
     }
@@ -16304,13 +16304,13 @@ extension ProtobufUnittest_TestParsingMerge.RepeatedFieldsGenerator: SwiftProtob
   }
 }
 
-extension ProtobufUnittest_TestParsingMerge.RepeatedFieldsGenerator.Group1: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestParsingMerge.RepeatedFieldsGenerator.Group1: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestParsingMerge.RepeatedFieldsGenerator.protoMessageName + ".Group1"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     11: .same(proto: "field1"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -16322,7 +16322,7 @@ extension ProtobufUnittest_TestParsingMerge.RepeatedFieldsGenerator.Group1: Swif
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -16340,13 +16340,13 @@ extension ProtobufUnittest_TestParsingMerge.RepeatedFieldsGenerator.Group1: Swif
   }
 }
 
-extension ProtobufUnittest_TestParsingMerge.RepeatedFieldsGenerator.Group2: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestParsingMerge.RepeatedFieldsGenerator.Group2: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestParsingMerge.RepeatedFieldsGenerator.protoMessageName + ".Group2"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     21: .same(proto: "field1"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -16358,7 +16358,7 @@ extension ProtobufUnittest_TestParsingMerge.RepeatedFieldsGenerator.Group2: Swif
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -16376,13 +16376,13 @@ extension ProtobufUnittest_TestParsingMerge.RepeatedFieldsGenerator.Group2: Swif
   }
 }
 
-extension ProtobufUnittest_TestParsingMerge.OptionalGroup: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestParsingMerge.OptionalGroup: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestParsingMerge.protoMessageName + ".OptionalGroup"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     11: .standard(proto: "optional_group_all_types"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -16394,7 +16394,7 @@ extension ProtobufUnittest_TestParsingMerge.OptionalGroup: SwiftProtobuf.Message
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -16412,13 +16412,13 @@ extension ProtobufUnittest_TestParsingMerge.OptionalGroup: SwiftProtobuf.Message
   }
 }
 
-extension ProtobufUnittest_TestParsingMerge.RepeatedGroup: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestParsingMerge.RepeatedGroup: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestParsingMerge.protoMessageName + ".RepeatedGroup"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     21: .standard(proto: "repeated_group_all_types"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -16430,7 +16430,7 @@ extension ProtobufUnittest_TestParsingMerge.RepeatedGroup: SwiftProtobuf.Message
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -16448,9 +16448,9 @@ extension ProtobufUnittest_TestParsingMerge.RepeatedGroup: SwiftProtobuf.Message
   }
 }
 
-extension ProtobufUnittest_TestMergeException: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestMergeException: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestMergeException"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "all_extensions"),
   ]
 
@@ -16459,7 +16459,7 @@ extension ProtobufUnittest_TestMergeException: SwiftProtobuf.Message, SwiftProto
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -16471,7 +16471,7 @@ extension ProtobufUnittest_TestMergeException: SwiftProtobuf.Message, SwiftProto
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -16489,13 +16489,13 @@ extension ProtobufUnittest_TestMergeException: SwiftProtobuf.Message, SwiftProto
   }
 }
 
-extension ProtobufUnittest_TestCommentInjectionMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestCommentInjectionMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestCommentInjectionMessage"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "a"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -16507,7 +16507,7 @@ extension ProtobufUnittest_TestCommentInjectionMessage: SwiftProtobuf.Message, S
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -16525,9 +16525,9 @@ extension ProtobufUnittest_TestCommentInjectionMessage: SwiftProtobuf.Message, S
   }
 }
 
-extension ProtobufUnittest_TestMessageSize: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestMessageSize: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestMessageSize"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "m1"),
     2: .same(proto: "m2"),
     3: .same(proto: "m3"),
@@ -16536,7 +16536,7 @@ extension ProtobufUnittest_TestMessageSize: SwiftProtobuf.Message, SwiftProtobuf
     6: .same(proto: "m6"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -16553,7 +16553,7 @@ extension ProtobufUnittest_TestMessageSize: SwiftProtobuf.Message, SwiftProtobuf
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -16591,16 +16591,16 @@ extension ProtobufUnittest_TestMessageSize: SwiftProtobuf.Message, SwiftProtobuf
   }
 }
 
-extension ProtobufUnittest_FooRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_FooRequest: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".FooRequest"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let _ = try decoder.nextFieldNumber() {
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -16610,16 +16610,16 @@ extension ProtobufUnittest_FooRequest: SwiftProtobuf.Message, SwiftProtobuf._Mes
   }
 }
 
-extension ProtobufUnittest_FooResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_FooResponse: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".FooResponse"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let _ = try decoder.nextFieldNumber() {
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -16629,16 +16629,16 @@ extension ProtobufUnittest_FooResponse: SwiftProtobuf.Message, SwiftProtobuf._Me
   }
 }
 
-extension ProtobufUnittest_FooClientMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_FooClientMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".FooClientMessage"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let _ = try decoder.nextFieldNumber() {
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -16648,16 +16648,16 @@ extension ProtobufUnittest_FooClientMessage: SwiftProtobuf.Message, SwiftProtobu
   }
 }
 
-extension ProtobufUnittest_FooServerMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_FooServerMessage: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".FooServerMessage"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let _ = try decoder.nextFieldNumber() {
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -16667,16 +16667,16 @@ extension ProtobufUnittest_FooServerMessage: SwiftProtobuf.Message, SwiftProtobu
   }
 }
 
-extension ProtobufUnittest_BarRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_BarRequest: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".BarRequest"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let _ = try decoder.nextFieldNumber() {
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -16686,16 +16686,16 @@ extension ProtobufUnittest_BarRequest: SwiftProtobuf.Message, SwiftProtobuf._Mes
   }
 }
 
-extension ProtobufUnittest_BarResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_BarResponse: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".BarResponse"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  static let _protobuf_nameMap = IntentSwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let _ = try decoder.nextFieldNumber() {
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -16705,9 +16705,9 @@ extension ProtobufUnittest_BarResponse: SwiftProtobuf.Message, SwiftProtobuf._Me
   }
 }
 
-extension ProtobufUnittest_TestJsonName: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestJsonName: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestJsonName"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "field_name1"),
     2: .same(proto: "fieldName2"),
     3: .same(proto: "FieldName3"),
@@ -16717,7 +16717,7 @@ extension ProtobufUnittest_TestJsonName: SwiftProtobuf.Message, SwiftProtobuf._M
     7: .same(proto: "fieldname7"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -16735,7 +16735,7 @@ extension ProtobufUnittest_TestJsonName: SwiftProtobuf.Message, SwiftProtobuf._M
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -16777,9 +16777,9 @@ extension ProtobufUnittest_TestJsonName: SwiftProtobuf.Message, SwiftProtobuf._M
   }
 }
 
-extension ProtobufUnittest_TestHugeFieldNumbers: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestHugeFieldNumbers: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestHugeFieldNumbers"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     536870000: .standard(proto: "optional_int32"),
     536870001: .standard(proto: "fixed_32"),
     536870002: .standard(proto: "repeated_int32"),
@@ -16801,7 +16801,7 @@ extension ProtobufUnittest_TestHugeFieldNumbers: SwiftProtobuf.Message, SwiftPro
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -16816,7 +16816,7 @@ extension ProtobufUnittest_TestHugeFieldNumbers: SwiftProtobuf.Message, SwiftPro
       case 536870006: try { try decoder.decodeSingularBytesField(value: &self._optionalBytes) }()
       case 536870007: try { try decoder.decodeSingularMessageField(value: &self._optionalMessage) }()
       case 536870008: try { try decoder.decodeSingularGroupField(value: &self._optionalGroup) }()
-      case 536870010: try { try decoder.decodeMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufString>.self, value: &self.stringStringMap) }()
+      case 536870010: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufString>.self, value: &self.stringStringMap) }()
       case 536870011: try {
         var v: UInt32?
         try decoder.decodeSingularUInt32Field(value: &v)
@@ -16861,7 +16861,7 @@ extension ProtobufUnittest_TestHugeFieldNumbers: SwiftProtobuf.Message, SwiftPro
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -16895,7 +16895,7 @@ extension ProtobufUnittest_TestHugeFieldNumbers: SwiftProtobuf.Message, SwiftPro
       try visitor.visitSingularGroupField(value: v, fieldNumber: 536870008)
     } }()
     if !self.stringStringMap.isEmpty {
-      try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufString>.self, value: self.stringStringMap, fieldNumber: 536870010)
+      try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufString>.self, value: self.stringStringMap, fieldNumber: 536870010)
     }
     switch self.oneofField {
     case .oneofUint32?: try {
@@ -16937,13 +16937,13 @@ extension ProtobufUnittest_TestHugeFieldNumbers: SwiftProtobuf.Message, SwiftPro
   }
 }
 
-extension ProtobufUnittest_TestHugeFieldNumbers.OptionalGroup: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestHugeFieldNumbers.OptionalGroup: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestHugeFieldNumbers.protoMessageName + ".OptionalGroup"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     536870009: .standard(proto: "group_a"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -16955,7 +16955,7 @@ extension ProtobufUnittest_TestHugeFieldNumbers.OptionalGroup: SwiftProtobuf.Mes
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -16973,9 +16973,9 @@ extension ProtobufUnittest_TestHugeFieldNumbers.OptionalGroup: SwiftProtobuf.Mes
   }
 }
 
-extension ProtobufUnittest_TestExtensionInsideTable: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestExtensionInsideTable: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestExtensionInsideTable"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "field1"),
     2: .same(proto: "field2"),
     3: .same(proto: "field3"),
@@ -16992,7 +16992,7 @@ extension ProtobufUnittest_TestExtensionInsideTable: SwiftProtobuf.Message, Swif
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -17014,7 +17014,7 @@ extension ProtobufUnittest_TestExtensionInsideTable: SwiftProtobuf.Message, Swif
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -17066,9 +17066,9 @@ extension ProtobufUnittest_TestExtensionInsideTable: SwiftProtobuf.Message, Swif
   }
 }
 
-extension ProtobufUnittest_TestNestedGroupExtensionOuter: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestNestedGroupExtensionOuter: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestNestedGroupExtensionOuter"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .unique(proto: "Layer1OptionalGroup", json: "layer1optionalgroup"),
   ]
 
@@ -17077,7 +17077,7 @@ extension ProtobufUnittest_TestNestedGroupExtensionOuter: SwiftProtobuf.Message,
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -17089,7 +17089,7 @@ extension ProtobufUnittest_TestNestedGroupExtensionOuter: SwiftProtobuf.Message,
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -17107,19 +17107,19 @@ extension ProtobufUnittest_TestNestedGroupExtensionOuter: SwiftProtobuf.Message,
   }
 }
 
-extension ProtobufUnittest_TestNestedGroupExtensionOuter.Layer1OptionalGroup: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestNestedGroupExtensionOuter.Layer1OptionalGroup: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestNestedGroupExtensionOuter.protoMessageName + ".Layer1OptionalGroup"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     2: .unique(proto: "Layer2RepeatedGroup", json: "layer2repeatedgroup"),
     4: .unique(proto: "Layer2AnotherOptionalRepeatedGroup", json: "layer2anotheroptionalrepeatedgroup"),
   ]
 
   public var isInitialized: Bool {
-    if !SwiftProtobuf.Internal.areAllInitialized(self.layer2RepeatedGroup) {return false}
+    if !IntentSwiftProtobuf.Internal.areAllInitialized(self.layer2RepeatedGroup) {return false}
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -17132,7 +17132,7 @@ extension ProtobufUnittest_TestNestedGroupExtensionOuter.Layer1OptionalGroup: Sw
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.layer2RepeatedGroup.isEmpty {
       try visitor.visitRepeatedGroupField(value: self.layer2RepeatedGroup, fieldNumber: 2)
     }
@@ -17150,9 +17150,9 @@ extension ProtobufUnittest_TestNestedGroupExtensionOuter.Layer1OptionalGroup: Sw
   }
 }
 
-extension ProtobufUnittest_TestNestedGroupExtensionOuter.Layer1OptionalGroup.Layer2RepeatedGroup: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestNestedGroupExtensionOuter.Layer1OptionalGroup.Layer2RepeatedGroup: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestNestedGroupExtensionOuter.Layer1OptionalGroup.protoMessageName + ".Layer2RepeatedGroup"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     6: .standard(proto: "another_field"),
   ]
 
@@ -17161,7 +17161,7 @@ extension ProtobufUnittest_TestNestedGroupExtensionOuter.Layer1OptionalGroup.Lay
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -17175,7 +17175,7 @@ extension ProtobufUnittest_TestNestedGroupExtensionOuter.Layer1OptionalGroup.Lay
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -17195,13 +17195,13 @@ extension ProtobufUnittest_TestNestedGroupExtensionOuter.Layer1OptionalGroup.Lay
   }
 }
 
-extension ProtobufUnittest_TestNestedGroupExtensionOuter.Layer1OptionalGroup.Layer2AnotherOptionalRepeatedGroup: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestNestedGroupExtensionOuter.Layer1OptionalGroup.Layer2AnotherOptionalRepeatedGroup: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestNestedGroupExtensionOuter.Layer1OptionalGroup.protoMessageName + ".Layer2AnotherOptionalRepeatedGroup"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     5: .standard(proto: "but_why_tho"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -17213,7 +17213,7 @@ extension ProtobufUnittest_TestNestedGroupExtensionOuter.Layer1OptionalGroup.Lay
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -17231,13 +17231,13 @@ extension ProtobufUnittest_TestNestedGroupExtensionOuter.Layer1OptionalGroup.Lay
   }
 }
 
-extension ProtobufUnittest_TestNestedGroupExtensionInnerExtension: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestNestedGroupExtensionInnerExtension: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestNestedGroupExtensionInnerExtension"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "inner_name"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -17249,7 +17249,7 @@ extension ProtobufUnittest_TestNestedGroupExtensionInnerExtension: SwiftProtobuf
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -17267,9 +17267,9 @@ extension ProtobufUnittest_TestNestedGroupExtensionInnerExtension: SwiftProtobuf
   }
 }
 
-extension ProtobufUnittest_TestExtensionRangeSerialize: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestExtensionRangeSerialize: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestExtensionRangeSerialize"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "foo_one"),
     6: .standard(proto: "foo_two"),
     7: .standard(proto: "foo_three"),
@@ -17281,7 +17281,7 @@ extension ProtobufUnittest_TestExtensionRangeSerialize: SwiftProtobuf.Message, S
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -17298,7 +17298,7 @@ extension ProtobufUnittest_TestExtensionRangeSerialize: SwiftProtobuf.Message, S
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -17332,16 +17332,16 @@ extension ProtobufUnittest_TestExtensionRangeSerialize: SwiftProtobuf.Message, S
   }
 }
 
-extension ProtobufUnittest_TestVerifyInt32Simple: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestVerifyInt32Simple: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestVerifyInt32Simple"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "optional_int32_1"),
     2: .standard(proto: "optional_int32_2"),
     63: .standard(proto: "optional_int32_63"),
     64: .standard(proto: "optional_int32_64"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -17356,7 +17356,7 @@ extension ProtobufUnittest_TestVerifyInt32Simple: SwiftProtobuf.Message, SwiftPr
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -17386,9 +17386,9 @@ extension ProtobufUnittest_TestVerifyInt32Simple: SwiftProtobuf.Message, SwiftPr
   }
 }
 
-extension ProtobufUnittest_TestVerifyInt32: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestVerifyInt32: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestVerifyInt32"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "optional_int32_1"),
     2: .standard(proto: "optional_int32_2"),
     63: .standard(proto: "optional_int32_63"),
@@ -17397,7 +17397,7 @@ extension ProtobufUnittest_TestVerifyInt32: SwiftProtobuf.Message, SwiftProtobuf
     10: .standard(proto: "repeated_all_types"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -17414,7 +17414,7 @@ extension ProtobufUnittest_TestVerifyInt32: SwiftProtobuf.Message, SwiftProtobuf
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -17452,9 +17452,9 @@ extension ProtobufUnittest_TestVerifyInt32: SwiftProtobuf.Message, SwiftProtobuf
   }
 }
 
-extension ProtobufUnittest_TestVerifyMostlyInt32: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestVerifyMostlyInt32: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestVerifyMostlyInt32"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     30: .standard(proto: "optional_int64_30"),
     1: .standard(proto: "optional_int32_1"),
     2: .standard(proto: "optional_int32_2"),
@@ -17466,7 +17466,7 @@ extension ProtobufUnittest_TestVerifyMostlyInt32: SwiftProtobuf.Message, SwiftPr
     10: .standard(proto: "repeated_all_types"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -17486,7 +17486,7 @@ extension ProtobufUnittest_TestVerifyMostlyInt32: SwiftProtobuf.Message, SwiftPr
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -17536,9 +17536,9 @@ extension ProtobufUnittest_TestVerifyMostlyInt32: SwiftProtobuf.Message, SwiftPr
   }
 }
 
-extension ProtobufUnittest_TestVerifyMostlyInt32BigFieldNumber: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestVerifyMostlyInt32BigFieldNumber: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestVerifyMostlyInt32BigFieldNumber"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     30: .standard(proto: "optional_int64_30"),
     300: .standard(proto: "optional_int32_300"),
     1: .standard(proto: "optional_int32_1"),
@@ -17551,7 +17551,7 @@ extension ProtobufUnittest_TestVerifyMostlyInt32BigFieldNumber: SwiftProtobuf.Me
     10: .standard(proto: "repeated_all_types"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -17572,7 +17572,7 @@ extension ProtobufUnittest_TestVerifyMostlyInt32BigFieldNumber: SwiftProtobuf.Me
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -17626,16 +17626,16 @@ extension ProtobufUnittest_TestVerifyMostlyInt32BigFieldNumber: SwiftProtobuf.Me
   }
 }
 
-extension ProtobufUnittest_TestVerifyUint32Simple: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestVerifyUint32Simple: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestVerifyUint32Simple"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "optional_uint32_1"),
     2: .standard(proto: "optional_uint32_2"),
     63: .standard(proto: "optional_uint32_63"),
     64: .standard(proto: "optional_uint32_64"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -17650,7 +17650,7 @@ extension ProtobufUnittest_TestVerifyUint32Simple: SwiftProtobuf.Message, SwiftP
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -17680,9 +17680,9 @@ extension ProtobufUnittest_TestVerifyUint32Simple: SwiftProtobuf.Message, SwiftP
   }
 }
 
-extension ProtobufUnittest_TestVerifyUint32: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestVerifyUint32: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestVerifyUint32"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "optional_uint32_1"),
     2: .standard(proto: "optional_uint32_2"),
     63: .standard(proto: "optional_uint32_63"),
@@ -17691,7 +17691,7 @@ extension ProtobufUnittest_TestVerifyUint32: SwiftProtobuf.Message, SwiftProtobu
     10: .standard(proto: "repeated_all_types"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -17708,7 +17708,7 @@ extension ProtobufUnittest_TestVerifyUint32: SwiftProtobuf.Message, SwiftProtobu
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -17746,9 +17746,9 @@ extension ProtobufUnittest_TestVerifyUint32: SwiftProtobuf.Message, SwiftProtobu
   }
 }
 
-extension ProtobufUnittest_TestVerifyOneUint32: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestVerifyOneUint32: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestVerifyOneUint32"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "optional_uint32_1"),
     2: .standard(proto: "optional_int32_2"),
     63: .standard(proto: "optional_int32_63"),
@@ -17757,7 +17757,7 @@ extension ProtobufUnittest_TestVerifyOneUint32: SwiftProtobuf.Message, SwiftProt
     10: .standard(proto: "repeated_all_types"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -17774,7 +17774,7 @@ extension ProtobufUnittest_TestVerifyOneUint32: SwiftProtobuf.Message, SwiftProt
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -17812,9 +17812,9 @@ extension ProtobufUnittest_TestVerifyOneUint32: SwiftProtobuf.Message, SwiftProt
   }
 }
 
-extension ProtobufUnittest_TestVerifyOneInt32BigFieldNumber: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestVerifyOneInt32BigFieldNumber: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestVerifyOneInt32BigFieldNumber"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     65: .standard(proto: "optional_int32_65"),
     1: .standard(proto: "optional_int64_1"),
     2: .standard(proto: "optional_int64_2"),
@@ -17824,7 +17824,7 @@ extension ProtobufUnittest_TestVerifyOneInt32BigFieldNumber: SwiftProtobuf.Messa
     10: .standard(proto: "repeated_all_types"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -17842,7 +17842,7 @@ extension ProtobufUnittest_TestVerifyOneInt32BigFieldNumber: SwiftProtobuf.Messa
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -17884,9 +17884,9 @@ extension ProtobufUnittest_TestVerifyOneInt32BigFieldNumber: SwiftProtobuf.Messa
   }
 }
 
-extension ProtobufUnittest_TestVerifyInt32BigFieldNumber: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestVerifyInt32BigFieldNumber: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestVerifyInt32BigFieldNumber"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1000: .standard(proto: "optional_int32_1000"),
     65: .standard(proto: "optional_int32_65"),
     1: .standard(proto: "optional_int32_1"),
@@ -17897,7 +17897,7 @@ extension ProtobufUnittest_TestVerifyInt32BigFieldNumber: SwiftProtobuf.Message,
     10: .standard(proto: "repeated_all_types"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -17916,7 +17916,7 @@ extension ProtobufUnittest_TestVerifyInt32BigFieldNumber: SwiftProtobuf.Message,
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -17962,9 +17962,9 @@ extension ProtobufUnittest_TestVerifyInt32BigFieldNumber: SwiftProtobuf.Message,
   }
 }
 
-extension ProtobufUnittest_TestVerifyUint32BigFieldNumber: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestVerifyUint32BigFieldNumber: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestVerifyUint32BigFieldNumber"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1000: .standard(proto: "optional_uint32_1000"),
     65: .standard(proto: "optional_uint32_65"),
     1: .standard(proto: "optional_uint32_1"),
@@ -17975,7 +17975,7 @@ extension ProtobufUnittest_TestVerifyUint32BigFieldNumber: SwiftProtobuf.Message
     10: .standard(proto: "repeated_all_types"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -17994,7 +17994,7 @@ extension ProtobufUnittest_TestVerifyUint32BigFieldNumber: SwiftProtobuf.Message
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -18040,13 +18040,13 @@ extension ProtobufUnittest_TestVerifyUint32BigFieldNumber: SwiftProtobuf.Message
   }
 }
 
-extension ProtobufUnittest_TestVerifyBigFieldNumberUint32: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestVerifyBigFieldNumberUint32: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".TestVerifyBigFieldNumberUint32"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "optional_nested"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -18058,7 +18058,7 @@ extension ProtobufUnittest_TestVerifyBigFieldNumberUint32: SwiftProtobuf.Message
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -18076,9 +18076,9 @@ extension ProtobufUnittest_TestVerifyBigFieldNumberUint32: SwiftProtobuf.Message
   }
 }
 
-extension ProtobufUnittest_TestVerifyBigFieldNumberUint32.Nested: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_TestVerifyBigFieldNumberUint32.Nested: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittest_TestVerifyBigFieldNumberUint32.protoMessageName + ".Nested"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     5000: .standard(proto: "optional_uint32_5000"),
     1000: .standard(proto: "optional_uint32_1000"),
     66: .standard(proto: "optional_uint32_66"),
@@ -18128,7 +18128,7 @@ extension ProtobufUnittest_TestVerifyBigFieldNumberUint32.Nested: SwiftProtobuf.
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -18152,7 +18152,7 @@ extension ProtobufUnittest_TestVerifyBigFieldNumberUint32.Nested: SwiftProtobuf.
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -18216,9 +18216,9 @@ extension ProtobufUnittest_TestVerifyBigFieldNumberUint32.Nested: SwiftProtobuf.
   }
 }
 
-extension ProtobufUnittest_EnumParseTester: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_EnumParseTester: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".EnumParseTester"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "optional_seq_small_0_lowfield"),
     1001: .standard(proto: "optional_seq_small_0_midfield"),
     1000001: .standard(proto: "optional_seq_small_0_hifield"),
@@ -18349,7 +18349,7 @@ extension ProtobufUnittest_EnumParseTester: SwiftProtobuf.Message, SwiftProtobuf
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -18400,7 +18400,7 @@ extension ProtobufUnittest_EnumParseTester: SwiftProtobuf.Message, SwiftProtobuf
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -18572,24 +18572,24 @@ extension ProtobufUnittest_EnumParseTester: SwiftProtobuf.Message, SwiftProtobuf
   }
 }
 
-extension ProtobufUnittest_EnumParseTester.SeqSmall0: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_EnumParseTester.SeqSmall0: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     0: .same(proto: "SEQ_SMALL_0_DEFAULT"),
     1: .same(proto: "SEQ_SMALL_0_1"),
     2: .same(proto: "SEQ_SMALL_0_2"),
   ]
 }
 
-extension ProtobufUnittest_EnumParseTester.SeqSmall1: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_EnumParseTester.SeqSmall1: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "SEQ_SMALL_1_DEFAULT"),
     2: .same(proto: "SEQ_SMALL_1_2"),
     3: .same(proto: "SEQ_SMALL_1_3"),
   ]
 }
 
-extension ProtobufUnittest_EnumParseTester.SeqLarge: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_EnumParseTester.SeqLarge: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     -1: .same(proto: "SEQ_LARGE_DEFAULT"),
     0: .same(proto: "SEQ_LARGE_0"),
     1: .same(proto: "SEQ_LARGE_1"),
@@ -18628,8 +18628,8 @@ extension ProtobufUnittest_EnumParseTester.SeqLarge: SwiftProtobuf._ProtoNamePro
   ]
 }
 
-extension ProtobufUnittest_EnumParseTester.Arbitrary: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_EnumParseTester.Arbitrary: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     -2147483648: .same(proto: "ARBITRARY_MIN"),
     -123123: .same(proto: "ARBITRARY_DEFAULT"),
     -123: .same(proto: "ARBITRARY_1"),
@@ -18639,9 +18639,9 @@ extension ProtobufUnittest_EnumParseTester.Arbitrary: SwiftProtobuf._ProtoNamePr
   ]
 }
 
-extension ProtobufUnittest_BoolParseTester: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_BoolParseTester: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".BoolParseTester"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "optional_bool_lowfield"),
     1001: .standard(proto: "optional_bool_midfield"),
     1000001: .standard(proto: "optional_bool_hifield"),
@@ -18654,7 +18654,7 @@ extension ProtobufUnittest_BoolParseTester: SwiftProtobuf.Message, SwiftProtobuf
     99: .standard(proto: "other_field"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -18675,7 +18675,7 @@ extension ProtobufUnittest_BoolParseTester: SwiftProtobuf.Message, SwiftProtobuf
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -18729,9 +18729,9 @@ extension ProtobufUnittest_BoolParseTester: SwiftProtobuf.Message, SwiftProtobuf
   }
 }
 
-extension ProtobufUnittest_StringParseTester: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_StringParseTester: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".StringParseTester"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "optional_string_lowfield"),
     1001: .standard(proto: "optional_string_midfield"),
     1000001: .standard(proto: "optional_string_hifield"),
@@ -18740,7 +18740,7 @@ extension ProtobufUnittest_StringParseTester: SwiftProtobuf.Message, SwiftProtob
     1000002: .standard(proto: "repeated_string_hifield"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -18757,7 +18757,7 @@ extension ProtobufUnittest_StringParseTester: SwiftProtobuf.Message, SwiftProtob
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -18795,14 +18795,14 @@ extension ProtobufUnittest_StringParseTester: SwiftProtobuf.Message, SwiftProtob
   }
 }
 
-extension ProtobufUnittest_BadFieldNames: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_BadFieldNames: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".BadFieldNames"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "OptionalInt32"),
     2: .same(proto: "for"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -18815,7 +18815,7 @@ extension ProtobufUnittest_BadFieldNames: SwiftProtobuf.Message, SwiftProtobuf._
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -18837,13 +18837,13 @@ extension ProtobufUnittest_BadFieldNames: SwiftProtobuf.Message, SwiftProtobuf._
   }
 }
 
-extension ProtobufUnittest_RedactedFields: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_RedactedFields: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".RedactedFields"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "optional_redacted_string"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -18855,7 +18855,7 @@ extension ProtobufUnittest_RedactedFields: SwiftProtobuf.Message, SwiftProtobuf.
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and

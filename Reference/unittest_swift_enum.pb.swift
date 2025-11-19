@@ -45,8 +45,8 @@ import SwiftProtobuf
 // incompatible with the version of SwiftProtobuf to which you are linking.
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
-fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+fileprivate struct _GeneratedWithProtocGenSwiftVersion: IntentSwiftProtobuf.ProtobufAPIVersionCheck {
+  struct _2: IntentSwiftProtobuf.ProtobufAPIVersion_2 {}
   typealias Version = _2
 }
 
@@ -63,9 +63,9 @@ struct ProtobufUnittest_SwiftEnumTest {
 
   var values4: [ProtobufUnittest_SwiftEnumTest.EnumTestReservedWord] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
-  enum EnumTest1: SwiftProtobuf.Enum {
+  enum EnumTest1: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
     case firstValue // = 1
     case secondValue // = 2
@@ -91,7 +91,7 @@ struct ProtobufUnittest_SwiftEnumTest {
 
   }
 
-  enum EnumTest2: SwiftProtobuf.Enum {
+  enum EnumTest2: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
     case firstValue // = 1
     case secondValue // = 2
@@ -117,7 +117,7 @@ struct ProtobufUnittest_SwiftEnumTest {
 
   }
 
-  enum EnumTestNoStem: SwiftProtobuf.Enum {
+  enum EnumTestNoStem: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
     case enumTestNoStem1 // = 1
     case enumTestNoStem2 // = 2
@@ -143,7 +143,7 @@ struct ProtobufUnittest_SwiftEnumTest {
 
   }
 
-  enum EnumTestReservedWord: SwiftProtobuf.Enum {
+  enum EnumTestReservedWord: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
     case `var` // = 1
     case notReserved // = 2
@@ -199,9 +199,9 @@ struct ProtobufUnittest_SwiftEnumWithAliasTest {
 
   var values: [ProtobufUnittest_SwiftEnumWithAliasTest.EnumWithAlias] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
-  enum EnumWithAlias: SwiftProtobuf.Enum {
+  enum EnumWithAlias: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
     case foo1 // = 1
     static let foo2 = foo1
@@ -259,16 +259,16 @@ extension ProtobufUnittest_SwiftEnumWithAliasTest.EnumWithAlias: @unchecked Send
 
 fileprivate let _protobuf_package = "protobuf_unittest"
 
-extension ProtobufUnittest_SwiftEnumTest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_SwiftEnumTest: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".SwiftEnumTest"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "values1"),
     2: .same(proto: "values2"),
     3: .same(proto: "values3"),
     4: .same(proto: "values4"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -283,7 +283,7 @@ extension ProtobufUnittest_SwiftEnumTest: SwiftProtobuf.Message, SwiftProtobuf._
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.values1.isEmpty {
       try visitor.visitRepeatedEnumField(value: self.values1, fieldNumber: 1)
     }
@@ -309,41 +309,41 @@ extension ProtobufUnittest_SwiftEnumTest: SwiftProtobuf.Message, SwiftProtobuf._
   }
 }
 
-extension ProtobufUnittest_SwiftEnumTest.EnumTest1: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_SwiftEnumTest.EnumTest1: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "ENUM_TEST_1_FIRST_VALUE"),
     2: .same(proto: "ENUM_TEST_1_SECOND_VALUE"),
   ]
 }
 
-extension ProtobufUnittest_SwiftEnumTest.EnumTest2: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_SwiftEnumTest.EnumTest2: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "ENUM_TEST_2_FIRST_VALUE"),
     2: .same(proto: "SECOND_VALUE"),
   ]
 }
 
-extension ProtobufUnittest_SwiftEnumTest.EnumTestNoStem: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_SwiftEnumTest.EnumTestNoStem: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "ENUM_TEST_NO_STEM_1"),
     2: .same(proto: "ENUM_TEST_NO_STEM_2"),
   ]
 }
 
-extension ProtobufUnittest_SwiftEnumTest.EnumTestReservedWord: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_SwiftEnumTest.EnumTestReservedWord: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "ENUM_TEST_RESERVED_WORD_VAR"),
     2: .same(proto: "ENUM_TEST_RESERVED_WORD_NOT_RESERVED"),
   ]
 }
 
-extension ProtobufUnittest_SwiftEnumWithAliasTest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension ProtobufUnittest_SwiftEnumWithAliasTest: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".SwiftEnumWithAliasTest"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "values"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -355,7 +355,7 @@ extension ProtobufUnittest_SwiftEnumWithAliasTest: SwiftProtobuf.Message, SwiftP
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.values.isEmpty {
       try visitor.visitPackedEnumField(value: self.values, fieldNumber: 1)
     }
@@ -369,8 +369,8 @@ extension ProtobufUnittest_SwiftEnumWithAliasTest: SwiftProtobuf.Message, SwiftP
   }
 }
 
-extension ProtobufUnittest_SwiftEnumWithAliasTest.EnumWithAlias: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension ProtobufUnittest_SwiftEnumWithAliasTest.EnumWithAlias: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .aliased(proto: "FOO1", aliases: ["FOO2"]),
     2: .aliased(proto: "BAR1", aliases: ["BAR2"]),
     3: .same(proto: "BAZ1"),

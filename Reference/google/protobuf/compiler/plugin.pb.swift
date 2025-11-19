@@ -58,8 +58,8 @@ import SwiftProtobuf
 // incompatible with the version of SwiftProtobuf to which you are linking.
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
-fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+fileprivate struct _GeneratedWithProtocGenSwiftVersion: IntentSwiftProtobuf.ProtobufAPIVersionCheck {
+  struct _2: IntentSwiftProtobuf.ProtobufAPIVersion_2 {}
   typealias Version = _2
 }
 
@@ -107,7 +107,7 @@ struct Google_Protobuf_Compiler_Version {
   /// Clears the value of `suffix`. Subsequent reads from it will return its default value.
   mutating func clearSuffix() {self._suffix = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -164,7 +164,7 @@ struct Google_Protobuf_Compiler_CodeGeneratorRequest {
   /// Clears the value of `compilerVersion`. Subsequent reads from it will return its default value.
   mutating func clearCompilerVersion() {self._compilerVersion = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   init() {}
 
@@ -208,10 +208,10 @@ struct Google_Protobuf_Compiler_CodeGeneratorResponse {
 
   var file: [Google_Protobuf_Compiler_CodeGeneratorResponse.File] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
   /// Sync with code_generator.h.
-  enum Feature: SwiftProtobuf.Enum {
+  enum Feature: IntentSwiftProtobuf.Enum {
     typealias RawValue = Int
     case none // = 0
     case proto3Optional // = 1
@@ -322,7 +322,7 @@ struct Google_Protobuf_Compiler_CodeGeneratorResponse {
     /// Information describing the file content being inserted. If an insertion
     /// point is used, this information will be appropriately offset and inserted
     /// into the code generation metadata for the generated files.
-    var generatedCodeInfo: SwiftProtobuf.Google_Protobuf_GeneratedCodeInfo {
+    var generatedCodeInfo: IntentSwiftProtobuf.Google_Protobuf_GeneratedCodeInfo {
       get {return _generatedCodeInfo ?? SwiftProtobuf.Google_Protobuf_GeneratedCodeInfo()}
       set {_generatedCodeInfo = newValue}
     }
@@ -331,14 +331,14 @@ struct Google_Protobuf_Compiler_CodeGeneratorResponse {
     /// Clears the value of `generatedCodeInfo`. Subsequent reads from it will return its default value.
     mutating func clearGeneratedCodeInfo() {self._generatedCodeInfo = nil}
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    var unknownFields = IntentSwiftProtobuf.UnknownStorage()
 
     init() {}
 
     fileprivate var _name: String? = nil
     fileprivate var _insertionPoint: String? = nil
     fileprivate var _content: String? = nil
-    fileprivate var _generatedCodeInfo: SwiftProtobuf.Google_Protobuf_GeneratedCodeInfo? = nil
+    fileprivate var _generatedCodeInfo: IntentSwiftProtobuf.Google_Protobuf_GeneratedCodeInfo? = nil
   }
 
   init() {}
@@ -367,16 +367,16 @@ extension Google_Protobuf_Compiler_CodeGeneratorResponse.File: @unchecked Sendab
 
 fileprivate let _protobuf_package = "google.protobuf.compiler"
 
-extension Google_Protobuf_Compiler_Version: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension Google_Protobuf_Compiler_Version: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".Version"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "major"),
     2: .same(proto: "minor"),
     3: .same(proto: "patch"),
     4: .same(proto: "suffix"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -391,7 +391,7 @@ extension Google_Protobuf_Compiler_Version: SwiftProtobuf.Message, SwiftProtobuf
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -421,9 +421,9 @@ extension Google_Protobuf_Compiler_Version: SwiftProtobuf.Message, SwiftProtobuf
   }
 }
 
-extension Google_Protobuf_Compiler_CodeGeneratorRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension Google_Protobuf_Compiler_CodeGeneratorRequest: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".CodeGeneratorRequest"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .standard(proto: "file_to_generate"),
     2: .same(proto: "parameter"),
     15: .standard(proto: "proto_file"),
@@ -431,11 +431,11 @@ extension Google_Protobuf_Compiler_CodeGeneratorRequest: SwiftProtobuf.Message, 
   ]
 
   public var isInitialized: Bool {
-    if !SwiftProtobuf.Internal.areAllInitialized(self.protoFile) {return false}
+    if !IntentSwiftProtobuf.Internal.areAllInitialized(self.protoFile) {return false}
     return true
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -450,7 +450,7 @@ extension Google_Protobuf_Compiler_CodeGeneratorRequest: SwiftProtobuf.Message, 
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -480,15 +480,15 @@ extension Google_Protobuf_Compiler_CodeGeneratorRequest: SwiftProtobuf.Message, 
   }
 }
 
-extension Google_Protobuf_Compiler_CodeGeneratorResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension Google_Protobuf_Compiler_CodeGeneratorResponse: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".CodeGeneratorResponse"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "error"),
     2: .standard(proto: "supported_features"),
     15: .same(proto: "file"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -502,7 +502,7 @@ extension Google_Protobuf_Compiler_CodeGeneratorResponse: SwiftProtobuf.Message,
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -528,23 +528,23 @@ extension Google_Protobuf_Compiler_CodeGeneratorResponse: SwiftProtobuf.Message,
   }
 }
 
-extension Google_Protobuf_Compiler_CodeGeneratorResponse.Feature: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+extension Google_Protobuf_Compiler_CodeGeneratorResponse.Feature: IntentSwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     0: .same(proto: "FEATURE_NONE"),
     1: .same(proto: "FEATURE_PROTO3_OPTIONAL"),
   ]
 }
 
-extension Google_Protobuf_Compiler_CodeGeneratorResponse.File: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+extension Google_Protobuf_Compiler_CodeGeneratorResponse.File: IntentSwiftProtobuf.Message, IntentSwiftProtobuf._MessageImplementationBase, IntentSwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = Google_Protobuf_Compiler_CodeGeneratorResponse.protoMessageName + ".File"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: IntentSwiftProtobuf._NameMap = [
     1: .same(proto: "name"),
     2: .standard(proto: "insertion_point"),
     15: .same(proto: "content"),
     16: .standard(proto: "generated_code_info"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  mutating func decodeMessage<D: IntentSwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -559,7 +559,7 @@ extension Google_Protobuf_Compiler_CodeGeneratorResponse.File: SwiftProtobuf.Mes
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
