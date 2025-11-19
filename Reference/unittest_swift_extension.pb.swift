@@ -371,7 +371,7 @@ let ProtobufUnittest_Extend_UnittestSwiftExtension_Extensions: IntentSwiftProtob
 // constructing a `SimpleExtensionMap`, otherwise, use the above _Extension Properties_
 // accessors for the extension fields on the messages directly.
 
-let ProtobufUnittest_Extend_Extensions_b = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_Extend_Foo.Bar.Baz>(
+let ProtobufUnittest_Extend_Extensions_b = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufString>, ProtobufUnittest_Extend_Foo.Bar.Baz>(
   _protobuf_fieldNumber: 100,
   fieldName: "protobuf_unittest.extend.b"
 )
@@ -381,7 +381,7 @@ let ProtobufUnittest_Extend_Extensions_C = IntentSwiftProtobuf.MessageExtension<
   fieldName: "protobuf_unittest.extend.c"
 )
 
-let ProtobufUnittest_Extend_Extensions_a_b = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_Extend_Msg1>(
+let ProtobufUnittest_Extend_Extensions_a_b = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_Extend_Msg1>(
   _protobuf_fieldNumber: 1,
   fieldName: "protobuf_unittest.extend.a_b"
 )
@@ -391,27 +391,27 @@ let ProtobufUnittest_Extend_Extensions_m2 = IntentSwiftProtobuf.MessageExtension
   fieldName: "protobuf_unittest.extend.m2"
 )
 
-let ProtobufUnittest_Extend_Extensions_aB = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_Extend_Msg2>(
+let ProtobufUnittest_Extend_Extensions_aB = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_Extend_Msg2>(
   _protobuf_fieldNumber: 1,
   fieldName: "protobuf_unittest.extend.aB"
 )
 
-let ProtobufUnittest_Extend_Extensions_ext_a = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_Extend_MsgNoStorage>(
+let ProtobufUnittest_Extend_Extensions_ext_a = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_Extend_MsgNoStorage>(
   _protobuf_fieldNumber: 100,
   fieldName: "protobuf_unittest.extend.ext_a"
 )
 
-let ProtobufUnittest_Extend_Extensions_ext_b = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_Extend_MsgNoStorage>(
+let ProtobufUnittest_Extend_Extensions_ext_b = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_Extend_MsgNoStorage>(
   _protobuf_fieldNumber: 101,
   fieldName: "protobuf_unittest.extend.ext_b"
 )
 
-let ProtobufUnittest_Extend_Extensions_ext_c = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_Extend_MsgUsesStorage>(
+let ProtobufUnittest_Extend_Extensions_ext_c = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_Extend_MsgUsesStorage>(
   _protobuf_fieldNumber: 100,
   fieldName: "protobuf_unittest.extend.ext_c"
 )
 
-let ProtobufUnittest_Extend_Extensions_ext_d = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_Extend_MsgUsesStorage>(
+let ProtobufUnittest_Extend_Extensions_ext_d = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_Extend_MsgUsesStorage>(
   _protobuf_fieldNumber: 101,
   fieldName: "protobuf_unittest.extend.ext_d"
 )

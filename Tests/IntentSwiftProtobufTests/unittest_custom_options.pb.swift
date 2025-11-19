@@ -1689,44 +1689,44 @@ let ProtobufUnittest_UnittestCustomOptions_Extensions: IntentSwiftProtobuf.Simpl
 // constructing a `SimpleExtensionMap`, otherwise, use the above _Extension Properties_
 // accessors for the extension fields on the messages directly.
 
-let ProtobufUnittest_Extensions_file_opt1 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufUInt64>, SwiftProtobuf.Google_Protobuf_FileOptions>(
+let ProtobufUnittest_Extensions_file_opt1 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufUInt64>, SwiftProtobuf.Google_Protobuf_FileOptions>(
   _protobuf_fieldNumber: 7736974,
   fieldName: "protobuf_unittest.file_opt1"
 )
 
-let ProtobufUnittest_Extensions_message_opt1 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
+let ProtobufUnittest_Extensions_message_opt1 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
   _protobuf_fieldNumber: 7739036,
   fieldName: "protobuf_unittest.message_opt1"
 )
 
-let ProtobufUnittest_Extensions_field_opt1 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFixed64>, SwiftProtobuf.Google_Protobuf_FieldOptions>(
+let ProtobufUnittest_Extensions_field_opt1 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufFixed64>, SwiftProtobuf.Google_Protobuf_FieldOptions>(
   _protobuf_fieldNumber: 7740936,
   fieldName: "protobuf_unittest.field_opt1"
 )
 
 /// This is useful for testing that we correctly register default values for
 /// extension options.
-let ProtobufUnittest_Extensions_field_opt2 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftProtobuf.Google_Protobuf_FieldOptions>(
+let ProtobufUnittest_Extensions_field_opt2 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftProtobuf.Google_Protobuf_FieldOptions>(
   _protobuf_fieldNumber: 7753913,
   fieldName: "protobuf_unittest.field_opt2"
 )
 
-let ProtobufUnittest_Extensions_oneof_opt1 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftProtobuf.Google_Protobuf_OneofOptions>(
+let ProtobufUnittest_Extensions_oneof_opt1 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftProtobuf.Google_Protobuf_OneofOptions>(
   _protobuf_fieldNumber: 7740111,
   fieldName: "protobuf_unittest.oneof_opt1"
 )
 
-let ProtobufUnittest_Extensions_enum_opt1 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSFixed32>, SwiftProtobuf.Google_Protobuf_EnumOptions>(
+let ProtobufUnittest_Extensions_enum_opt1 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufSFixed32>, SwiftProtobuf.Google_Protobuf_EnumOptions>(
   _protobuf_fieldNumber: 7753576,
   fieldName: "protobuf_unittest.enum_opt1"
 )
 
-let ProtobufUnittest_Extensions_enum_value_opt1 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftProtobuf.Google_Protobuf_EnumValueOptions>(
+let ProtobufUnittest_Extensions_enum_value_opt1 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftProtobuf.Google_Protobuf_EnumValueOptions>(
   _protobuf_fieldNumber: 1560678,
   fieldName: "protobuf_unittest.enum_value_opt1"
 )
 
-let ProtobufUnittest_Extensions_service_opt1 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSInt64>, SwiftProtobuf.Google_Protobuf_ServiceOptions>(
+let ProtobufUnittest_Extensions_service_opt1 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufSInt64>, SwiftProtobuf.Google_Protobuf_ServiceOptions>(
   _protobuf_fieldNumber: 7887650,
   fieldName: "protobuf_unittest.service_opt1"
 )
@@ -1736,77 +1736,77 @@ let ProtobufUnittest_Extensions_method_opt1 = IntentSwiftProtobuf.MessageExtensi
   fieldName: "protobuf_unittest.method_opt1"
 )
 
-let ProtobufUnittest_Extensions_bool_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
+let ProtobufUnittest_Extensions_bool_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufBool>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
   _protobuf_fieldNumber: 7706090,
   fieldName: "protobuf_unittest.bool_opt"
 )
 
-let ProtobufUnittest_Extensions_int32_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
+let ProtobufUnittest_Extensions_int32_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
   _protobuf_fieldNumber: 7705709,
   fieldName: "protobuf_unittest.int32_opt"
 )
 
-let ProtobufUnittest_Extensions_int64_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt64>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
+let ProtobufUnittest_Extensions_int64_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt64>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
   _protobuf_fieldNumber: 7705542,
   fieldName: "protobuf_unittest.int64_opt"
 )
 
-let ProtobufUnittest_Extensions_uint32_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufUInt32>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
+let ProtobufUnittest_Extensions_uint32_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufUInt32>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
   _protobuf_fieldNumber: 7704880,
   fieldName: "protobuf_unittest.uint32_opt"
 )
 
-let ProtobufUnittest_Extensions_uint64_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufUInt64>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
+let ProtobufUnittest_Extensions_uint64_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufUInt64>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
   _protobuf_fieldNumber: 7702367,
   fieldName: "protobuf_unittest.uint64_opt"
 )
 
-let ProtobufUnittest_Extensions_sint32_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSInt32>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
+let ProtobufUnittest_Extensions_sint32_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufSInt32>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
   _protobuf_fieldNumber: 7701568,
   fieldName: "protobuf_unittest.sint32_opt"
 )
 
-let ProtobufUnittest_Extensions_sint64_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSInt64>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
+let ProtobufUnittest_Extensions_sint64_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufSInt64>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
   _protobuf_fieldNumber: 7700863,
   fieldName: "protobuf_unittest.sint64_opt"
 )
 
-let ProtobufUnittest_Extensions_fixed32_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFixed32>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
+let ProtobufUnittest_Extensions_fixed32_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufFixed32>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
   _protobuf_fieldNumber: 7700307,
   fieldName: "protobuf_unittest.fixed32_opt"
 )
 
-let ProtobufUnittest_Extensions_fixed64_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFixed64>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
+let ProtobufUnittest_Extensions_fixed64_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufFixed64>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
   _protobuf_fieldNumber: 7700194,
   fieldName: "protobuf_unittest.fixed64_opt"
 )
 
-let ProtobufUnittest_Extensions_sfixed32_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSFixed32>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
+let ProtobufUnittest_Extensions_sfixed32_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufSFixed32>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
   _protobuf_fieldNumber: 7698645,
   fieldName: "protobuf_unittest.sfixed32_opt"
 )
 
-let ProtobufUnittest_Extensions_sfixed64_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSFixed64>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
+let ProtobufUnittest_Extensions_sfixed64_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufSFixed64>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
   _protobuf_fieldNumber: 7685475,
   fieldName: "protobuf_unittest.sfixed64_opt"
 )
 
-let ProtobufUnittest_Extensions_float_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFloat>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
+let ProtobufUnittest_Extensions_float_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufFloat>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
   _protobuf_fieldNumber: 7675390,
   fieldName: "protobuf_unittest.float_opt"
 )
 
-let ProtobufUnittest_Extensions_double_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufDouble>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
+let ProtobufUnittest_Extensions_double_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufDouble>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
   _protobuf_fieldNumber: 7673293,
   fieldName: "protobuf_unittest.double_opt"
 )
 
-let ProtobufUnittest_Extensions_string_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
+let ProtobufUnittest_Extensions_string_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufString>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
   _protobuf_fieldNumber: 7673285,
   fieldName: "protobuf_unittest.string_opt"
 )
 
-let ProtobufUnittest_Extensions_bytes_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBytes>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
+let ProtobufUnittest_Extensions_bytes_opt = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufBytes>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
   _protobuf_fieldNumber: 7673238,
   fieldName: "protobuf_unittest.bytes_opt"
 )
@@ -1821,7 +1821,7 @@ let ProtobufUnittest_Extensions_message_type_opt = IntentSwiftProtobuf.MessageEx
   fieldName: "protobuf_unittest.message_type_opt"
 )
 
-let ProtobufUnittest_Extensions_mooo = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_ComplexOptionType1>(
+let ProtobufUnittest_Extensions_mooo = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_ComplexOptionType1>(
   _protobuf_fieldNumber: 7663707,
   fieldName: "protobuf_unittest.mooo"
 )
@@ -1831,7 +1831,7 @@ let ProtobufUnittest_Extensions_corge = IntentSwiftProtobuf.MessageExtension<Swi
   fieldName: "protobuf_unittest.corge"
 )
 
-let ProtobufUnittest_Extensions_grault = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_ComplexOptionType2>(
+let ProtobufUnittest_Extensions_grault = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_ComplexOptionType2>(
   _protobuf_fieldNumber: 7650927,
   fieldName: "protobuf_unittest.grault"
 )
@@ -1930,7 +1930,7 @@ extension ProtobufUnittest_Aggregate {
 
 extension ProtobufUnittest_NestedOptionType {
   enum Extensions {
-    static let nested_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftProtobuf.Google_Protobuf_FileOptions>(
+    static let nested_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftProtobuf.Google_Protobuf_FileOptions>(
       _protobuf_fieldNumber: 7912573,
       fieldName: "protobuf_unittest.NestedOptionType.nested_extension"
     )
@@ -1977,7 +1977,7 @@ extension ProtobufUnittest_TestMessageWithCustomOptions: IntentSwiftProtobuf.Mes
           self.anOneof = .oneofField(v)
         }
       }()
-      case 3: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufString>.self, value: &self.mapField) }()
+      case 3: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<IntentSwiftProtobuf.ProtobufString,IntentSwiftProtobuf.ProtobufString>.self, value: &self.mapField) }()
       default: break
       }
     }
@@ -1995,7 +1995,7 @@ extension ProtobufUnittest_TestMessageWithCustomOptions: IntentSwiftProtobuf.Mes
       try visitor.visitSingularInt32Field(value: v, fieldNumber: 2)
     } }()
     if !self.mapField.isEmpty {
-      try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufString>.self, value: self.mapField, fieldNumber: 3)
+      try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<IntentSwiftProtobuf.ProtobufString,IntentSwiftProtobuf.ProtobufString>.self, value: self.mapField, fieldNumber: 3)
     }
     try unknownFields.traverse(visitor: &visitor)
   }

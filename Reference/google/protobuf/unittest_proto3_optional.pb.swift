@@ -445,12 +445,12 @@ let ProtobufUnittest_UnittestProto3Optional_Extensions: IntentSwiftProtobuf.Simp
 
 extension ProtobufUnittest_Proto3OptionalExtensions {
   enum Extensions {
-    static let ext_no_optional = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
+    static let ext_no_optional = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
       _protobuf_fieldNumber: 355886728,
       fieldName: "protobuf_unittest.Proto3OptionalExtensions.ext_no_optional"
     )
 
-    static let ext_with_optional = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
+    static let ext_with_optional = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftProtobuf.Google_Protobuf_MessageOptions>(
       _protobuf_fieldNumber: 355886729,
       fieldName: "protobuf_unittest.Proto3OptionalExtensions.ext_with_optional"
     )

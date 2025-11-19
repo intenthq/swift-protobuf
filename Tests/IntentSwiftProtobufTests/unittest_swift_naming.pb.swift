@@ -15978,254 +15978,254 @@ let SwiftUnittest_Names_UnittestSwiftNaming_Extensions: IntentSwiftProtobuf.Simp
 // constructing a `SimpleExtensionMap`, otherwise, use the above _Extension Properties_
 // accessors for the extension fields on the messages directly.
 
-let SwiftUnittest_Names_Extensions_http = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
+let SwiftUnittest_Names_Extensions_http = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
   _protobuf_fieldNumber: 1,
   fieldName: "swift_unittest.names.http"
 )
 
-let SwiftUnittest_Names_Extensions_http_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
+let SwiftUnittest_Names_Extensions_http_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
   _protobuf_fieldNumber: 2,
   fieldName: "swift_unittest.names.http_request"
 )
 
-let SwiftUnittest_Names_Extensions_the_http_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
+let SwiftUnittest_Names_Extensions_the_http_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
   _protobuf_fieldNumber: 3,
   fieldName: "swift_unittest.names.the_http_request"
 )
 
-let SwiftUnittest_Names_Extensions_the_http = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
+let SwiftUnittest_Names_Extensions_the_http = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
   _protobuf_fieldNumber: 4,
   fieldName: "swift_unittest.names.the_http"
 )
 
-let SwiftUnittest_Names_Extensions_https = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
+let SwiftUnittest_Names_Extensions_https = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
   _protobuf_fieldNumber: 11,
   fieldName: "swift_unittest.names.https"
 )
 
-let SwiftUnittest_Names_Extensions_https_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
+let SwiftUnittest_Names_Extensions_https_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
   _protobuf_fieldNumber: 12,
   fieldName: "swift_unittest.names.https_request"
 )
 
-let SwiftUnittest_Names_Extensions_the_https_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
+let SwiftUnittest_Names_Extensions_the_https_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
   _protobuf_fieldNumber: 13,
   fieldName: "swift_unittest.names.the_https_request"
 )
 
-let SwiftUnittest_Names_Extensions_the_https = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
+let SwiftUnittest_Names_Extensions_the_https = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
   _protobuf_fieldNumber: 14,
   fieldName: "swift_unittest.names.the_https"
 )
 
-let SwiftUnittest_Names_Extensions_url = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
+let SwiftUnittest_Names_Extensions_url = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
   _protobuf_fieldNumber: 21,
   fieldName: "swift_unittest.names.url"
 )
 
-let SwiftUnittest_Names_Extensions_url_value = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
+let SwiftUnittest_Names_Extensions_url_value = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
   _protobuf_fieldNumber: 22,
   fieldName: "swift_unittest.names.url_value"
 )
 
-let SwiftUnittest_Names_Extensions_the_url_value = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
+let SwiftUnittest_Names_Extensions_the_url_value = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
   _protobuf_fieldNumber: 23,
   fieldName: "swift_unittest.names.the_url_value"
 )
 
-let SwiftUnittest_Names_Extensions_the_url = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
+let SwiftUnittest_Names_Extensions_the_url = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
   _protobuf_fieldNumber: 24,
   fieldName: "swift_unittest.names.the_url"
 )
 
-let SwiftUnittest_Names_Extensions_a_b_c = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
+let SwiftUnittest_Names_Extensions_a_b_c = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
   _protobuf_fieldNumber: 31,
   fieldName: "swift_unittest.names.a_b_c"
 )
 
-let SwiftUnittest_Names_Extensions_id = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
+let SwiftUnittest_Names_Extensions_id = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
   _protobuf_fieldNumber: 41,
   fieldName: "swift_unittest.names.id"
 )
 
-let SwiftUnittest_Names_Extensions_id_number = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
+let SwiftUnittest_Names_Extensions_id_number = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
   _protobuf_fieldNumber: 42,
   fieldName: "swift_unittest.names.id_number"
 )
 
-let SwiftUnittest_Names_Extensions_the_id_number = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
+let SwiftUnittest_Names_Extensions_the_id_number = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
   _protobuf_fieldNumber: 43,
   fieldName: "swift_unittest.names.the_id_number"
 )
 
-let SwiftUnittest_Names_Extensions_request_id = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
+let SwiftUnittest_Names_Extensions_request_id = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsLowers>(
   _protobuf_fieldNumber: 44,
   fieldName: "swift_unittest.names.request_id"
 )
 
-let SwiftUnittest_Names_Extensions_HTTP = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
+let SwiftUnittest_Names_Extensions_HTTP = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
   _protobuf_fieldNumber: 1,
   fieldName: "swift_unittest.names.HTTP"
 )
 
-let SwiftUnittest_Names_Extensions_HTTP_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
+let SwiftUnittest_Names_Extensions_HTTP_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
   _protobuf_fieldNumber: 2,
   fieldName: "swift_unittest.names.HTTP_request"
 )
 
-let SwiftUnittest_Names_Extensions_the_HTTP_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
+let SwiftUnittest_Names_Extensions_the_HTTP_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
   _protobuf_fieldNumber: 3,
   fieldName: "swift_unittest.names.the_HTTP_request"
 )
 
-let SwiftUnittest_Names_Extensions_the_HTTP = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
+let SwiftUnittest_Names_Extensions_the_HTTP = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
   _protobuf_fieldNumber: 4,
   fieldName: "swift_unittest.names.the_HTTP"
 )
 
-let SwiftUnittest_Names_Extensions_HTTPS = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
+let SwiftUnittest_Names_Extensions_HTTPS = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
   _protobuf_fieldNumber: 11,
   fieldName: "swift_unittest.names.HTTPS"
 )
 
-let SwiftUnittest_Names_Extensions_HTTPS_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
+let SwiftUnittest_Names_Extensions_HTTPS_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
   _protobuf_fieldNumber: 12,
   fieldName: "swift_unittest.names.HTTPS_request"
 )
 
-let SwiftUnittest_Names_Extensions_the_HTTPS_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
+let SwiftUnittest_Names_Extensions_the_HTTPS_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
   _protobuf_fieldNumber: 13,
   fieldName: "swift_unittest.names.the_HTTPS_request"
 )
 
-let SwiftUnittest_Names_Extensions_the_HTTPS = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
+let SwiftUnittest_Names_Extensions_the_HTTPS = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
   _protobuf_fieldNumber: 14,
   fieldName: "swift_unittest.names.the_HTTPS"
 )
 
-let SwiftUnittest_Names_Extensions_URL = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
+let SwiftUnittest_Names_Extensions_URL = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
   _protobuf_fieldNumber: 21,
   fieldName: "swift_unittest.names.URL"
 )
 
-let SwiftUnittest_Names_Extensions_URL_value = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
+let SwiftUnittest_Names_Extensions_URL_value = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
   _protobuf_fieldNumber: 22,
   fieldName: "swift_unittest.names.URL_value"
 )
 
-let SwiftUnittest_Names_Extensions_the_URL_value = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
+let SwiftUnittest_Names_Extensions_the_URL_value = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
   _protobuf_fieldNumber: 23,
   fieldName: "swift_unittest.names.the_URL_value"
 )
 
-let SwiftUnittest_Names_Extensions_the_URL = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
+let SwiftUnittest_Names_Extensions_the_URL = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
   _protobuf_fieldNumber: 24,
   fieldName: "swift_unittest.names.the_URL"
 )
 
-let SwiftUnittest_Names_Extensions_ID = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
+let SwiftUnittest_Names_Extensions_ID = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
   _protobuf_fieldNumber: 41,
   fieldName: "swift_unittest.names.ID"
 )
 
-let SwiftUnittest_Names_Extensions_ID_number = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
+let SwiftUnittest_Names_Extensions_ID_number = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
   _protobuf_fieldNumber: 42,
   fieldName: "swift_unittest.names.ID_number"
 )
 
-let SwiftUnittest_Names_Extensions_the_ID_number = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
+let SwiftUnittest_Names_Extensions_the_ID_number = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
   _protobuf_fieldNumber: 43,
   fieldName: "swift_unittest.names.the_ID_number"
 )
 
-let SwiftUnittest_Names_Extensions_request_ID = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
+let SwiftUnittest_Names_Extensions_request_ID = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsUppers>(
   _protobuf_fieldNumber: 44,
   fieldName: "swift_unittest.names.request_ID"
 )
 
-let SwiftUnittest_Names_Extensions_Http = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
+let SwiftUnittest_Names_Extensions_Http = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
   _protobuf_fieldNumber: 1,
   fieldName: "swift_unittest.names.Http"
 )
 
-let SwiftUnittest_Names_Extensions_HttpRequest = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
+let SwiftUnittest_Names_Extensions_HttpRequest = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
   _protobuf_fieldNumber: 2,
   fieldName: "swift_unittest.names.HttpRequest"
 )
 
-let SwiftUnittest_Names_Extensions_TheHttpRequest = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
+let SwiftUnittest_Names_Extensions_TheHttpRequest = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
   _protobuf_fieldNumber: 3,
   fieldName: "swift_unittest.names.TheHttpRequest"
 )
 
-let SwiftUnittest_Names_Extensions_TheHttp = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
+let SwiftUnittest_Names_Extensions_TheHttp = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
   _protobuf_fieldNumber: 4,
   fieldName: "swift_unittest.names.TheHttp"
 )
 
-let SwiftUnittest_Names_Extensions_Https = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
+let SwiftUnittest_Names_Extensions_Https = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
   _protobuf_fieldNumber: 11,
   fieldName: "swift_unittest.names.Https"
 )
 
-let SwiftUnittest_Names_Extensions_HttpsRequest = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
+let SwiftUnittest_Names_Extensions_HttpsRequest = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
   _protobuf_fieldNumber: 12,
   fieldName: "swift_unittest.names.HttpsRequest"
 )
 
-let SwiftUnittest_Names_Extensions_TheHttpsRequest = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
+let SwiftUnittest_Names_Extensions_TheHttpsRequest = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
   _protobuf_fieldNumber: 13,
   fieldName: "swift_unittest.names.TheHttpsRequest"
 )
 
-let SwiftUnittest_Names_Extensions_TheHttps = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
+let SwiftUnittest_Names_Extensions_TheHttps = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
   _protobuf_fieldNumber: 14,
   fieldName: "swift_unittest.names.TheHttps"
 )
 
-let SwiftUnittest_Names_Extensions_Url = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
+let SwiftUnittest_Names_Extensions_Url = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
   _protobuf_fieldNumber: 21,
   fieldName: "swift_unittest.names.Url"
 )
 
-let SwiftUnittest_Names_Extensions_UrlValue = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
+let SwiftUnittest_Names_Extensions_UrlValue = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
   _protobuf_fieldNumber: 22,
   fieldName: "swift_unittest.names.UrlValue"
 )
 
-let SwiftUnittest_Names_Extensions_TheUrlValue = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
+let SwiftUnittest_Names_Extensions_TheUrlValue = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
   _protobuf_fieldNumber: 23,
   fieldName: "swift_unittest.names.TheUrlValue"
 )
 
-let SwiftUnittest_Names_Extensions_TheUrl = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
+let SwiftUnittest_Names_Extensions_TheUrl = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
   _protobuf_fieldNumber: 24,
   fieldName: "swift_unittest.names.TheUrl"
 )
 
-let SwiftUnittest_Names_Extensions_Id = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
+let SwiftUnittest_Names_Extensions_Id = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
   _protobuf_fieldNumber: 41,
   fieldName: "swift_unittest.names.Id"
 )
 
-let SwiftUnittest_Names_Extensions_IdNumber = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
+let SwiftUnittest_Names_Extensions_IdNumber = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
   _protobuf_fieldNumber: 42,
   fieldName: "swift_unittest.names.IdNumber"
 )
 
-let SwiftUnittest_Names_Extensions_TheIdNumber = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
+let SwiftUnittest_Names_Extensions_TheIdNumber = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
   _protobuf_fieldNumber: 43,
   fieldName: "swift_unittest.names.TheIdNumber"
 )
 
-let SwiftUnittest_Names_Extensions_RequestId = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
+let SwiftUnittest_Names_Extensions_RequestId = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitialsWordCase>(
   _protobuf_fieldNumber: 44,
   fieldName: "swift_unittest.names.RequestId"
 )
 
 extension SwiftUnittest_Names_FieldNames {
   enum Extensions {
-    static let foo1 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_Foo>(
+    static let foo1 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_Foo>(
       _protobuf_fieldNumber: 1,
       fieldName: "swift_unittest.names.FieldNames.foo1"
     )
@@ -16234,12 +16234,12 @@ extension SwiftUnittest_Names_FieldNames {
 
 extension SwiftUnittest_Names_MessageNames {
   enum Extensions {
-    static let foo2 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_Foo>(
+    static let foo2 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_Foo>(
       _protobuf_fieldNumber: 2,
       fieldName: "swift_unittest.names.MessageNames.foo2"
     )
 
-    static let foo4 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_Foo>(
+    static let foo4 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_Foo>(
       _protobuf_fieldNumber: 4,
       fieldName: "swift_unittest.names.MessageNames.foo4"
     )
@@ -16248,7 +16248,7 @@ extension SwiftUnittest_Names_MessageNames {
 
 extension SwiftUnittest_Names_MessageNames.StringMessage {
   enum Extensions {
-    static let foo3 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_Foo>(
+    static let foo3 = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_Foo>(
       _protobuf_fieldNumber: 3,
       fieldName: "swift_unittest.names.MessageNames.String.foo3"
     )
@@ -16257,87 +16257,87 @@ extension SwiftUnittest_Names_MessageNames.StringMessage {
 
 extension SwiftUnittest_Names_Lowers {
   enum Extensions {
-    static let http = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let http = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 1,
       fieldName: "swift_unittest.names.Lowers.http"
     )
 
-    static let http_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let http_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 2,
       fieldName: "swift_unittest.names.Lowers.http_request"
     )
 
-    static let the_http_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let the_http_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 3,
       fieldName: "swift_unittest.names.Lowers.the_http_request"
     )
 
-    static let the_http = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let the_http = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 4,
       fieldName: "swift_unittest.names.Lowers.the_http"
     )
 
-    static let https = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let https = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 11,
       fieldName: "swift_unittest.names.Lowers.https"
     )
 
-    static let https_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let https_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 12,
       fieldName: "swift_unittest.names.Lowers.https_request"
     )
 
-    static let the_https_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let the_https_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 13,
       fieldName: "swift_unittest.names.Lowers.the_https_request"
     )
 
-    static let the_https = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let the_https = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 14,
       fieldName: "swift_unittest.names.Lowers.the_https"
     )
 
-    static let url = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let url = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 21,
       fieldName: "swift_unittest.names.Lowers.url"
     )
 
-    static let url_value = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let url_value = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 22,
       fieldName: "swift_unittest.names.Lowers.url_value"
     )
 
-    static let the_url_value = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let the_url_value = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 23,
       fieldName: "swift_unittest.names.Lowers.the_url_value"
     )
 
-    static let the_url = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let the_url = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 24,
       fieldName: "swift_unittest.names.Lowers.the_url"
     )
 
-    static let a_b_c = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let a_b_c = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 31,
       fieldName: "swift_unittest.names.Lowers.a_b_c"
     )
 
-    static let id = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let id = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 41,
       fieldName: "swift_unittest.names.Lowers.id"
     )
 
-    static let id_number = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let id_number = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 42,
       fieldName: "swift_unittest.names.Lowers.id_number"
     )
 
-    static let the_id_number = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let the_id_number = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 43,
       fieldName: "swift_unittest.names.Lowers.the_id_number"
     )
 
-    static let request_id = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let request_id = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 44,
       fieldName: "swift_unittest.names.Lowers.request_id"
     )
@@ -16346,82 +16346,82 @@ extension SwiftUnittest_Names_Lowers {
 
 extension SwiftUnittest_Names_Uppers {
   enum Extensions {
-    static let HTTP = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let HTTP = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 101,
       fieldName: "swift_unittest.names.Uppers.HTTP"
     )
 
-    static let HTTP_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let HTTP_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 102,
       fieldName: "swift_unittest.names.Uppers.HTTP_request"
     )
 
-    static let the_HTTP_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let the_HTTP_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 103,
       fieldName: "swift_unittest.names.Uppers.the_HTTP_request"
     )
 
-    static let the_HTTP = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let the_HTTP = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 104,
       fieldName: "swift_unittest.names.Uppers.the_HTTP"
     )
 
-    static let HTTPS = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let HTTPS = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 111,
       fieldName: "swift_unittest.names.Uppers.HTTPS"
     )
 
-    static let HTTPS_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let HTTPS_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 112,
       fieldName: "swift_unittest.names.Uppers.HTTPS_request"
     )
 
-    static let the_HTTPS_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let the_HTTPS_request = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 113,
       fieldName: "swift_unittest.names.Uppers.the_HTTPS_request"
     )
 
-    static let the_HTTPS = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let the_HTTPS = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 114,
       fieldName: "swift_unittest.names.Uppers.the_HTTPS"
     )
 
-    static let URL = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let URL = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 121,
       fieldName: "swift_unittest.names.Uppers.URL"
     )
 
-    static let URL_value = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let URL_value = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 122,
       fieldName: "swift_unittest.names.Uppers.URL_value"
     )
 
-    static let the_URL_value = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let the_URL_value = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 123,
       fieldName: "swift_unittest.names.Uppers.the_URL_value"
     )
 
-    static let the_URL = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let the_URL = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 124,
       fieldName: "swift_unittest.names.Uppers.the_URL"
     )
 
-    static let ID = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let ID = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 141,
       fieldName: "swift_unittest.names.Uppers.ID"
     )
 
-    static let ID_number = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let ID_number = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 142,
       fieldName: "swift_unittest.names.Uppers.ID_number"
     )
 
-    static let the_ID_number = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let the_ID_number = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 143,
       fieldName: "swift_unittest.names.Uppers.the_ID_number"
     )
 
-    static let request_ID = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let request_ID = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 144,
       fieldName: "swift_unittest.names.Uppers.request_ID"
     )
@@ -16430,82 +16430,82 @@ extension SwiftUnittest_Names_Uppers {
 
 extension SwiftUnittest_Names_WordCase {
   enum Extensions {
-    static let Http = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let Http = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 201,
       fieldName: "swift_unittest.names.WordCase.Http"
     )
 
-    static let HttpRequest = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let HttpRequest = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 202,
       fieldName: "swift_unittest.names.WordCase.HttpRequest"
     )
 
-    static let TheHttpRequest = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let TheHttpRequest = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 203,
       fieldName: "swift_unittest.names.WordCase.TheHttpRequest"
     )
 
-    static let TheHttp = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let TheHttp = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 204,
       fieldName: "swift_unittest.names.WordCase.TheHttp"
     )
 
-    static let Https = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let Https = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 211,
       fieldName: "swift_unittest.names.WordCase.Https"
     )
 
-    static let HttpsRequest = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let HttpsRequest = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 212,
       fieldName: "swift_unittest.names.WordCase.HttpsRequest"
     )
 
-    static let TheHttpsRequest = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let TheHttpsRequest = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 213,
       fieldName: "swift_unittest.names.WordCase.TheHttpsRequest"
     )
 
-    static let TheHttps = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let TheHttps = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 214,
       fieldName: "swift_unittest.names.WordCase.TheHttps"
     )
 
-    static let Url = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let Url = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 221,
       fieldName: "swift_unittest.names.WordCase.Url"
     )
 
-    static let UrlValue = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let UrlValue = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 222,
       fieldName: "swift_unittest.names.WordCase.UrlValue"
     )
 
-    static let TheUrlValue = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let TheUrlValue = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 223,
       fieldName: "swift_unittest.names.WordCase.TheUrlValue"
     )
 
-    static let TheUrl = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let TheUrl = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 224,
       fieldName: "swift_unittest.names.WordCase.TheUrl"
     )
 
-    static let Id = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let Id = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 241,
       fieldName: "swift_unittest.names.WordCase.Id"
     )
 
-    static let IdNumber = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let IdNumber = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 242,
       fieldName: "swift_unittest.names.WordCase.IdNumber"
     )
 
-    static let TheIdNumber = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let TheIdNumber = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 243,
       fieldName: "swift_unittest.names.WordCase.TheIdNumber"
     )
 
-    static let RequestId = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
+    static let RequestId = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, SwiftUnittest_Names_ExtensionNamingInitials>(
       _protobuf_fieldNumber: 244,
       fieldName: "swift_unittest.names.WordCase.RequestId"
     )

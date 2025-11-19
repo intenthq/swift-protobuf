@@ -390,7 +390,7 @@ extension Swift_Performance_TestAllTypes: IntentSwiftProtobuf.Message, IntentSwi
         case 43: try { try decoder.decodeRepeatedBoolField(value: &_storage._repeatedBool) }()
         case 44: try { try decoder.decodeRepeatedStringField(value: &_storage._repeatedString) }()
         case 45: try { try decoder.decodeRepeatedBytesField(value: &_storage._repeatedBytes) }()
-        case 71: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMessageMap<SwiftProtobuf.ProtobufString,Swift_Performance_TestAllTypes>.self, value: &_storage._mapStringMessage) }()
+        case 71: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMessageMap<IntentSwiftProtobuf.ProtobufString,Swift_Performance_TestAllTypes>.self, value: &_storage._mapStringMessage) }()
         default: break
         }
       }
@@ -493,7 +493,7 @@ extension Swift_Performance_TestAllTypes: IntentSwiftProtobuf.Message, IntentSwi
         try visitor.visitRepeatedBytesField(value: _storage._repeatedBytes, fieldNumber: 45)
       }
       if !_storage._mapStringMessage.isEmpty {
-        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMessageMap<SwiftProtobuf.ProtobufString,Swift_Performance_TestAllTypes>.self, value: _storage._mapStringMessage, fieldNumber: 71)
+        try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMessageMap<IntentSwiftProtobuf.ProtobufString,Swift_Performance_TestAllTypes>.self, value: _storage._mapStringMessage, fieldNumber: 71)
       }
     }
     try unknownFields.traverse(visitor: &visitor)

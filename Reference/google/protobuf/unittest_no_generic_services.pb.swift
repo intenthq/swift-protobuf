@@ -152,7 +152,7 @@ let ProtobufUnittest_NoGenericServicesTest_UnittestNoGenericServices_Extensions:
 // constructing a `SimpleExtensionMap`, otherwise, use the above _Extension Properties_
 // accessors for the extension fields on the messages directly.
 
-let ProtobufUnittest_NoGenericServicesTest_Extensions_test_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_NoGenericServicesTest_TestMessage>(
+let ProtobufUnittest_NoGenericServicesTest_Extensions_test_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_NoGenericServicesTest_TestMessage>(
   _protobuf_fieldNumber: 1000,
   fieldName: "protobuf_unittest.no_generic_services_test.test_extension"
 )

@@ -720,7 +720,7 @@ let SDTPluginlibDescriptorTest_Extensions: IntentSwiftProtobuf.SimpleExtensionMa
 // constructing a `SimpleExtensionMap`, otherwise, use the above _Extension Properties_
 // accessors for the extension fields on the messages directly.
 
-let SDTExtensions_ext_str = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, SwiftProtobuf.Google_Protobuf_FieldOptions>(
+let SDTExtensions_ext_str = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufString>, SwiftProtobuf.Google_Protobuf_FieldOptions>(
   _protobuf_fieldNumber: 90000,
   fieldName: "swift_descriptor_test.ext_str"
 )

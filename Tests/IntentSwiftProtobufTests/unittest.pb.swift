@@ -9467,77 +9467,77 @@ let ProtobufUnittest_Unittest_Extensions: IntentSwiftProtobuf.SimpleExtensionMap
 // accessors for the extension fields on the messages directly.
 
 /// Singular
-let ProtobufUnittest_Extensions_optional_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 1,
   fieldName: "protobuf_unittest.optional_int32_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_int64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_int64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 2,
   fieldName: "protobuf_unittest.optional_int64_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_uint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_uint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 3,
   fieldName: "protobuf_unittest.optional_uint32_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_uint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufUInt64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_uint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufUInt64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 4,
   fieldName: "protobuf_unittest.optional_uint64_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_sint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSInt32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_sint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufSInt32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 5,
   fieldName: "protobuf_unittest.optional_sint32_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_sint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSInt64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_sint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufSInt64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 6,
   fieldName: "protobuf_unittest.optional_sint64_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_fixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_fixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 7,
   fieldName: "protobuf_unittest.optional_fixed32_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_fixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFixed64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_fixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufFixed64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 8,
   fieldName: "protobuf_unittest.optional_fixed64_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_sfixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSFixed32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_sfixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufSFixed32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 9,
   fieldName: "protobuf_unittest.optional_sfixed32_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_sfixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSFixed64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_sfixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufSFixed64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 10,
   fieldName: "protobuf_unittest.optional_sfixed64_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_float_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFloat>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_float_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufFloat>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 11,
   fieldName: "protobuf_unittest.optional_float_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_double_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufDouble>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_double_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufDouble>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 12,
   fieldName: "protobuf_unittest.optional_double_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_bool_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_bool_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufBool>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 13,
   fieldName: "protobuf_unittest.optional_bool_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_string_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_string_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 14,
   fieldName: "protobuf_unittest.optional_string_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_bytes_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBytes>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_bytes_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufBytes>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 15,
   fieldName: "protobuf_unittest.optional_bytes_extension"
 )
@@ -9577,12 +9577,12 @@ let ProtobufUnittest_Extensions_optional_import_enum_extension = IntentSwiftProt
   fieldName: "protobuf_unittest.optional_import_enum_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_string_piece_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_string_piece_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 24,
   fieldName: "protobuf_unittest.optional_string_piece_extension"
 )
 
-let ProtobufUnittest_Extensions_optional_cord_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_optional_cord_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 25,
   fieldName: "protobuf_unittest.optional_cord_extension"
 )
@@ -9603,77 +9603,77 @@ let ProtobufUnittest_Extensions_optional_unverified_lazy_message_extension = Int
 )
 
 /// Repeated
-let ProtobufUnittest_Extensions_repeated_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 31,
   fieldName: "protobuf_unittest.repeated_int32_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_int64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufInt64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_int64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufInt64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 32,
   fieldName: "protobuf_unittest.repeated_int64_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_uint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_uint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 33,
   fieldName: "protobuf_unittest.repeated_uint32_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_uint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufUInt64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_uint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufUInt64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 34,
   fieldName: "protobuf_unittest.repeated_uint64_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_sint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSInt32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_sint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufSInt32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 35,
   fieldName: "protobuf_unittest.repeated_sint32_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_sint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSInt64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_sint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufSInt64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 36,
   fieldName: "protobuf_unittest.repeated_sint64_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_fixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_fixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 37,
   fieldName: "protobuf_unittest.repeated_fixed32_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_fixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFixed64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_fixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufFixed64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 38,
   fieldName: "protobuf_unittest.repeated_fixed64_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_sfixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSFixed32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_sfixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufSFixed32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 39,
   fieldName: "protobuf_unittest.repeated_sfixed32_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_sfixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSFixed64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_sfixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufSFixed64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 40,
   fieldName: "protobuf_unittest.repeated_sfixed64_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_float_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFloat>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_float_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufFloat>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 41,
   fieldName: "protobuf_unittest.repeated_float_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_double_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufDouble>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_double_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufDouble>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 42,
   fieldName: "protobuf_unittest.repeated_double_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_bool_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_bool_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufBool>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 43,
   fieldName: "protobuf_unittest.repeated_bool_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_string_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_string_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 44,
   fieldName: "protobuf_unittest.repeated_string_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_bytes_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufBytes>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_bytes_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufBytes>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 45,
   fieldName: "protobuf_unittest.repeated_bytes_extension"
 )
@@ -9713,12 +9713,12 @@ let ProtobufUnittest_Extensions_repeated_import_enum_extension = IntentSwiftProt
   fieldName: "protobuf_unittest.repeated_import_enum_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_string_piece_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_string_piece_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 54,
   fieldName: "protobuf_unittest.repeated_string_piece_extension"
 )
 
-let ProtobufUnittest_Extensions_repeated_cord_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_repeated_cord_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 55,
   fieldName: "protobuf_unittest.repeated_cord_extension"
 )
@@ -9729,77 +9729,77 @@ let ProtobufUnittest_Extensions_repeated_lazy_message_extension = IntentSwiftPro
 )
 
 /// Singular with defaults
-let ProtobufUnittest_Extensions_default_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 61,
   fieldName: "protobuf_unittest.default_int32_extension"
 )
 
-let ProtobufUnittest_Extensions_default_int64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_int64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 62,
   fieldName: "protobuf_unittest.default_int64_extension"
 )
 
-let ProtobufUnittest_Extensions_default_uint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_uint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 63,
   fieldName: "protobuf_unittest.default_uint32_extension"
 )
 
-let ProtobufUnittest_Extensions_default_uint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufUInt64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_uint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufUInt64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 64,
   fieldName: "protobuf_unittest.default_uint64_extension"
 )
 
-let ProtobufUnittest_Extensions_default_sint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSInt32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_sint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufSInt32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 65,
   fieldName: "protobuf_unittest.default_sint32_extension"
 )
 
-let ProtobufUnittest_Extensions_default_sint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSInt64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_sint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufSInt64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 66,
   fieldName: "protobuf_unittest.default_sint64_extension"
 )
 
-let ProtobufUnittest_Extensions_default_fixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_fixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 67,
   fieldName: "protobuf_unittest.default_fixed32_extension"
 )
 
-let ProtobufUnittest_Extensions_default_fixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFixed64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_fixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufFixed64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 68,
   fieldName: "protobuf_unittest.default_fixed64_extension"
 )
 
-let ProtobufUnittest_Extensions_default_sfixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSFixed32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_sfixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufSFixed32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 69,
   fieldName: "protobuf_unittest.default_sfixed32_extension"
 )
 
-let ProtobufUnittest_Extensions_default_sfixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufSFixed64>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_sfixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufSFixed64>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 70,
   fieldName: "protobuf_unittest.default_sfixed64_extension"
 )
 
-let ProtobufUnittest_Extensions_default_float_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufFloat>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_float_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufFloat>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 71,
   fieldName: "protobuf_unittest.default_float_extension"
 )
 
-let ProtobufUnittest_Extensions_default_double_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufDouble>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_double_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufDouble>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 72,
   fieldName: "protobuf_unittest.default_double_extension"
 )
 
-let ProtobufUnittest_Extensions_default_bool_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_bool_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufBool>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 73,
   fieldName: "protobuf_unittest.default_bool_extension"
 )
 
-let ProtobufUnittest_Extensions_default_string_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_string_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 74,
   fieldName: "protobuf_unittest.default_string_extension"
 )
 
-let ProtobufUnittest_Extensions_default_bytes_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBytes>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_bytes_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufBytes>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 75,
   fieldName: "protobuf_unittest.default_bytes_extension"
 )
@@ -9819,18 +9819,18 @@ let ProtobufUnittest_Extensions_default_import_enum_extension = IntentSwiftProto
   fieldName: "protobuf_unittest.default_import_enum_extension"
 )
 
-let ProtobufUnittest_Extensions_default_string_piece_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_string_piece_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 84,
   fieldName: "protobuf_unittest.default_string_piece_extension"
 )
 
-let ProtobufUnittest_Extensions_default_cord_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_default_cord_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 85,
   fieldName: "protobuf_unittest.default_cord_extension"
 )
 
 /// For oneof test
-let ProtobufUnittest_Extensions_oneof_uint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_oneof_uint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 111,
   fieldName: "protobuf_unittest.oneof_uint32_extension"
 )
@@ -9840,87 +9840,87 @@ let ProtobufUnittest_Extensions_oneof_nested_message_extension = IntentSwiftProt
   fieldName: "protobuf_unittest.oneof_nested_message_extension"
 )
 
-let ProtobufUnittest_Extensions_oneof_string_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_oneof_string_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 113,
   fieldName: "protobuf_unittest.oneof_string_extension"
 )
 
-let ProtobufUnittest_Extensions_oneof_bytes_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBytes>, ProtobufUnittest_TestAllExtensions>(
+let ProtobufUnittest_Extensions_oneof_bytes_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufBytes>, ProtobufUnittest_TestAllExtensions>(
   _protobuf_fieldNumber: 114,
   fieldName: "protobuf_unittest.oneof_bytes_extension"
 )
 
-let ProtobufUnittest_Extensions_my_extension_string = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestFieldOrderings>(
+let ProtobufUnittest_Extensions_my_extension_string = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufString>, ProtobufUnittest_TestFieldOrderings>(
   _protobuf_fieldNumber: 50,
   fieldName: "protobuf_unittest.my_extension_string"
 )
 
-let ProtobufUnittest_Extensions_my_extension_int = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestFieldOrderings>(
+let ProtobufUnittest_Extensions_my_extension_int = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestFieldOrderings>(
   _protobuf_fieldNumber: 5,
   fieldName: "protobuf_unittest.my_extension_int"
 )
 
-let ProtobufUnittest_Extensions_packed_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 90,
   fieldName: "protobuf_unittest.packed_int32_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_int64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufInt64>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_int64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<IntentSwiftProtobuf.ProtobufInt64>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 91,
   fieldName: "protobuf_unittest.packed_int64_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_uint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_uint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<IntentSwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 92,
   fieldName: "protobuf_unittest.packed_uint32_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_uint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufUInt64>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_uint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<IntentSwiftProtobuf.ProtobufUInt64>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 93,
   fieldName: "protobuf_unittest.packed_uint64_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_sint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufSInt32>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_sint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<IntentSwiftProtobuf.ProtobufSInt32>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 94,
   fieldName: "protobuf_unittest.packed_sint32_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_sint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufSInt64>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_sint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<IntentSwiftProtobuf.ProtobufSInt64>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 95,
   fieldName: "protobuf_unittest.packed_sint64_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_fixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_fixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<IntentSwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 96,
   fieldName: "protobuf_unittest.packed_fixed32_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_fixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufFixed64>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_fixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<IntentSwiftProtobuf.ProtobufFixed64>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 97,
   fieldName: "protobuf_unittest.packed_fixed64_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_sfixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufSFixed32>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_sfixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<IntentSwiftProtobuf.ProtobufSFixed32>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 98,
   fieldName: "protobuf_unittest.packed_sfixed32_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_sfixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufSFixed64>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_sfixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<IntentSwiftProtobuf.ProtobufSFixed64>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 99,
   fieldName: "protobuf_unittest.packed_sfixed64_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_float_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufFloat>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_float_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<IntentSwiftProtobuf.ProtobufFloat>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 100,
   fieldName: "protobuf_unittest.packed_float_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_double_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufDouble>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_double_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<IntentSwiftProtobuf.ProtobufDouble>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 101,
   fieldName: "protobuf_unittest.packed_double_extension"
 )
 
-let ProtobufUnittest_Extensions_packed_bool_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_TestPackedExtensions>(
+let ProtobufUnittest_Extensions_packed_bool_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.PackedExtensionField<IntentSwiftProtobuf.ProtobufBool>, ProtobufUnittest_TestPackedExtensions>(
   _protobuf_fieldNumber: 102,
   fieldName: "protobuf_unittest.packed_bool_extension"
 )
@@ -9930,67 +9930,67 @@ let ProtobufUnittest_Extensions_packed_enum_extension = IntentSwiftProtobuf.Mess
   fieldName: "protobuf_unittest.packed_enum_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 90,
   fieldName: "protobuf_unittest.unpacked_int32_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_int64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufInt64>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_int64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufInt64>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 91,
   fieldName: "protobuf_unittest.unpacked_int64_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_uint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_uint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufUInt32>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 92,
   fieldName: "protobuf_unittest.unpacked_uint32_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_uint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufUInt64>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_uint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufUInt64>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 93,
   fieldName: "protobuf_unittest.unpacked_uint64_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_sint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSInt32>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_sint32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufSInt32>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 94,
   fieldName: "protobuf_unittest.unpacked_sint32_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_sint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSInt64>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_sint64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufSInt64>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 95,
   fieldName: "protobuf_unittest.unpacked_sint64_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_fixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_fixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 96,
   fieldName: "protobuf_unittest.unpacked_fixed32_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_fixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFixed64>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_fixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufFixed64>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 97,
   fieldName: "protobuf_unittest.unpacked_fixed64_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_sfixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSFixed32>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_sfixed32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufSFixed32>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 98,
   fieldName: "protobuf_unittest.unpacked_sfixed32_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_sfixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufSFixed64>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_sfixed64_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufSFixed64>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 99,
   fieldName: "protobuf_unittest.unpacked_sfixed64_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_float_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFloat>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_float_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufFloat>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 100,
   fieldName: "protobuf_unittest.unpacked_float_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_double_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufDouble>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_double_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufDouble>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 101,
   fieldName: "protobuf_unittest.unpacked_double_extension"
 )
 
-let ProtobufUnittest_Extensions_unpacked_bool_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_TestUnpackedExtensions>(
+let ProtobufUnittest_Extensions_unpacked_bool_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufBool>, ProtobufUnittest_TestUnpackedExtensions>(
   _protobuf_fieldNumber: 102,
   fieldName: "protobuf_unittest.unpacked_bool_extension"
 )
@@ -10005,7 +10005,7 @@ let ProtobufUnittest_Extensions_test_all_types = IntentSwiftProtobuf.MessageExte
   fieldName: "protobuf_unittest.test_all_types"
 )
 
-let ProtobufUnittest_Extensions_test_extension_inside_table_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionInsideTable>(
+let ProtobufUnittest_Extensions_test_extension_inside_table_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionInsideTable>(
   _protobuf_fieldNumber: 5,
   fieldName: "protobuf_unittest.test_extension_inside_table_extension"
 )
@@ -10017,12 +10017,12 @@ let ProtobufUnittest_Extensions_inner = IntentSwiftProtobuf.MessageExtension<Swi
 
 extension ProtobufUnittest_TestMixedFieldsAndExtensions {
   enum Extensions {
-    static let c = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestMixedFieldsAndExtensions>(
+    static let c = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestMixedFieldsAndExtensions>(
       _protobuf_fieldNumber: 2,
       fieldName: "protobuf_unittest.TestMixedFieldsAndExtensions.c"
     )
 
-    static let d = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestMixedFieldsAndExtensions>(
+    static let d = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufFixed32>, ProtobufUnittest_TestMixedFieldsAndExtensions>(
       _protobuf_fieldNumber: 4,
       fieldName: "protobuf_unittest.TestMixedFieldsAndExtensions.d"
     )
@@ -10033,14 +10033,14 @@ extension ProtobufUnittest_TestNestedExtension {
   enum Extensions {
     /// Check for bug where string extensions declared in tested scope did not
     /// compile.
-    static let test = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+    static let test = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
       _protobuf_fieldNumber: 1002,
       fieldName: "protobuf_unittest.TestNestedExtension.test"
     )
 
     /// Used to test if generated extension name is correct when there are
     /// underscores.
-    static let nested_string_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
+    static let nested_string_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufString>, ProtobufUnittest_TestAllExtensions>(
       _protobuf_fieldNumber: 1003,
       fieldName: "protobuf_unittest.TestNestedExtension.nested_string_extension"
     )
@@ -10114,27 +10114,27 @@ extension ProtobufUnittest_TestParsingMerge {
 
 extension ProtobufUnittest_TestExtensionRangeSerialize {
   enum Extensions {
-    static let bar_one = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionRangeSerialize>(
+    static let bar_one = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionRangeSerialize>(
       _protobuf_fieldNumber: 2,
       fieldName: "protobuf_unittest.TestExtensionRangeSerialize.bar_one"
     )
 
-    static let bar_two = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionRangeSerialize>(
+    static let bar_two = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionRangeSerialize>(
       _protobuf_fieldNumber: 4,
       fieldName: "protobuf_unittest.TestExtensionRangeSerialize.bar_two"
     )
 
-    static let bar_three = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionRangeSerialize>(
+    static let bar_three = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionRangeSerialize>(
       _protobuf_fieldNumber: 10,
       fieldName: "protobuf_unittest.TestExtensionRangeSerialize.bar_three"
     )
 
-    static let bar_four = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionRangeSerialize>(
+    static let bar_four = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionRangeSerialize>(
       _protobuf_fieldNumber: 15,
       fieldName: "protobuf_unittest.TestExtensionRangeSerialize.bar_four"
     )
 
-    static let bar_five = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionRangeSerialize>(
+    static let bar_five = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestExtensionRangeSerialize>(
       _protobuf_fieldNumber: 19,
       fieldName: "protobuf_unittest.TestExtensionRangeSerialize.bar_five"
     )
@@ -16816,7 +16816,7 @@ extension ProtobufUnittest_TestHugeFieldNumbers: IntentSwiftProtobuf.Message, In
       case 536870006: try { try decoder.decodeSingularBytesField(value: &self._optionalBytes) }()
       case 536870007: try { try decoder.decodeSingularMessageField(value: &self._optionalMessage) }()
       case 536870008: try { try decoder.decodeSingularGroupField(value: &self._optionalGroup) }()
-      case 536870010: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufString>.self, value: &self.stringStringMap) }()
+      case 536870010: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<IntentSwiftProtobuf.ProtobufString,IntentSwiftProtobuf.ProtobufString>.self, value: &self.stringStringMap) }()
       case 536870011: try {
         var v: UInt32?
         try decoder.decodeSingularUInt32Field(value: &v)
@@ -16895,7 +16895,7 @@ extension ProtobufUnittest_TestHugeFieldNumbers: IntentSwiftProtobuf.Message, In
       try visitor.visitSingularGroupField(value: v, fieldNumber: 536870008)
     } }()
     if !self.stringStringMap.isEmpty {
-      try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufString>.self, value: self.stringStringMap, fieldNumber: 536870010)
+      try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMap<IntentSwiftProtobuf.ProtobufString,IntentSwiftProtobuf.ProtobufString>.self, value: self.stringStringMap, fieldNumber: 536870010)
     }
     switch self.oneofField {
     case .oneofUint32?: try {

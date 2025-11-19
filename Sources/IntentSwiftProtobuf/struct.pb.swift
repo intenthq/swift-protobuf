@@ -282,7 +282,7 @@ extension Google_Protobuf_Struct: IntentSwiftProtobuf.Message, IntentSwiftProtob
       // allocates stack space for every case branch when no optimizations are
       // enabled. https://github.com/apple/swift-protobuf/issues/1034
       switch fieldNumber {
-      case 1: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMessageMap<SwiftProtobuf.ProtobufString,Google_Protobuf_Value>.self, value: &self.fields) }()
+      case 1: try { try decoder.decodeMapField(fieldType: IntentSwiftProtobuf._ProtobufMessageMap<IntentSwiftProtobuf.ProtobufString,Google_Protobuf_Value>.self, value: &self.fields) }()
       default: break
       }
     }
@@ -290,7 +290,7 @@ extension Google_Protobuf_Struct: IntentSwiftProtobuf.Message, IntentSwiftProtob
 
   public func traverse<V: IntentSwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.fields.isEmpty {
-      try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMessageMap<SwiftProtobuf.ProtobufString,Google_Protobuf_Value>.self, value: self.fields, fieldNumber: 1)
+      try visitor.visitMapField(fieldType: IntentSwiftProtobuf._ProtobufMessageMap<IntentSwiftProtobuf.ProtobufString,Google_Protobuf_Value>.self, value: self.fields, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }

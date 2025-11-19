@@ -239,7 +239,7 @@ let ProtobufUnittest_UnittestOptimizeFor_Extensions: IntentSwiftProtobuf.SimpleE
 
 extension ProtobufUnittest_TestOptimizedForSize {
   enum Extensions {
-    static let test_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestOptimizedForSize>(
+    static let test_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufUnittest_TestOptimizedForSize>(
       _protobuf_fieldNumber: 1234,
       fieldName: "protobuf_unittest.TestOptimizedForSize.test_extension"
     )

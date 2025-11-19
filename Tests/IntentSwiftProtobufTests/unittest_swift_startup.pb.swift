@@ -153,19 +153,19 @@ let ProtobufObjcUnittest_UnittestSwiftStartup_Extensions: IntentSwiftProtobuf.Si
 // accessors for the extension fields on the messages directly.
 
 /// Singular
-let ProtobufObjcUnittest_Extensions_optional_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufObjcUnittest_TestObjCStartupMessage>(
+let ProtobufObjcUnittest_Extensions_optional_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufObjcUnittest_TestObjCStartupMessage>(
   _protobuf_fieldNumber: 1,
   fieldName: "protobuf_objc_unittest.optional_int32_extension"
 )
 
-let ProtobufObjcUnittest_Extensions_repeated_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<SwiftProtobuf.ProtobufInt32>, ProtobufObjcUnittest_TestObjCStartupMessage>(
+let ProtobufObjcUnittest_Extensions_repeated_int32_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.RepeatedExtensionField<IntentSwiftProtobuf.ProtobufInt32>, ProtobufObjcUnittest_TestObjCStartupMessage>(
   _protobuf_fieldNumber: 2,
   fieldName: "protobuf_objc_unittest.repeated_int32_extension"
 )
 
 extension ProtobufObjcUnittest_TestObjCStartupNested {
   enum Extensions {
-    static let nested_string_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufObjcUnittest_TestObjCStartupMessage>(
+    static let nested_string_extension = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufString>, ProtobufObjcUnittest_TestObjCStartupMessage>(
       _protobuf_fieldNumber: 3,
       fieldName: "protobuf_objc_unittest.TestObjCStartupNested.nested_string_extension"
     )

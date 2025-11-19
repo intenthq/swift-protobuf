@@ -484,34 +484,34 @@ let ProtobufUnittest_UnittestSwiftReserved_Extensions: IntentSwiftProtobuf.Simpl
 // accessors for the extension fields on the messages directly.
 
 /// Won't get _p added because it is fully qualified.
-let ProtobufUnittest_Extensions_debug_description = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+let ProtobufUnittest_Extensions_debug_description = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
   _protobuf_fieldNumber: 1000,
   fieldName: "protobuf_unittest.debug_description"
 )
 
 /// These are scoped to the file, so the package prefix (or a Swift prefix)
 /// will get added to them to they aren't going to get renamed.
-let ProtobufUnittest_Extensions_as = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+let ProtobufUnittest_Extensions_as = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
   _protobuf_fieldNumber: 1012,
   fieldName: "protobuf_unittest.as"
 )
 
-let ProtobufUnittest_Extensions_var = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+let ProtobufUnittest_Extensions_var = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
   _protobuf_fieldNumber: 1013,
   fieldName: "protobuf_unittest.var"
 )
 
-let ProtobufUnittest_Extensions_try = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+let ProtobufUnittest_Extensions_try = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
   _protobuf_fieldNumber: 1014,
   fieldName: "protobuf_unittest.try"
 )
 
-let ProtobufUnittest_Extensions_do = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+let ProtobufUnittest_Extensions_do = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
   _protobuf_fieldNumber: 1015,
   fieldName: "protobuf_unittest.do"
 )
 
-let ProtobufUnittest_Extensions_nil = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+let ProtobufUnittest_Extensions_nil = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
   _protobuf_fieldNumber: 1016,
   fieldName: "protobuf_unittest.nil"
 )
@@ -521,34 +521,34 @@ extension ProtobufUnittest_SwiftReservedTestExt {
     /// This will end up in the "enum Extensions" to scope it, but there
     /// the raw form is used ("hash_value", not the Swift one "hashValue"),
     /// so there is no conflict, and no renaming happens.
-    static let hash_value = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+    static let hash_value = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
       _protobuf_fieldNumber: 1001,
       fieldName: "protobuf_unittest.SwiftReservedTestExt.hash_value"
     )
 
     /// Reserved words, since these end up in the "struct Extensions", they
     /// can't just be get their names, and sanitation kicks.
-    static let `as` = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+    static let `as` = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
       _protobuf_fieldNumber: 1022,
       fieldName: "protobuf_unittest.SwiftReservedTestExt.as"
     )
 
-    static let `var` = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+    static let `var` = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
       _protobuf_fieldNumber: 1023,
       fieldName: "protobuf_unittest.SwiftReservedTestExt.var"
     )
 
-    static let `try` = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+    static let `try` = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
       _protobuf_fieldNumber: 1024,
       fieldName: "protobuf_unittest.SwiftReservedTestExt.try"
     )
 
-    static let `do` = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+    static let `do` = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
       _protobuf_fieldNumber: 1025,
       fieldName: "protobuf_unittest.SwiftReservedTestExt.do"
     )
 
-    static let `nil` = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
+    static let `nil` = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufBool>, ProtobufUnittest_SwiftReservedTest.classMessage>(
       _protobuf_fieldNumber: 1026,
       fieldName: "protobuf_unittest.SwiftReservedTestExt.nil"
     )

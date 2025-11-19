@@ -457,12 +457,12 @@ let Swift_Protobuf_UnittestSwiftFieldorder_Extensions: IntentSwiftProtobuf.Simpl
 // constructing a `SimpleExtensionMap`, otherwise, use the above _Extension Properties_
 // accessors for the extension fields on the messages directly.
 
-let Swift_Protobuf_Extensions_my_extension_string = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, Swift_Protobuf_TestFieldOrderings>(
+let Swift_Protobuf_Extensions_my_extension_string = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufString>, Swift_Protobuf_TestFieldOrderings>(
   _protobuf_fieldNumber: 50,
   fieldName: "swift.protobuf.my_extension_string"
 )
 
-let Swift_Protobuf_Extensions_my_extension_int = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufInt32>, Swift_Protobuf_TestFieldOrderings>(
+let Swift_Protobuf_Extensions_my_extension_int = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufInt32>, Swift_Protobuf_TestFieldOrderings>(
   _protobuf_fieldNumber: 5,
   fieldName: "swift.protobuf.my_extension_int"
 )

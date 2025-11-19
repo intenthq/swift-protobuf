@@ -186,7 +186,7 @@ let ProtobufUnittest_Extend3_UnittestSwiftExtension3_Extensions: IntentSwiftProt
 // constructing a `SimpleExtensionMap`, otherwise, use the above _Extension Properties_
 // accessors for the extension fields on the messages directly.
 
-let ProtobufUnittest_Extend3_Extensions_b = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_Extend_Foo.Bar.Baz>(
+let ProtobufUnittest_Extend3_Extensions_b = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufString>, ProtobufUnittest_Extend_Foo.Bar.Baz>(
   _protobuf_fieldNumber: 320,
   fieldName: "protobuf_unittest.extend3.b"
 )
@@ -198,7 +198,7 @@ let ProtobufUnittest_Extend3_Extensions_C = IntentSwiftProtobuf.MessageExtension
 
 extension ProtobufUnittest_Extend3_MyMessage {
   enum Extensions {
-    static let b = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<SwiftProtobuf.ProtobufString>, ProtobufUnittest_Extend_Foo.Bar.Baz>(
+    static let b = IntentSwiftProtobuf.MessageExtension<SwiftProtobuf.OptionalExtensionField<IntentSwiftProtobuf.ProtobufString>, ProtobufUnittest_Extend_Foo.Bar.Baz>(
       _protobuf_fieldNumber: 310,
       fieldName: "protobuf_unittest.extend3.MyMessage.b"
     )
